@@ -445,4 +445,13 @@ input{
                             "imagenes"
                             "pie";
 }
+
+@media screen and (max-width: 758px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:    "header"
+                            "main"
+                            "imagenes"
+                            "pie";
+}
     
