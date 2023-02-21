@@ -10,6 +10,7 @@
     background-image: url(https://images4.alphacoders.com/814/81446.jpg);
     background-position: center;
     background-size: cover;
+    background-position-y: center;
     background-attachment: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -27,6 +28,9 @@
 
 .parrafo{
     grid-area: imagenes;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -176,7 +180,7 @@ footer{
 
 
 
-
+/* --------------------------------------------------------------------------------------------- */
 
 .contentForum{
     color: white;
@@ -272,6 +276,8 @@ input{
     margin-left: 735px;
 }
 
+/* --------------------------------------------------------------------------------------------- */
+
 .contentMerch{
     color: white;
     background-color: black;
@@ -352,6 +358,8 @@ input{
     flex-direction: column;
 }
 
+/* --------------------------------------------------------------------------------------------- */
+
 .contentMovies{
     color: white;
     background-color: black;
@@ -388,6 +396,13 @@ input{
     flex-direction: row;
 }
 
+.pelis:hover{
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
 
 .contentSeries{
     color: white;
@@ -398,15 +413,28 @@ input{
     background-position-y: center;
     background-attachment: fixed;
     height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 1fr 1fr 100px;
+    grid-template-areas: 
+    "headS headS headS"
+    "mainS mainS mainS"
+    "capS capS capS"
+    "pieS pieS pieS";
 }
 
-.contentSeries:before{
-    content: "";
-    width: 1900px;
-    height: 120%;
-    background-color: black;
-    position: absolute;
-    opacity: 0.5;
+.headerSerie{grid-area: headS;}
+
+.titSerie{
+    grid-area: mainS;
+}
+
+.capitulos{grid-area: capS;}
+
+.footerS{grid-area: pieS;}
+
+.navS{
+    margin-top: 20px;
 }
 
 .sw-series{
@@ -429,11 +457,7 @@ input{
     transition-duration: 1s;
 }
 
-.pelis:hover{
-    transform: scale(1.3);
-    transition-duration: 1s;
-}
-
+/* --------------------------------------------------------------------------------------------- */
 
 
 
