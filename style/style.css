@@ -11,20 +11,25 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 300px 1fr 100px;
+    grid-template-areas:    "header header header"
+                            "main main main"
+                            "imagenes imagenes imagenes"
+                            "pie pie pie";
 }
+
 
 .border{
     border: 5px solid rgba(0, 0, 0, 0);
 }
 
 .parrafo{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:    "filmo filmo filmo"
-                            "merch merch merch"
-                            "foro foro foro";
+    grid-area: imagenes;
 }
+
+
 
 .hijo1{
     grid-area: filmo;
@@ -51,6 +56,11 @@ header{
     border-bottom-right-radius: 30px;
     color: black;
     padding: 10px;
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
 }
 
 .homeIndex, .seriesIndex, .moviesIndex, .merchandisingIndex, .forumIndex{
@@ -151,6 +161,7 @@ footer{
     background-color: beige;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    grid-area: pie;
 }
 
 
@@ -427,13 +438,11 @@ input{
 
 
 @media screen and (max-width: 576px) {
-    .parrafo{
-        
-        grid-template-columns: 100vw;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:    "filmo"
-                                "merch"
-                                "foro";
-    }
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:    "header"
+                            "main"
+                            "imagenes"
+                            "pie";
 }
     
