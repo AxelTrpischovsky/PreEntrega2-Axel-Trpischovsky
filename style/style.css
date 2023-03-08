@@ -23,7 +23,7 @@
 
 
 .border{
-    border: 5px solid rgba(0, 0, 0, 0);
+    border: var(--bs-border-width) var(--bs-border-style) #dee2e600!important;
 }
 
 .parrafo{
