@@ -5,33 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/style.css">
     <title>SW Movies</title>
 </head>
 
 <body class="contentMovies">
     <header>
-        <nav>
-            <nav>
-                <ol class="menu">
-                    <li>
-                        <a  href="../index.html" class="homeIndex">Home</a>
-                    </li>
-                    <li>
-                        <a class="homeIndex" href="./series.html">Series</a>
-                    </li>
-                    <li>
-                        <a class="homeIndex" href="./movies.html">Movies</a>
-                    </li>
-                    <li>
-                        <a class="homeIndex" href="./merchandising.html">Merchandising</a>
-                    </li>
-                    <li>
-                        <a class="homeIndex" href="./forum.html">Forum</a>
-                    </li>
-                </ol>
-            </nav>
-    </header>
+
+        <nav class="navbar" style="background-color: beige;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                <img src="../img/Icono-star-wars.svg" alt="Logo" width="40" height="34" class="imagen-menu">
+                Home
+                </a>
+                <a href="./series.html" class="navbar-brand">Series</a>
+                <a href="./movies.html" class="navbar-brand">Movies</a>
+                <a href="./merchandising.html" class="navbar-brand">Merchandising</a>
+                <a href="./forum.html" class="navbar-brand">Forum</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        </header>
     <main class="titulo">
         <h1 class="tituloPagina">¡Seccion de películas!</h1>
         <h2 class="subtitulo">¡Bienvenido a nuestra página de películas de Star Wars! Aquí encontrarás una amplia
@@ -68,6 +66,7 @@
             </li>
         </ol>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>
