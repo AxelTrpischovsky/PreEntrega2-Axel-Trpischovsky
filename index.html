@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/style.css">
     <title>SW Home</title>
 </head>
@@ -13,28 +13,25 @@
 <body>
 
     <div class="content">
+        <header class="headerI">
 
-        <header class="border encabezado">
-            <nav>
-                <ol class="menu">
-                    <li class="menuList">
-                        <a href="./index.html" class="homeIndex">Home</a>
-                    </li>
-                    <li class="menuList">
-                        <a href="./pages/series.html" class="seriesIndex">Series</a>
-                    </li>
-                    <li class="menuList">
-                        <a href="./pages/movies.html" class="moviesIndex">Movies</a>
-                    </li>
-                    <li class="menuList">
-                        <a href="./pages/merchandising.html" class="merchandisingIndex">Merchandising</a>
-                    </li>
-                    <li class="menuList">
-                        <a href="./pages/forum.html" class="forumIndex">Forum</a>
-                    </li>
-                </ol>
+            <nav class="navbar" style="background-color: beige;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                    <img src="./img/Icono-star-wars.svg" alt="Logo" width="40" height="34" class="imagen-menu">
+                    Home
+                    </a>
+                    <a href="./pages/series.html" class="navbar-brand">Series</a>
+                    <a href="./pages/movies.html" class="navbar-brand">Movies</a>
+                    <a href="./pages/merchandising.html" class="navbar-brand">Merchandising</a>
+                    <a href="./pages/forum.html" class="navbar-brand">Forum</a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </nav>
-        </header>
+            </header>
 
         <main class="border titulo">        
             <h1 class="tituloPagina">En una galaxia muy, muy lejana...</h1>

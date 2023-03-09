@@ -20,11 +20,10 @@
                             "imagenes imagenes imagenes"
                             "pie pie pie";
 }
-
-
-.border{
-    border: var(--bs-border-width) var(--bs-border-style) #dee2e600!important;
+.border {
+    border: var(--bs-border-width) var(--bs-border-style) rgb(255 255 255 / 0%)!important;
 }
+
 
 .parrafo{
     grid-area: imagenes;
@@ -33,7 +32,9 @@
     justify-content: center;
 }
 
-
+.headerI{
+    grid-area: header;
+}
 
 .hijo1{
     grid-area: filmo;
@@ -51,37 +52,34 @@ header, .titulo, .primerParrafo, .segundoParrafo, .tercerParrafo, .cuartoParrafo
     position: relative;
 }
 
-header{
+.navbar{
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     padding: 20;
     background-color: beige;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     color: black;
-    padding: 10px;
-    grid-area: header;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-control{
+    height: 50px;
 }
 
 main{
     grid-area: main;
 }
 
-.homeIndex, .seriesIndex, .moviesIndex, .merchandisingIndex, .forumIndex{
-    margin: 20px;
-    text-decoration: none;
-}
 
-.menu{
-    list-style-type: none;
-}
 
-.menu, .menuList{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around;
-}
+
 
 .tituloPagina{ 
     text-align: center;
@@ -424,7 +422,9 @@ input{
 }
 
 .headerSerie{grid-area: headS;}
-
+.headerSe{
+    grid-area: headS;
+}
 .titSerie{
     grid-area: mainS;
 }
@@ -460,22 +460,3 @@ input{
 /* --------------------------------------------------------------------------------------------- */
 
 
-
-@media screen and (max-width: 576px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:    "header"
-                            "main"
-                            "imagenes"
-                            "pie";
-}
-
-@media screen and (max-width: 758px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:    "header"
-                            "main"
-                            "imagenes"
-                            "pie";
-}
-    
