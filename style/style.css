@@ -459,4 +459,40 @@ input{
 
 /* --------------------------------------------------------------------------------------------- */
 
+@media screen and (max-width: 576px) {
+.content {
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+grid-template-areas: 
+    "header"
+    "main"
+    "imagenes"
+    "pie";
+}
+}
+
+/* Reglas de estilo para pantallas con un ancho máximo de 768px */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+.content {
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto;
+grid-template-areas: 
+    "header header"
+    "main imagenes"
+    "pie pie";
+}
+
+}
+
+/* Reglas de estilo para pantallas con un ancho máximo de 1400px */
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+.content {
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto;
+grid-template-areas: 
+    "header header header"
+    "main imagenes imagenes"
+    "pie pie pie";
+}
+}
 
