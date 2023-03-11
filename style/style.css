@@ -10,9 +10,12 @@
     background-image: url(https://images4.alphacoders.com/814/81446.jpg);
     background-position: center;
     background-size: cover;
-    background-position-y: center;
+    background-position-y: center center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     display: grid;
+    height: 100%;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 300px 1fr 100px;
     grid-template-areas:    "header header header"
@@ -460,39 +463,207 @@ input{
 /* --------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 576px) {
-.content {
-grid-template-columns: 1fr;
-grid-template-rows: auto;
-grid-template-areas: 
-    "header"
-    "main"
-    "imagenes"
-    "pie";
-}
-}
-
-/* Reglas de estilo para pantallas con un ancho máximo de 768px */
-@media screen and (min-width: 577px) and (max-width: 768px) {
-.content {
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: auto;
-grid-template-areas: 
-    "header header"
-    "main imagenes"
-    "pie pie";
-}
-
-}
-
-/* Reglas de estilo para pantallas con un ancho máximo de 1400px */
-@media screen and (min-width: 769px) and (max-width: 1400px) {
-.content {
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: auto;
-grid-template-areas: 
-    "header header header"
-    "main imagenes imagenes"
-    "pie pie pie";
-}
-}
+    .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header"
+        "main"
+        "imagenes"
+        "pie";
+        height: 300%;
+        width: 250%;
+    }
+    
+    .tituloPagina{
+        font-size: 25px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 100px;
+    }
+    .subtitulo{
+        text-align:justify;
+        font-size: 17px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 100px;
+        margin-right: 0px;
+        font-family: 'Roboto:', sans-serif;
+        color: yellow;
+    }
+    
+    .imgIndex{
+        width: 200px;
+        height: 150px;
+        border-radius: 20px;
+        margin-left: 300px;
+        object-fit: cover;
+    }
+    
+    .primerParrafo{
+        font-family: 'Roboto', sans-serif;    
+        text-align: justify;
+        font-size: 17px;
+        padding: 0px 30px 30px 20px;
+        margin: 0px 0px 0px 50px;
+        width: 300px;
+    }
+    
+    .segundoParrafo{
+        font-family: 'Roboto', sans-serif;    
+        text-align: justify;
+        font-size: 17px;
+        padding: 0px 30px 30px 20px;
+        margin: 0px 0px 0px 50px;
+        width: 300px;
+    }
+    
+    .tercerParrafo{
+        font-family: 'Roboto', sans-serif;    
+        text-align: justify;
+        font-size: 17px;
+        padding: 0px 30px 30px 20px;
+        margin: 0px 0px 0px 50px;
+        width: 300px;
+    }
+    
+    }
+    
+    /* Reglas de estilo para pantallas con un ancho máximo de 768px */
+    @media screen and (min-width: 577px) and (max-width: 768px) {
+    .content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header"
+        "main imagenes"
+        "pie pie";
+        height: 300%;
+        width: 200%;
+    }
+    
+    .tituloPagina{
+        font-size: 25px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 100px;
+    }
+    .subtitulo{
+        text-align:justify;
+        font-size: 17px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 100px;
+        margin-right: 0px;
+        font-family: 'Roboto:', sans-serif;
+        color: yellow;
+    }
+    
+    .imgIndex{
+        width: 200px;
+        height: 150px;
+        border-radius: 20px;
+        margin-left: 300px;
+        object-fit: cover;
+    }
+    
+    .primerParrafo{
+        font-family: 'Roboto', sans-serif;    
+        text-align: justify;
+        font-size: 17px;
+        padding: 0px 30px 30px 20px;
+        margin: 0px 0px 0px 50px;
+        width: 300px;
+    }
+    
+    .segundoParrafo{
+        font-family: 'Roboto', sans-serif;    
+        text-align: justify;
+        font-size: 17px;
+        padding: 0px 30px 30px 20px;
+        margin: 0px 0px 0px 50px;
+        width: 300px;
+    }
+    
+    .tercerParrafo{
+        font-family: 'Roboto', sans-serif;    
+        text-align: justify;
+        font-size: 17px;
+        padding: 0px 30px 30px 20px;
+        margin: 0px 0px 0px 50px;
+        width: 300px;
+    }
+    
+    .titSerie{
+        margin-bottom: 20px;
+    }
+    
+    }
+    
+    /* Reglas de estilo para pantallas con un ancho máximo de 1400px */
+    @media screen and (min-width: 769px) and (max-width: 1400px) {
+    .content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header"
+        "main imagenes imagenes"
+        "pie pie pie";
+    }
+    
+    .tituloPagina{
+        font-size: 25px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 100px;
+    }
+    .subtitulo{
+        text-align:justify;
+        font-size: 17px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 100px;
+        margin-right: 0px;
+        font-family: 'Roboto:', sans-serif;
+        color: yellow;
+    }
+    
+    .imgIndex{
+        width: 200px;
+        height: 150px;
+        border-radius: 20px;
+        margin-left: 300px;
+        object-fit: cover;
+    }
+    
+    .primerParrafo{
+        font-family: 'Roboto', sans-serif;    
+        text-align: justify;
+        font-size: 17px;
+        padding: 0px 30px 30px 20px;
+        margin: 0px 0px 0px 50px;
+        width: 300px;
+    }
+    
+    .segundoParrafo{
+        font-family: 'Roboto', sans-serif;    
+        text-align: justify;
+        font-size: 17px;
+        padding: 0px 30px 30px 20px;
+        margin: 0px 0px 0px 50px;
+        width: 300px;
+    }
+    
+    .tercerParrafo{
+        font-family: 'Roboto', sans-serif;    
+        text-align: justify;
+        font-size: 17px;
+        padding: 0px 30px 30px 20px;
+        margin: 0px 0px 0px 50px;
+        width: 300px;
+    }
+    
+    }
+    
+    
 
