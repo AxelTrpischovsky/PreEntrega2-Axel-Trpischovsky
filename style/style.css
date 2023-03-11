@@ -365,22 +365,33 @@ input{
     color: white;
     background-color: black;
     background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/df4td7f-518bd788-ce19-4efc-9f39-6cafbc0f4074.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyOThiYWMwLWI4YmYtNGM4MC1hZjY3LTcyNWMxMjcyZGJiMFwvZGY0dGQ3Zi01MThiZDc4OC1jZTE5LTRlZmMtOWYzOS02Y2FmYmMwZjQwNzQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.j3-1AZN3ObJPAdisjOrDTEPF4vt210lwa-cwcXhIlWI);
-    
     background-position: center;
     background-size: cover;
     background-position-y: center;
     background-attachment: fixed;
     height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 1fr 1fr 100px;
+    grid-template-areas: 
+    "headM headM headM"
+    "mainM mainM mainM"
+    "capM capM capM"
+    "pieM pieM pieM";
 }
 
-.contentMovies:before{
-    content: "";
-    width: 1900px;
-    height: 110%;
-    background-color: black;
-    position: absolute;
-    opacity: 0.5;
+.headerMo{
+    grid-area: headM;
 }
+
+.tMo{
+    grid-area: mainM;
+}
+
+.secPelis{grid-area: capM;}
+
+.footerM{grid-area: pieM;}
+
 
 .pelis{
     width: 300px;
@@ -436,9 +447,7 @@ input{
 
 .footerS{grid-area: pieS;}
 
-.navS{
-    margin-top: 20px;
-}
+
 
 .sw-series{
     width: 300px;
@@ -543,6 +552,19 @@ input{
         height: 2000px;
     }
 
+    .tMo{
+        height: 500px;
+    }
+
+    .secPelis{
+        margin-bottom: 200px;
+        margin-left: 100px;
+    }
+
+    .contentMovies{
+        height: 2000px;
+    }
+
     }
     
     /* Reglas de estilo para pantallas con un ancho máximo de 768px */
@@ -609,10 +631,6 @@ input{
         margin: 0px 0px 0px 50px;
         width: 300px;
     }
-    
-    .titSerie{
-    
-    }
 
     .subtitulo{
         margin: 100px 100px 100px 100px;
@@ -631,6 +649,18 @@ input{
         height: 1000px;
     }
 
+    .pelis{
+        width: 200px;
+        height: 168px;
+    }
+    
+    .secPelis{
+        margin-bottom: 200px;
+    }
+
+    .contentMovies{
+        height: 1000px;
+    }
 
     }
     
