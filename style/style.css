@@ -527,6 +527,22 @@ input{
         width: 300px;
     }
     
+    .subtitulo{
+        margin: 100px 100px 100px 100px;
+    }
+
+    .titSerie{
+        height: 500px;
+    }
+
+    .capitulos{
+        margin-bottom: 200px;
+    }
+
+    .contentSeries{
+        height: 2000px;
+    }
+
     }
     
     /* Reglas de estilo para pantallas con un ancho máximo de 768px */
@@ -595,9 +611,27 @@ input{
     }
     
     .titSerie{
-        margin-bottom: 20px;
+    
+    }
+
+    .subtitulo{
+        margin: 100px 100px 100px 100px;
+    }
+
+    .sw-series{
+        width: 200px;
+        height: 168px;
     }
     
+    .capitulos{
+        margin-bottom: 200px;
+    }
+
+    .contentSeries{
+        height: 1000px;
+    }
+
+
     }
     
     /* Reglas de estilo para pantallas con un ancho máximo de 1400px */
@@ -663,6 +697,10 @@ input{
         width: 300px;
     }
     
+    .subtitulo{
+        margin: 100px 100px 100px 100px;
+    }
+
     }
     
     
