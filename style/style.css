@@ -533,11 +533,19 @@ input{
         color: yellow;
     }
     
+    .boxParrafos{
+        width: 700px;
+        padding: 0px;
+        margin-left: 25px;
+        margin-right: 5px;
+    }
+
     .imgIndex{
         width: 200px;
         height: 150px;
         border-radius: 20px;
         margin-left: 300px;
+        margin-left: 10px;
         object-fit: cover;
     }
     
@@ -673,11 +681,19 @@ input{
         color: yellow;
     }
     
+    .boxParrafos{
+        width: 700px;
+        padding: 0px;
+        margin-left: 25px;
+        margin-right: 5px;
+    }
+
     .imgIndex{
         width: 200px;
         height: 150px;
         border-radius: 20px;
         margin-left: 300px;
+        margin-left: 10px;
         object-fit: cover;
     }
     
@@ -813,11 +829,18 @@ input{
         color: yellow;
     }
     
+    .boxParrafos{
+        width: 700px;
+        padding: 0px;
+        margin-left: 25px;
+        margin-right: 5px;
+    }
+
     .imgIndex{
-        width: 200px;
-        height: 150px;
+        width: 190px;
+        height: 140px;
         border-radius: 20px;
-        margin-left: 300px;
+        margin-left: 10px;
         object-fit: cover;
     }
     
@@ -826,8 +849,8 @@ input{
         text-align: justify;
         font-size: 17px;
         padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 50px;
-        width: 300px;
+        margin: 0px 0px 0px 10px;
+        width: 250px;
     }
     
     .segundoParrafo{
@@ -835,8 +858,8 @@ input{
         text-align: justify;
         font-size: 17px;
         padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 50px;
-        width: 300px;
+        margin: 0px 0px 0px 10px;
+        width: 250px;
     }
     
     .tercerParrafo{
@@ -844,8 +867,8 @@ input{
         text-align: justify;
         font-size: 17px;
         padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 50px;
-        width: 300px;
+        margin: 0px 0px 0px 10px;
+        width: 250px;
     }
     
     .subtitulo{
