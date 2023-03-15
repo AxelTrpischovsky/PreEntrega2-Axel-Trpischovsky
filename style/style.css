@@ -503,6 +503,225 @@ input{
 
 /* --------------------------------------------------------------------------------------------- */
 
+@media screen and (min-width: 1px) and (max-width: 499px) {
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header"
+            "main"
+            "imagenes"
+            "pie";
+            height: 300%;
+            width: 250%;
+        }
+        
+        .tituloPagina{
+            font-size: 25px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: 100px;
+        }
+        .subtitulo{
+            text-align:justify;
+            font-size: 17px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: 100px;
+            margin-right: 0px;
+            font-family: 'Roboto:', sans-serif;
+            color: yellow;
+        }
+        
+        .boxParrafos{
+            width: 700px;
+            padding: 0px;
+            margin-left: 25px;
+            margin-right: 5px;
+        }
+    
+        .imgIndex{
+            width: 200px;
+            height: 150px;
+            border-radius: 20px;
+            margin-left: 300px;
+            margin-left: 10px;
+            object-fit: cover;
+        }
+        
+        .primerParrafo{
+            font-family: 'Roboto', sans-serif;    
+            text-align: justify;
+            font-size: 17px;
+            padding: 0px 30px 30px 20px;
+            margin: 0px 0px 0px 50px;
+            width: 300px;
+        }
+        
+        .segundoParrafo{
+            font-family: 'Roboto', sans-serif;    
+            text-align: justify;
+            font-size: 17px;
+            padding: 0px 30px 30px 20px;
+            margin: 0px 0px 0px 50px;
+            width: 300px;
+        }
+        
+        .tercerParrafo{
+            font-family: 'Roboto', sans-serif;    
+            text-align: justify;
+            font-size: 17px;
+            padding: 0px 30px 30px 20px;
+            margin: 0px 0px 0px 50px;
+            width: 300px;
+        }
+        
+h1.tituloPagina{
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+
+
+        h2.subtitulo{
+            margin: 25px;
+        }
+
+        .sw-series{
+            width: 260px;
+            height: 128px;
+        }
+    
+        .titSerie{
+            height: 500px;
+            margin-top: 50px;
+        }
+    
+        .capitulos{
+            margin-bottom: 200px;
+        }
+    
+        .contentSeries{
+            height: 2000px;
+        }
+    
+        .tMo{
+            height: 500px;
+        }
+    
+        .secPelis{
+            margin-bottom: 200px;
+
+        }
+    section.secPelis{
+        margin-left: 5px;
+    }
+        .contentMovies{
+            height: 2000px;
+        }
+    
+        .card1{
+            height: 100px;
+            width: 300px;
+        }
+    .card2{
+        height: 100px;
+        width: 300px;
+    }
+    .card3{
+        height: 100px;
+        width: 300px;
+    }
+    .card4{
+        height: 100px;
+        width: 300px;
+    }
+    
+        .img-merch{
+        
+            width: 50px;
+            height: 50px;
+    
+        }
+    
+        .text-merch{
+            font-size: 0.13cm;
+            width: 300px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            text-align: justify;
+        }
+        .carrito{
+            margin-top: 75px;
+            margin-right: 15px;
+            width: 15px;
+            height: 15px;
+            
+        }
+    
+        .imgCa{
+            width: 20px;
+            height: 20px;
+        }
+        section.padre-merch{
+            margin-left: 40px;
+            margin-bottom: 50px;
+            height: 600px;
+        }
+main.tMe{
+    height: 250px;
+}
+
+h2.subtitulo.mSt{
+    margin-bottom: 0px;
+}
+
+form.user-coment1{
+    width: 350px;
+    height: 500px;
+margin-top: 0px;
+margin-left: 15px;
+margin-right: 0px;
+margin-bottom: 20px;
+}
+
+legend.titulo-foro{
+    font-size: 0.4cm;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.list-foro{
+font-size: 0.5cm;
+padding-left: 0px;
+margin-left: 0px;}
+
+.titulos-comentarios{
+    font-family:'Roboto', sans-serif; 
+    font-size: 0.4cm;
+}
+
+input.inFo{
+    width: 300px;
+    height: 50px;
+}
+div.cajas-foro{
+    margin-top: 30px;
+    width: 300px;
+    height: 150px;
+}
+
+div.cajas-foro.cajFo2{
+    margin-top: 0px;
+}
+
+input.comentar{
+    margin-left: 230px;
+    height: 30px;
+}
+
+}
+
 @media screen and (max-width: 576px) {
     .content {
     grid-template-columns: 1fr;
@@ -647,6 +866,37 @@ input{
     .imgCa{
         width: 20px;
         height: 20px;
+    }
+
+    .user-coment1{
+        width: 300px;
+        height: 500px;
+        margin-left: 200px;
+        margin-right: 100px;
+    }
+
+.list-foro{
+    font-size: 0.5cm;
+    padding-left: 0px;
+    margin-left: 0px;}
+    
+    .titulos-comentarios{
+        font-family:'Roboto', sans-serif; 
+        font-size: 0.5cm;
+    }
+
+    input{
+        width: 500px;
+        height: 100px;
+    }
+    .cajas-foro{
+        margin-top: 30px;
+        width: 600px;
+        height: 150px;
+    }
+
+    .comentar{
+        margin-left: 530px;
     }
 
     }
