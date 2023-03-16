@@ -16,7 +16,7 @@
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33% 33% 34%;
     grid-template-rows: 100px 300px 1fr 100px;
     grid-template-areas:    "header header header"
                             "main main main"
@@ -51,9 +51,7 @@
     grid-area: foro;
 }
 
-header, .titulo, .primerParrafo, .segundoParrafo, .tercerParrafo, .cuartoParrafo, img, footer, .imgIndex, .card1, .card2, .card3, .card4, .img-merch, .text-merch, form, legend, label, input, ol, li, h1, h2{ 
-    position: relative;
-}
+
 
 .navbar{
     font-family: 'Roboto', sans-serif;
@@ -505,15 +503,15 @@ input{
 
 @media screen and (min-width: 1px) and (max-width: 499px) {
     .content {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         grid-template-areas: 
-            "header"
-            "main"
-            "imagenes"
-            "pie";
-            height: 300%;
-            width: 250%;
+            "header header header"
+            "main main main"
+            "imagenes imagenes imagenes"
+            "pie pie pie";
+            height: 100%;
+            width: 100%;
         }
         
         .tituloPagina{
@@ -541,8 +539,8 @@ input{
         }
     
         .imgIndex{
-            width: 200px;
-            height: 150px;
+            width: 150px;
+            height: 100px;
             border-radius: 20px;
             margin-left: 300px;
             margin-left: 10px;
@@ -552,28 +550,28 @@ input{
         .primerParrafo{
             font-family: 'Roboto', sans-serif;    
             text-align: justify;
-            font-size: 17px;
+            font-size: 13px;
             padding: 0px 30px 30px 20px;
-            margin: 0px 0px 0px 50px;
-            width: 300px;
+            margin: 0px 0px 0px 5px;
+            width: 250px;
         }
         
         .segundoParrafo{
             font-family: 'Roboto', sans-serif;    
             text-align: justify;
-            font-size: 17px;
+            font-size: 13px;
             padding: 0px 30px 30px 20px;
-            margin: 0px 0px 0px 50px;
-            width: 300px;
+            margin: 0px 0px 0px 5px;
+            width: 250px;
         }
         
         .tercerParrafo{
             font-family: 'Roboto', sans-serif;    
             text-align: justify;
-            font-size: 17px;
+            font-size: 13px;
             padding: 0px 30px 30px 20px;
-            margin: 0px 0px 0px 50px;
-            width: 300px;
+            margin: 0px 0px 0px 5px;
+            width: 250px;
         }
         
 h1.tituloPagina{
@@ -721,25 +719,25 @@ input.comentar{
 }
 
 }
-
-@media screen and (max-width: 576px) {
+/* ------------------------------------------------------------------------------------------ */
+@media screen and (min-width: 500px) and (max-width: 576px) {
     .content {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "header"
-        "main"
-        "imagenes"
-        "pie";
-        height: 300%;
-        width: 250%;
-    }
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header header header"
+            "main main main"
+            "imagenes imagenes imagenes"
+            "pie pie pie";
+            height: 100%;
+            width: 100%;
+        }
     
     .tituloPagina{
         font-size: 25px;
         margin-top: 100px;
         margin-bottom: 100px;
-        margin-left: 100px;
+        margin-left: 20px;
     }
     .subtitulo{
         text-align:justify;
@@ -760,8 +758,8 @@ input.comentar{
     }
 
     .imgIndex{
-        width: 200px;
-        height: 150px;
+        width: 150px;
+        height: 100px;
         border-radius: 20px;
         margin-left: 300px;
         margin-left: 10px;
@@ -774,7 +772,7 @@ input.comentar{
         font-size: 17px;
         padding: 0px 30px 30px 20px;
         margin: 0px 0px 0px 50px;
-        width: 300px;
+        width: 250px;
     }
     
     .segundoParrafo{
@@ -783,7 +781,7 @@ input.comentar{
         font-size: 17px;
         padding: 0px 30px 30px 20px;
         margin: 0px 0px 0px 50px;
-        width: 300px;
+        width: 250px;
     }
     
     .tercerParrafo{
@@ -792,7 +790,7 @@ input.comentar{
         font-size: 17px;
         padding: 0px 30px 30px 20px;
         margin: 0px 0px 0px 50px;
-        width: 300px;
+        width: 250px;
     }
     
     .subtitulo{
@@ -900,25 +898,26 @@ input.comentar{
     }
 
     }
-    
+    /* ------------------------------------------------------------------------------------------ */
+
     /* Reglas de estilo para pantallas con un ancho máximo de 768px */
     @media screen and (min-width: 577px) and (max-width: 768px) {
     .content {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-        "header header"
-        "main imagenes"
-        "pie pie";
-        height: 300%;
-        width: 200%;
+        "header header header"
+        "main imagenes imagenes"
+        "pie pie pie";
+        height: 100%;
+        width: 100%;
     }
     
     .tituloPagina{
         font-size: 25px;
         margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 100px;
+        margin-bottom: 20px;
+        margin-left: 20px;
     }
     .subtitulo{
         text-align:justify;
@@ -939,8 +938,8 @@ input.comentar{
     }
 
     .imgIndex{
-        width: 200px;
-        height: 150px;
+        width: 150px;
+        height: 100px;
         border-radius: 20px;
         margin-left: 300px;
         margin-left: 10px;
@@ -950,32 +949,32 @@ input.comentar{
     .primerParrafo{
         font-family: 'Roboto', sans-serif;    
         text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
+        font-size: 13px;
+        padding: 0px;
         margin: 0px 0px 0px 50px;
-        width: 300px;
+        width: 150px;
     }
     
     .segundoParrafo{
         font-family: 'Roboto', sans-serif;    
         text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
+        font-size: 13px;
+        padding: 0px;
         margin: 0px 0px 0px 50px;
-        width: 300px;
+        width: 150px;
     }
     
     .tercerParrafo{
         font-family: 'Roboto', sans-serif;    
         text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
+        font-size: 13px;
+        padding: 0px;
         margin: 0px 0px 0px 50px;
-        width: 300px;
+        width: 150px;
     }
 
     .subtitulo{
-        margin: 100px 100px 100px 100px;
+        margin: 20px 20px 100px 20px;
     }
 
     .sw-series{
@@ -1050,7 +1049,9 @@ input.comentar{
     }
 
     }
-    
+
+    /* ------------------------------------------------------------------------------------------ */
+
     /* Reglas de estilo para pantallas con un ancho máximo de 1400px */
     @media screen and (min-width: 769px) and (max-width: 1400px) {
     .content {
@@ -1165,6 +1166,8 @@ input.comentar{
 }
 }
 
+/* ------------------------------------------------------------------------------------------ */
+
 @media screen and (min-width: 0px) and (max-width: 768px) {
     .user-coment1{
         width: 500px;
@@ -1192,6 +1195,8 @@ input.comentar{
         margin-left: 330px;
     }
 }
+
+/* ------------------------------------------------------------------------------------------ */
     
 @media screen and (min-width: 768px) and (max-width: 915px) {
     .user-coment1{
@@ -1222,6 +1227,7 @@ input.comentar{
 
 }
 
+/* ------------------------------------------------------------------------------------------ */
     
 @media screen and (min-width: 915px) and (max-width: 1100px) {
 
@@ -1255,6 +1261,8 @@ input.comentar{
 
 }
 
+/* ------------------------------------------------------------------------------------------ */
+
 @media screen and (min-width: 1100px) and (max-width: 1400px) {
     .user-coment1{
         width: 900px;
@@ -1265,6 +1273,8 @@ input.comentar{
         margin-top: 50px;
 }
 }
+
+/* ------------------------------------------------------------------------------------------ */
 
     @media screen and (min-width: 1400px) and (max-width: 1885px) {
         .user-coment1{
