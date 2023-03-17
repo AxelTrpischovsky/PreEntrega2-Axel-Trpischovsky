@@ -5,6 +5,14 @@
     padding: 0;
 }
 
+nav{
+background-color: beige;
+}
+
+.img-icon-star-nav{
+    width: 40px; 
+    height: 34px;
+}
 
 .content{
     background-image: url(https://images4.alphacoders.com/814/81446.jpg);
