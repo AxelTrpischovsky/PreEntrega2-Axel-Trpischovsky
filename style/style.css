@@ -48,7 +48,7 @@
   height: 50px;
 }
 
-<<<<<<< HEAD
+
 nav{
 background-color: beige;
 }
@@ -74,10 +74,11 @@ background-color: beige;
                             "main main main"
                             "imagenes imagenes imagenes"
                             "pie pie pie";
-=======
+
+                          }
 .headerMerch {
   grid-area: headMe;
->>>>>>> star
+
 }
 .headerMerch .navbar {
   font-family: "Roboto", sans-serif;
