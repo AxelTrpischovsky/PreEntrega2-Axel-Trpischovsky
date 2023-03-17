@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: "Star Jedi";
+    src: url(../fonts/StarJediHollow.woff);
+}
 
 *{ 
     margin: 0;
@@ -264,12 +268,20 @@ input{
     font-size: 0.7cm;
     font-family: 'Roboto', sans-serif;    
     color: white;
+    margin-left: 50px;
 }
 
-.list-foro2{
+.menu-foro{
+    text-decoration: none;
+    font-family: "Star Jedi";
+    color: white;
+}
+
+li.list-foro2{
     padding: 10px;
-    background-color: burlywood;
-    border-radius: 35px;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 5px;
+
 }
 
 .titulo-foro{
