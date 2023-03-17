@@ -1,14 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @font-face {
-    font-family: "Star Jedi";
-    src: url(../fonts/StarJediHollow.woff);
+  font-family: "Star Jedi";
+  src: url(../fonts/StarJediHollow.woff);
+}
+.headerI {
+  grid-area: header;
+}
+.headerI .navbar {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 20;
+  background-color: beige;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: black;
+}
+.headerI .navbar > .container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-around;
+}
+.headerI .navbar > .container-fluid .form-control {
+  height: 50px;
 }
 
-*{ 
-    margin: 0;
-    padding: 0;
+.headerForum {
+  grid-area: headFo;
+}
+.headerForum .navbar {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 20;
+  background-color: beige;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: black;
+}
+.headerForum .navbar > .container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-around;
+}
+.headerForum .navbar > .container-fluid .form-control {
+  height: 50px;
 }
 
+<<<<<<< HEAD
 nav{
 background-color: beige;
 }
@@ -34,1282 +74,1158 @@ background-color: beige;
                             "main main main"
                             "imagenes imagenes imagenes"
                             "pie pie pie";
+=======
+.headerMerch {
+  grid-area: headMe;
+>>>>>>> star
 }
+.headerMerch .navbar {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 20;
+  background-color: beige;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: black;
+}
+.headerMerch .navbar > .container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-around;
+}
+.headerMerch .navbar > .container-fluid .form-control {
+  height: 50px;
+}
+
+.headerMo {
+  grid-area: headM;
+}
+.headerMo .navbar {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 20;
+  background-color: beige;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: black;
+}
+.headerMo .navbar > .container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-around;
+}
+.headerMo .navbar > .container-fluid .form-control {
+  height: 50px;
+}
+
+.headerSe {
+  grid-area: headS;
+}
+.headerSe .navbar {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 20;
+  background-color: beige;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: black;
+}
+.headerSe .navbar > .container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-around;
+}
+.headerSe .navbar > .container-fluid .form-control {
+  height: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  background-image: url(https://images4.alphacoders.com/814/81446.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position-y: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 100px 300px 1fr 100px;
+  grid-template-areas: "header header header" "main main main" "imagenes imagenes imagenes" "pie pie pie";
+}
+
 .border {
-    border: var(--bs-border-width) var(--bs-border-style) rgb(255 255 255 / 0%)!important;
+  border: var(--bs-border-width) var(--bs-border-style) rgba(255, 255, 255, 0) !important;
 }
 
-.imgRedes:hover{
-    transform: scale(0.7);
-    transition-duration: 0.5s;
-
+.imgRedes:hover {
+  transform: scale(0.7);
+  transition-duration: 0.5s;
 }
 
-
-.parrafo{
-    grid-area: imagenes;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.parrafo {
+  grid-area: imagenes;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.headerI{
-    grid-area: header;
+.hijo1 {
+  grid-area: filmo;
 }
 
-.hijo1{
-    grid-area: filmo;
+.hijo2 {
+  grid-area: merch;
 }
 
-.hijo2{
-    grid-area: merch;
+.hijo3 {
+  grid-area: foro;
 }
 
-.hijo3{
-    grid-area: foro;
+main {
+  grid-area: main;
 }
 
-
-
-.navbar{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    padding: 20;
-    background-color: beige;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    color: black;
+.tituloPagina {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: aqua;
 }
 
-.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-around;
+.subtitulo {
+  text-align: justify;
+  font-size: 30px;
+  margin: 100px 250px 100px 250px;
+  font-family: "Roboto:", sans-serif;
+  color: yellow;
 }
 
-.form-control{
-    height: 50px;
+.imgIndex {
+  width: 400px;
+  height: 350px;
+  border-radius: 20px;
+  margin-left: 300px;
+  object-fit: cover;
 }
 
-main{
-    grid-area: main;
+.boxParrafos {
+  padding: 50px;
+  margin: 40px;
+  display: flex;
 }
 
-
-
-
-
-.tituloPagina{ 
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    color: aqua;
+.primerParrafo {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: 30px;
+  padding: 90px 30px 30px 20px;
+  margin: 0px 200px 0px 50px;
+  color: yellow;
+  text-shadow: white;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.subtitulo{
-    text-align: justify;
-    font-size: 30px;
-    margin: 100px 250px 100px 250px;
-    font-family: 'Roboto:', sans-serif;
-    color: yellow;
+.segundoParrafo {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: 30px;
+  padding: 70px 30px 30px 20px;
+  margin: 0px 200px 0px 50px;
+  color: yellow;
+  text-shadow: white;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.imgIndex{
-    width: 400px;
-    height: 350px;
-    border-radius: 20px;
-    margin-left: 300px;
-    object-fit: cover;
+.tercerParrafo {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: 30px;
+  padding: 60px 30px 30px 20px;
+  margin: 0px 200px 0px 50px;
+  color: yellow;
+  text-shadow: white;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-
-.boxParrafos{
-    padding: 50px;
-    margin: 40px;
-    display: flex;
-
+.boxParrafos {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: 30px;
+  padding: 50px;
+  margin: 50px 300px 50px 50px;
+  color: yellow;
 }
 
-.primerParrafo{
-    font-family: 'Roboto', sans-serif;    
-    text-align: justify;
-    font-size: 30px;
-    padding: 90px 30px 30px 20px;
-    margin: 0px 200px 0px 50px;
-    color: yellow;
-    text-shadow:white;
-    background-color: rgba(0, 0, 0, 0.7);
+footer {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  padding: 15px;
+  background-color: beige;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  grid-area: pie;
 }
 
-.segundoParrafo{
-    font-family: 'Roboto', sans-serif;    
-    text-align: justify;
-    font-size: 30px;
-    padding: 70px 30px 30px 20px;
-    margin: 0px 200px 0px 50px;
-    color: yellow;
-    text-shadow:white;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.tercerParrafo{
-    font-family: 'Roboto', sans-serif;    
-    text-align: justify;
-    font-size: 30px;
-    padding: 60px 30px 30px 20px;
-    margin: 0px 200px 0px 50px;
-    color: yellow;
-    text-shadow:white;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.boxParrafos{
-    font-family: 'Roboto', sans-serif;    
-    text-align: justify;
-    font-size: 30px;
-    padding: 50px;
-    margin: 50px 300px 50px 50px;
-    color: yellow;
-}
-
-footer{
-    font-family: 'Roboto', sans-serif;    
-    text-align: justify;
-    padding: 15px;
-    background-color: beige;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    grid-area: pie;
-}
-
-
-
-
-.redes, .redesList{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around;
-}
-
-
-
-/* --------------------------------------------------------------------------------------------- */
-
-.contentForum{
-    color: white;
-    background-color: black;
-    background-image: url(http://www.solofondos.com/wp-content/uploads/2016/02/12486d9d5ec2f4d62c52669d6b30546d_w324_h576_sc.jpg);
-    background-position: center;
-    background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 33% 33% 34%;
-    grid-template-rows: 100px 500px 1fr 100px;
-    grid-template-areas: 
-    "headFo headFo headFo"
-    "mainFo mainFo mainFo"
-    "secFo secFo secFo"
-    "pieFo pieFo pieFo";
-}
-
-.tFo{
-    grid-area: mainFo;
-}
-
-.headerForum{
-grid-area: headFo;
-}
-
-.secForo{
-    grid-area: secFo ;
-}
-
-.footerForo{
-    grid-area: pieFo ;
-}
-
-.list-foro{
-    margin-left: 150px;
-    list-style-type: none;
-}
-
-
-
-.user-coment1{
-    padding: 20px 20px 20px 20px;
-    margin: 55px 550px 50px 500px;
-    background-color:darkgrey;
-    border-bottom-right-radius:  35px;
-    border-top-left-radius: 35px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-
-legend{
-    font-size: 0.7cm;
-    font-family: 'Roboto', sans-serif;    
-    text-align: justify;
-}
-
-
-input{
-    width: 800px;
-    height: 200px;
-}
-
-
-
-.list-foro{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    font-size: 0.7cm;
-    font-family: 'Roboto', sans-serif;    
-    color: white;
-    margin-left: 50px;
-}
-
-.menu-foro{
-    text-decoration: none;
-    font-family: "Star Jedi";
-    color: white;
-}
-
-li.list-foro2{
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.836);
-    border-radius: 5px;
-
-}
-
-.titulo-foro{
-    text-align: center;
-}
-
-.cajas-foro{
-    margin-top: 30px;
-}
-
-.titulos-comentarios{
-    font-family:'Roboto', sans-serif; 
-    font-size: 0.7cm;
-}
-
-.comentar{
-    width: 70px;
-    height: 30px;
-    margin-left: 735px;
+.redes, .redesList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* --------------------------------------------------------------------------------------------- */
-
-.contentMerch{
-    color: white;
-    background-color: black;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1041px-Star_Wars_Logo.svg.png);
-    background-position: center;
-    background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 33% 33% 34%;
-    grid-template-rows: 100px 500px 1fr 100px;
-    grid-template-areas: 
-    "headMe headMe headMe"
-    "mainMe mainMe mainMe"
-    "secM secM secM"
-    "pieMer pieMer pieMer";
+.contentForum {
+  color: white;
+  background-color: black;
+  background-image: url(http://www.solofondos.com/wp-content/uploads/2016/02/12486d9d5ec2f4d62c52669d6b30546d_w324_h576_sc.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: fixed;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 100px 500px 1fr 100px;
+  grid-template-areas: "headFo headFo headFo" "mainFo mainFo mainFo" "secFo secFo secFo" "pieFo pieFo pieFo";
 }
 
-.pieMe{
-    grid-area: pieMer;
+.tFo {
+  grid-area: mainFo;
 }
 
-.padre-merch{
-    grid-area: secM;
-    margin-left: 30%;
+.secForo {
+  grid-area: secFo;
 }
 
-.headerMerch{
-    grid-area: headMe;
+.footerForo {
+  grid-area: pieFo;
 }
 
-.tMe{
-    grid-area: mainMe;
-    height: 500px;
+.list-foro {
+  margin-left: 150px;
+  list-style-type: none;
 }
 
-.mSt{
-    text-shadow:white;
-    background-color: rgba(0, 0, 0, 0.952);
-    border-radius: 5px;
+.user-coment1 {
+  padding: 20px 20px 20px 20px;
+  margin: 55px 550px 50px 500px;
+  background-color: darkgrey;
+  border-bottom-right-radius: 35px;
+  border-top-left-radius: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
-.img-merch{
-    width: 300px;
-    height: 300px;
-    border-radius: 6px;
-    margin: 20px 20px 20px 20px;
+legend {
+  font-size: 0.7cm;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
 }
 
-.img-merch, .text-merch{
-    display: inline-block;
+input {
+  width: 800px;
+  height: 200px;
 }
 
-.text-merch{
-    margin-top: 20px;
-    text-align:justify;
-    color: white;
-    font-size: 0.4cm;
-    margin-right: 20px;
-    margin-bottom: 20px;
+.list-foro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 0.7cm;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-left: 50px;
 }
 
-.card1{
-    display: flex;
-    margin-bottom: 20px;
-    background-color: cadetblue;
-
-    height: 350px;
-    width: 800px;
-}
-.card2{
-    display: flex;
-    margin-bottom: 20px;
-    background-color: cadetblue;
-    height: 350px;
-    width: 800px;
-}
-.card3{
-    display: flex;
-    margin-bottom: 20px;
-    background-color: cadetblue;
-    height: 350px;
-    width: 800px;
-}
-.card4{
-    display: flex;
-    margin-bottom: 20px;
-    background-color: cadetblue;
-    height: 350px;
-    width: 800px;
+.menu-foro {
+  text-decoration: none;
+  font-family: "Star Jedi";
+  color: white;
 }
 
-.carrito{
-    margin-top: 300px;
-    flex-direction: column;
+li.list-foro2 {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.836);
+  border-radius: 5px;
 }
 
-.text-merch, .carrito{
-    flex-direction: column;
+.titulo-foro {
+  text-align: center;
+}
+
+.cajas-foro {
+  margin-top: 30px;
+}
+
+.titulos-comentarios {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7cm;
+}
+
+.comentar {
+  width: 70px;
+  height: 30px;
+  margin-left: 735px;
 }
 
 /* --------------------------------------------------------------------------------------------- */
-
-.contentMovies{
-    color: white;
-    background-color: black;
-    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/df4td7f-518bd788-ce19-4efc-9f39-6cafbc0f4074.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyOThiYWMwLWI4YmYtNGM4MC1hZjY3LTcyNWMxMjcyZGJiMFwvZGY0dGQ3Zi01MThiZDc4OC1jZTE5LTRlZmMtOWYzOS02Y2FmYmMwZjQwNzQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.j3-1AZN3ObJPAdisjOrDTEPF4vt210lwa-cwcXhIlWI);
-    background-position: center;
-    background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 33% 33% 34%;
-    grid-template-rows: 100px 1fr 1fr 100px;
-    grid-template-areas: 
-    "headM headM headM"
-    "mainM mainM mainM"
-    "capM capM capM"
-    "pieM pieM pieM";
+.contentMerch {
+  color: white;
+  background-color: black;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1041px-Star_Wars_Logo.svg.png);
+  background-position: center;
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: fixed;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 100px 500px 1fr 100px;
+  grid-template-areas: "headMe headMe headMe" "mainMe mainMe mainMe" "secM secM secM" "pieMer pieMer pieMer";
 }
 
-.headerMo{
-    grid-area: headM;
+.pieMe {
+  grid-area: pieMer;
 }
 
-.tMo{
-    grid-area: mainM;
+.padre-merch {
+  grid-area: secM;
+  margin-left: 30%;
 }
 
-.secPelis{grid-area: capM;}
-
-.footerM{grid-area: pieM;}
-
-
-.pelis{
-    width: 300px;
-    height: 168px;
-    padding: 10px;
-    border-radius: 35px;
+.tMe {
+  grid-area: mainMe;
+  height: 500px;
 }
 
-.content-pelis{
-    margin-left: 30px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.mSt {
+  text-shadow: white;
+  background-color: rgba(0, 0, 0, 0.952);
+  border-radius: 5px;
 }
 
-.pelis:hover{
-    transform: scale(1.3);
-    transition-duration: 1s;
+.img-merch {
+  width: 300px;
+  height: 300px;
+  border-radius: 6px;
+  margin: 20px 20px 20px 20px;
 }
 
+.img-merch, .text-merch {
+  display: inline-block;
+}
+
+.text-merch {
+  margin-top: 20px;
+  text-align: justify;
+  color: white;
+  font-size: 0.4cm;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card1 {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: cadetblue;
+  height: 350px;
+  width: 800px;
+}
+
+.card2 {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: cadetblue;
+  height: 350px;
+  width: 800px;
+}
+
+.card3 {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: cadetblue;
+  height: 350px;
+  width: 800px;
+}
+
+.card4 {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: cadetblue;
+  height: 350px;
+  width: 800px;
+}
+
+.carrito {
+  margin-top: 300px;
+  flex-direction: column;
+}
+
+.text-merch, .carrito {
+  flex-direction: column;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+.contentMovies {
+  color: white;
+  background-color: black;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/df4td7f-518bd788-ce19-4efc-9f39-6cafbc0f4074.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyOThiYWMwLWI4YmYtNGM4MC1hZjY3LTcyNWMxMjcyZGJiMFwvZGY0dGQ3Zi01MThiZDc4OC1jZTE5LTRlZmMtOWYzOS02Y2FmYmMwZjQwNzQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.j3-1AZN3ObJPAdisjOrDTEPF4vt210lwa-cwcXhIlWI);
+  background-position: center;
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: fixed;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 100px 1fr 1fr 100px;
+  grid-template-areas: "headM headM headM" "mainM mainM mainM" "capM capM capM" "pieM pieM pieM";
+}
+
+.tMo {
+  grid-area: mainM;
+}
+
+.secPelis {
+  grid-area: capM;
+}
+
+.footerM {
+  grid-area: pieM;
+}
+
+.pelis {
+  width: 300px;
+  height: 168px;
+  padding: 10px;
+  border-radius: 35px;
+}
+
+.content-pelis {
+  margin-left: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.pelis:hover {
+  transform: scale(1.3);
+  transition-duration: 1s;
+}
 
 /* ------------------------------------------------------------------------------------------------ */
-
-.contentSeries{
-    color: white;
-    background-color: black;
-    background-image: url(https://andro4all.com/hero/2021/06/La-Remesa-Mala-es-una-de-las-ultimas-series-en-incorporarse-a-Disney.jpeg?width=1200);
-    background-position: center;
-    background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 33% 33% 34%;
-    grid-template-rows: 100px 1fr 1fr 100px;
-    grid-template-areas: 
-    "headS headS headS"
-    "mainS mainS mainS"
-    "capS capS capS"
-    "pieS pieS pieS";
+.contentSeries {
+  color: white;
+  background-color: black;
+  background-image: url(https://andro4all.com/hero/2021/06/La-Remesa-Mala-es-una-de-las-ultimas-series-en-incorporarse-a-Disney.jpeg?width=1200);
+  background-position: center;
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: fixed;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 100px 1fr 1fr 100px;
+  grid-template-areas: "headS headS headS" "mainS mainS mainS" "capS capS capS" "pieS pieS pieS";
 }
 
-.headerSerie{grid-area: headS;}
-.headerSe{
-    grid-area: headS;
-}
-.titSerie{
-    grid-area: mainS;
+.titSerie {
+  grid-area: mainS;
 }
 
-.capitulos{grid-area: capS;}
-
-.footerS{grid-area: pieS;}
-
-
-
-.sw-series{
-    width: 300px;
-    height: 168px;
-    padding: 10px;
-    border-radius: 35px;
+.capitulos {
+  grid-area: capS;
 }
 
-.content-series{
-    margin-left: 30px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.footerS {
+  grid-area: pieS;
 }
 
-.sw-series:hover{
-    transform: scale(1.3);
-    transition-duration: 1s;
+.sw-series {
+  width: 300px;
+  height: 168px;
+  padding: 10px;
+  border-radius: 35px;
+}
+
+.content-series {
+  margin-left: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sw-series:hover {
+  transform: scale(1.3);
+  transition-duration: 1s;
 }
 
 /* --------------------------------------------------------------------------------------------- */
-
 @media screen and (min-width: 1px) and (max-width: 499px) {
-    .content {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-            "header header header"
-            "main main main"
-            "imagenes imagenes imagenes"
-            "pie pie pie";
-            height: 100%;
-            width: 100%;
-        }
-        
-        .tituloPagina{
-            font-size: 25px;
-            margin-top: 100px;
-            margin-bottom: 100px;
-            margin-left: 100px;
-        }
-        .subtitulo{
-            text-align:justify;
-            font-size: 17px;
-            margin-top: 100px;
-            margin-bottom: 100px;
-            margin-left: 100px;
-            margin-right: 0px;
-            font-family: 'Roboto:', sans-serif;
-            color: yellow;
-        }
-        
-        .boxParrafos{
-            width: 700px;
-            padding: 0px;
-            margin-left: 2.5px;
-            margin-right: 5px;
-        }
-    
-        .imgIndex{
-            width: 150px;
-            height: 100px;
-            border-radius: 20px;
-            margin-left: 300px;
-            margin-left: 10px;
-            object-fit: cover;
-        }
-        
-        .primerParrafo{
-            font-family: 'Roboto', sans-serif;    
-            text-align: justify;
-            font-size: 13px;
-            padding: 5px;
-            margin: 0px 0px 0px 5px;
-            width: 200px;
-        }
-        
-        .segundoParrafo{
-            font-family: 'Roboto', sans-serif;    
-            text-align: justify;
-            font-size: 13px;
-            padding: 5px;
-            margin: 0px 0px 0px 5px;
-            width: 200px;
-        }
-        
-        .tercerParrafo{
-            font-family: 'Roboto', sans-serif;    
-            text-align: justify;
-            font-size: 13px;
-            padding: 5px;
-            margin: 0px 0px 0px 5px;
-            width: 200px;
-        }
-        
-h1.tituloPagina{
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" "main main main" "imagenes imagenes imagenes" "pie pie pie";
+    height: 100%;
+    width: 100%;
+  }
+  .tituloPagina {
+    font-size: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+  }
+  .subtitulo {
+    text-align: justify;
+    font-size: 17px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 0px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
+  }
+  .boxParrafos {
+    width: 700px;
+    padding: 0px;
+    margin-left: 2.5px;
+    margin-right: 5px;
+  }
+  .imgIndex {
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    margin-left: 300px;
+    margin-left: 10px;
+    object-fit: cover;
+  }
+  .primerParrafo {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 13px;
+    padding: 5px;
+    margin: 0px 0px 0px 5px;
+    width: 200px;
+  }
+  .segundoParrafo {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 13px;
+    padding: 5px;
+    margin: 0px 0px 0px 5px;
+    width: 200px;
+  }
+  .tercerParrafo {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 13px;
+    padding: 5px;
+    margin: 0px 0px 0px 5px;
+    width: 200px;
+  }
+  h1.tituloPagina {
     margin-bottom: 25px;
     margin-left: 20px;
-}
-
-
-
-        h2.subtitulo{
-            margin: 25px;
-        }
-
-        .sw-series{
-            width: 260px;
-            height: 128px;
-        }
-    
-        .titSerie{
-            height: 500px;
-            margin-top: 50px;
-        }
-    
-        .capitulos{
-            margin-bottom: 200px;
-        }
-    
-        .contentSeries{
-            height: 2000px;
-        }
-    
-        .tMo{
-            height: 500px;
-        }
-    
-        .secPelis{
-            margin-bottom: 200px;
-
-        }
-    section.secPelis{
-        margin-left: 5px;
-    }
-        .contentMovies{
-            height: 2000px;
-        }
-    
-        .card1{
-            height: 100px;
-            width: 300px;
-        }
-    .card2{
-        height: 100px;
-        width: 300px;
-    }
-    .card3{
-        height: 100px;
-        width: 300px;
-    }
-    .card4{
-        height: 100px;
-        width: 300px;
-    }
-    
-        .img-merch{
-        
-            width: 50px;
-            height: 50px;
-    
-        }
-    
-        .text-merch{
-            font-size: 0.13cm;
-            width: 300px;
-            margin-right: 0px;
-            margin-bottom: 0px;
-            text-align: justify;
-        }
-        .carrito{
-            margin-top: 75px;
-            margin-right: 15px;
-            width: 15px;
-            height: 15px;
-            
-        }
-    
-        .imgCa{
-            width: 20px;
-            height: 20px;
-        }
-        section.padre-merch{
-            margin-left: 40px;
-            margin-bottom: 50px;
-            height: 600px;
-        }
-main.tMe{
-    height: 250px;
-}
-
-h2.subtitulo.mSt{
+  }
+  h2.subtitulo {
+    margin: 25px;
+  }
+  .sw-series {
+    width: 260px;
+    height: 128px;
+  }
+  .titSerie {
+    height: 500px;
+    margin-top: 50px;
+  }
+  .capitulos {
+    margin-bottom: 200px;
+  }
+  .contentSeries {
+    height: 2000px;
+  }
+  .tMo {
+    height: 500px;
+  }
+  .secPelis {
+    margin-bottom: 200px;
+  }
+  section.secPelis {
+    margin-left: 5px;
+  }
+  .contentMovies {
+    height: 2000px;
+  }
+  .card1 {
+    height: 100px;
+    width: 300px;
+  }
+  .card2 {
+    height: 100px;
+    width: 300px;
+  }
+  .card3 {
+    height: 100px;
+    width: 300px;
+  }
+  .card4 {
+    height: 100px;
+    width: 300px;
+  }
+  .img-merch {
+    width: 50px;
+    height: 50px;
+  }
+  .text-merch {
+    font-size: 0.13cm;
+    width: 300px;
+    margin-right: 0px;
     margin-bottom: 0px;
-}
-
-form.user-coment1{
+    text-align: justify;
+  }
+  .carrito {
+    margin-top: 75px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+  }
+  .imgCa {
+    width: 20px;
+    height: 20px;
+  }
+  section.padre-merch {
+    margin-left: 40px;
+    margin-bottom: 50px;
+    height: 600px;
+  }
+  main.tMe {
+    height: 250px;
+  }
+  h2.subtitulo.mSt {
+    margin-bottom: 0px;
+  }
+  form.user-coment1 {
     width: 350px;
     height: 500px;
-margin-top: 0px;
-margin-left: 15px;
-margin-right: 0px;
-margin-bottom: 20px;
-}
-
-legend.titulo-foro{
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  legend.titulo-foro {
     font-size: 0.4cm;
     margin-bottom: 0px;
     margin-top: 10px;
-}
-
-.list-foro{
-font-size: 0.5cm;
-padding-left: 0px;
-margin-left: 0px;}
-
-.titulos-comentarios{
-    font-family:'Roboto', sans-serif; 
+  }
+  .list-foro {
+    font-size: 0.5cm;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .titulos-comentarios {
+    font-family: "Roboto", sans-serif;
     font-size: 0.4cm;
-}
-
-input.inFo{
+  }
+  input.inFo {
     width: 300px;
     height: 50px;
-}
-div.cajas-foro{
+  }
+  div.cajas-foro {
     margin-top: 30px;
     width: 300px;
     height: 150px;
-}
-
-div.cajas-foro.cajFo2{
+  }
+  div.cajas-foro.cajFo2 {
     margin-top: 0px;
-}
-
-input.comentar{
+  }
+  input.comentar {
     margin-left: 230px;
     height: 30px;
-}
-
+  }
 }
 /* ------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 500px) and (max-width: 576px) {
-    .content {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-            "header header header"
-            "main main main"
-            "imagenes imagenes imagenes"
-            "pie pie pie";
-            height: 100%;
-            width: 100%;
-        }
-    
-    .tituloPagina{
-        font-size: 25px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 20px;
-    }
-    .subtitulo{
-        text-align:justify;
-        font-size: 17px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 100px;
-        margin-right: 0px;
-        font-family: 'Roboto:', sans-serif;
-        color: yellow;
-    }
-    
-    .boxParrafos{
-        width: 700px;
-        padding: 0px;
-        margin-left: 25px;
-        margin-right: 5px;
-    }
-
-    .imgIndex{
-        width: 150px;
-        height: 100px;
-        border-radius: 20px;
-        margin-left: 300px;
-        margin-left: 10px;
-        object-fit: cover;
-    }
-    
-    .primerParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 50px;
-        width: 250px;
-    }
-    
-    .segundoParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 50px;
-        width: 250px;
-    }
-    
-    .tercerParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 50px;
-        width: 250px;
-    }
-    
-    .subtitulo{
-        margin: 100px 100px 100px 100px;
-    }
-
-    .titSerie{
-        height: 500px;
-    }
-
-    .capitulos{
-        margin-bottom: 200px;
-    }
-
-    .contentSeries{
-        height: 2000px;
-    }
-
-    .tMo{
-        height: 500px;
-    }
-
-    .secPelis{
-        margin-bottom: 200px;
-        margin-left: 100px;
-    }
-
-    .contentMovies{
-        height: 2000px;
-    }
-
-    .card1{
-        height: 100px;
-        width: 300px;
-    }
-.card2{
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" "main main main" "imagenes imagenes imagenes" "pie pie pie";
+    height: 100%;
+    width: 100%;
+  }
+  .tituloPagina {
+    font-size: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+  }
+  .subtitulo {
+    text-align: justify;
+    font-size: 17px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 0px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
+  }
+  .boxParrafos {
+    width: 700px;
+    padding: 0px;
+    margin-left: 25px;
+    margin-right: 5px;
+  }
+  .imgIndex {
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    margin-left: 300px;
+    margin-left: 10px;
+    object-fit: cover;
+  }
+  .primerParrafo {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    padding: 0px 30px 30px 20px;
+    margin: 0px 0px 0px 50px;
+    width: 250px;
+  }
+  .segundoParrafo {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    padding: 0px 30px 30px 20px;
+    margin: 0px 0px 0px 50px;
+    width: 250px;
+  }
+  .tercerParrafo {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    padding: 0px 30px 30px 20px;
+    margin: 0px 0px 0px 50px;
+    width: 250px;
+  }
+  .subtitulo {
+    margin: 100px 100px 100px 100px;
+  }
+  .titSerie {
+    height: 500px;
+  }
+  .capitulos {
+    margin-bottom: 200px;
+  }
+  .contentSeries {
+    height: 2000px;
+  }
+  .tMo {
+    height: 500px;
+  }
+  .secPelis {
+    margin-bottom: 200px;
+    margin-left: 100px;
+  }
+  .contentMovies {
+    height: 2000px;
+  }
+  .card1 {
     height: 100px;
     width: 300px;
-}
-.card3{
+  }
+  .card2 {
     height: 100px;
     width: 300px;
-}
-.card4{
+  }
+  .card3 {
     height: 100px;
     width: 300px;
-}
-
-    .img-merch{
-    
-        width: 50px;
-        height: 50px;
-
-    }
-
-    .text-merch{
-        font-size: 0.13cm;
-        width: 300px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        text-align: justify;
-    }
-    .carrito{
-        margin-top: 75px;
-        margin-right: 15px;
-        width: 15px;
-        height: 15px;
-        
-    }
-
-    .imgCa{
-        width: 20px;
-        height: 20px;
-    }
-
-    .user-coment1{
-        width: 300px;
-        height: 500px;
-        margin-left: 200px;
-        margin-right: 100px;
-    }
-
-.list-foro{
+  }
+  .card4 {
+    height: 100px;
+    width: 300px;
+  }
+  .img-merch {
+    width: 50px;
+    height: 50px;
+  }
+  .text-merch {
+    font-size: 0.13cm;
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .carrito {
+    margin-top: 75px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+  }
+  .imgCa {
+    width: 20px;
+    height: 20px;
+  }
+  .user-coment1 {
+    width: 300px;
+    height: 500px;
+    margin-left: 200px;
+    margin-right: 100px;
+  }
+  .list-foro {
     font-size: 0.5cm;
     padding-left: 0px;
-    margin-left: 0px;}
-    
-    .titulos-comentarios{
-        font-family:'Roboto', sans-serif; 
-        font-size: 0.5cm;
-    }
-
-    input{
-        width: 500px;
-        height: 100px;
-    }
-    .cajas-foro{
-        margin-top: 30px;
-        width: 600px;
-        height: 150px;
-    }
-
-    .comentar{
-        margin-left: 530px;
-    }
-
-    }
-    /* ------------------------------------------------------------------------------------------ */
-
-    /* Reglas de estilo para pantallas con un ancho máximo de 768px */
-    @media screen and (min-width: 577px) and (max-width: 768px) {
-    .content {
+    margin-left: 0px;
+  }
+  .titulos-comentarios {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5cm;
+  }
+  input {
+    width: 500px;
+    height: 100px;
+  }
+  .cajas-foro {
+    margin-top: 30px;
+    width: 600px;
+    height: 150px;
+  }
+  .comentar {
+    margin-left: 530px;
+  }
+}
+/* ------------------------------------------------------------------------------------------ */
+/* Reglas de estilo para pantallas con un ancho máximo de 768px */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .content {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: 
-        "header header header"
-        "main imagenes imagenes"
-        "pie pie pie";
-        height: 100%;
-        width: 100%;
-    }
-    
-    .tituloPagina{
-        font-size: 25px;
-        margin-top: 100px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-    }
-    .subtitulo{
-        text-align:justify;
-        font-size: 17px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 100px;
-        margin-right: 0px;
-        font-family: 'Roboto:', sans-serif;
-        color: yellow;
-    }
-    
-    .boxParrafos{
-        width: 700px;
-        padding: 0px;
-        margin-left: 25px;
-        margin-right: 5px;
-    }
-
-    .imgIndex{
-        width: 150px;
-        height: 100px;
-        border-radius: 20px;
-        margin-left: 300px;
-        margin-left: 10px;
-        object-fit: cover;
-    }
-    
-    .primerParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 13px;
-        padding: 0px;
-        margin: 0px 0px 0px 50px;
-        width: 150px;
-    }
-    
-    .segundoParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 13px;
-        padding: 0px;
-        margin: 0px 0px 0px 50px;
-        width: 150px;
-    }
-    
-    .tercerParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 13px;
-        padding: 0px;
-        margin: 0px 0px 0px 50px;
-        width: 150px;
-    }
-
-    .subtitulo{
-        margin: 20px 20px 100px 20px;
-    }
-
-    .sw-series{
-        width: 200px;
-        height: 168px;
-    }
-    
-    .capitulos{
-        margin-bottom: 200px;
-    }
-
-    .contentSeries{
-        height: 1000px;
-    }
-
-    .pelis{
-        width: 200px;
-        height: 168px;
-    }
-    
-    .secPelis{
-        margin-bottom: 200px;
-    }
-
-    .contentMovies{
-        height: 1000px;
-    }
-
-    .card1{
-        height: 150px;
-        width: 400px;
-    }
-.card2{
+    grid-template-areas: "header header header" "main imagenes imagenes" "pie pie pie";
+    height: 100%;
+    width: 100%;
+  }
+  .tituloPagina {
+    font-size: 25px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .subtitulo {
+    text-align: justify;
+    font-size: 17px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 0px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
+  }
+  .boxParrafos {
+    width: 700px;
+    padding: 0px;
+    margin-left: 25px;
+    margin-right: 5px;
+  }
+  .imgIndex {
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    margin-left: 300px;
+    margin-left: 10px;
+    object-fit: cover;
+  }
+  .primerParrafo {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 13px;
+    padding: 0px;
+    margin: 0px 0px 0px 50px;
+    width: 150px;
+  }
+  .segundoParrafo {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 13px;
+    padding: 0px;
+    margin: 0px 0px 0px 50px;
+    width: 150px;
+  }
+  .tercerParrafo {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 13px;
+    padding: 0px;
+    margin: 0px 0px 0px 50px;
+    width: 150px;
+  }
+  .subtitulo {
+    margin: 20px 20px 100px 20px;
+  }
+  .sw-series {
+    width: 200px;
+    height: 168px;
+  }
+  .capitulos {
+    margin-bottom: 200px;
+  }
+  .contentSeries {
+    height: 1000px;
+  }
+  .pelis {
+    width: 200px;
+    height: 168px;
+  }
+  .secPelis {
+    margin-bottom: 200px;
+  }
+  .contentMovies {
+    height: 1000px;
+  }
+  .card1 {
     height: 150px;
     width: 400px;
-}
-.card3{
+  }
+  .card2 {
     height: 150px;
     width: 400px;
-}
-.card4{
+  }
+  .card3 {
     height: 150px;
     width: 400px;
+  }
+  .card4 {
+    height: 150px;
+    width: 400px;
+  }
+  .img-merch {
+    width: 80px;
+    height: 80px;
+  }
+  .text-merch {
+    font-size: 0.2cm;
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .carrito {
+    margin-top: 120px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+  }
+  .imgCa {
+    width: 30px;
+    height: 30px;
+  }
 }
-
-    .img-merch{
-    
-        width: 80px;
-        height: 80px;
-
-    }
-
-    .text-merch{
-        font-size: 0.20cm;
-        width: 300px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        text-align: justify;
-    }
-    
-    .carrito{
-        margin-top: 120px;
-        margin-right: 15px;
-        width: 15px;
-        height: 15px;
-        
-    }
-
-    .imgCa{
-        width: 30px;
-        height: 30px;
-    }
-
-    }
-
-    /* ------------------------------------------------------------------------------------------ */
-
-    /* Reglas de estilo para pantallas con un ancho máximo de 1400px */
-    @media screen and (min-width: 769px) and (max-width: 1400px) {
-    .content {
+/* ------------------------------------------------------------------------------------------ */
+/* Reglas de estilo para pantallas con un ancho máximo de 1400px */
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+  .content {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: 
-        "header header header"
-        "main imagenes imagenes"
-        "pie pie pie";
-    }
-    
-    .tituloPagina{
-        font-size: 25px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 100px;
-    }
-    .subtitulo{
-        text-align:justify;
-        font-size: 17px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 100px;
-        margin-right: 0px;
-        font-family: 'Roboto:', sans-serif;
-        color: yellow;
-    }
-    
-    .boxParrafos{
-        width: 700px;
-        padding: 0px;
-        margin-left: 25px;
-        margin-right: 5px;
-    }
-
-    .imgIndex{
-        width: 190px;
-        height: 140px;
-        border-radius: 20px;
-        margin-left: 10px;
-        object-fit: cover;
-    }
-    
-    .primerParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 10px;
-        width: 250px;
-    }
-    
-    .segundoParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 10px;
-        width: 250px;
-    }
-    
-    .tercerParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 10px;
-        width: 250px;
-    }
-    
-    .subtitulo{
-        margin: 100px 100px 100px 100px;
-    }
-
-    .card1{
-        height: 250px;
-        width: 600px;
-    }
-.card2{
+    grid-template-areas: "header header header" "main imagenes imagenes" "pie pie pie";
+  }
+  .tituloPagina {
+    font-size: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+  }
+  .subtitulo {
+    text-align: justify;
+    font-size: 17px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 0px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
+  }
+  .boxParrafos {
+    width: 700px;
+    padding: 0px;
+    margin-left: 25px;
+    margin-right: 5px;
+  }
+  .imgIndex {
+    width: 190px;
+    height: 140px;
+    border-radius: 20px;
+    margin-left: 10px;
+    object-fit: cover;
+  }
+  .primerParrafo {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    padding: 0px 30px 30px 20px;
+    margin: 0px 0px 0px 10px;
+    width: 250px;
+  }
+  .segundoParrafo {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    padding: 0px 30px 30px 20px;
+    margin: 0px 0px 0px 10px;
+    width: 250px;
+  }
+  .tercerParrafo {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    padding: 0px 30px 30px 20px;
+    margin: 0px 0px 0px 10px;
+    width: 250px;
+  }
+  .subtitulo {
+    margin: 100px 100px 100px 100px;
+  }
+  .card1 {
     height: 250px;
     width: 600px;
-}
-.card3{
+  }
+  .card2 {
     height: 250px;
     width: 600px;
-}
-.card4{
+  }
+  .card3 {
     height: 250px;
     width: 600px;
-}
-
-    .img-merch{
-    
-        width: 150px;
-        height: 150px;
-
-    }
-
-    .text-merch{
-        font-size: 0.3cm;
-    }
-
-.carrito{
+  }
+  .card4 {
+    height: 250px;
+    width: 600px;
+  }
+  .img-merch {
+    width: 150px;
+    height: 150px;
+  }
+  .text-merch {
+    font-size: 0.3cm;
+  }
+  .carrito {
     margin-top: 200px;
     margin-right: 15px;
     width: 30px;
     height: 30px;
-}
-.imgCa{
+  }
+  .imgCa {
     width: 45px;
     height: 45px;
+  }
 }
-}
-
 /* ------------------------------------------------------------------------------------------ */
-
 @media screen and (min-width: 0px) and (max-width: 768px) {
-    .user-coment1{
-        width: 500px;
-        height: 600px;
-        margin-left: 200px;
-        margin-right: 100px;
-    }
-
-    .titulos-comentarios{
-        font-family:'Roboto', sans-serif; 
-        font-size: 0.5cm;
-    }
-
-    input{
-        width: 400px;
-        height: 100px;
-    }
-    .cajas-foro{
-        margin-top: 30px;
-        width: 400px;
-        height: 100px;
-    }
-
-    .comentar{
-        margin-left: 330px;
-    }
+  .user-coment1 {
+    width: 500px;
+    height: 600px;
+    margin-left: 200px;
+    margin-right: 100px;
+  }
+  .titulos-comentarios {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5cm;
+  }
+  input {
+    width: 400px;
+    height: 100px;
+  }
+  .cajas-foro {
+    margin-top: 30px;
+    width: 400px;
+    height: 100px;
+  }
+  .comentar {
+    margin-left: 330px;
+  }
 }
-
 /* ------------------------------------------------------------------------------------------ */
-    
 @media screen and (min-width: 768px) and (max-width: 915px) {
-    .user-coment1{
-        width: 600px;
-        height: 700px;
-        margin-left: 200px;
-        margin-right: 100px;
-    }
-
-    .titulos-comentarios{
-        font-family:'Roboto', sans-serif; 
-        font-size: 0.5cm;
-    }
-
-    input{
-        width: 500px;
-        height: 100px;
-    }
-    .cajas-foro{
-        margin-top: 30px;
-        width: 600px;
-        height: 150px;
-    }
-
-    .comentar{
-        margin-left: 530px;
-    }
-
+  .user-coment1 {
+    width: 600px;
+    height: 700px;
+    margin-left: 200px;
+    margin-right: 100px;
+  }
+  .titulos-comentarios {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5cm;
+  }
+  input {
+    width: 500px;
+    height: 100px;
+  }
+  .cajas-foro {
+    margin-top: 30px;
+    width: 600px;
+    height: 150px;
+  }
+  .comentar {
+    margin-left: 530px;
+  }
 }
-
 /* ------------------------------------------------------------------------------------------ */
-    
 @media screen and (min-width: 915px) and (max-width: 1100px) {
-
-    .user-coment1{
-        width: 700px;
-        height: 800px;
-        margin-left: 200px;
-        margin-right: 100px;
-    }
-
-    .titulos-comentarios{
-        font-family:'Roboto', sans-serif; 
-        font-size: 0.5cm;
-    }
-
-    input{
-        width: 600px;
-        height: 150px;
-    }
-    .cajas-foro{
-        margin-top: 30px;
-        width: 600px;
-        height: 150px;
-    }
-
-    .comentar{
-        margin-left: 530px;
-    }
-
-
-
+  .user-coment1 {
+    width: 700px;
+    height: 800px;
+    margin-left: 200px;
+    margin-right: 100px;
+  }
+  .titulos-comentarios {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5cm;
+  }
+  input {
+    width: 600px;
+    height: 150px;
+  }
+  .cajas-foro {
+    margin-top: 30px;
+    width: 600px;
+    height: 150px;
+  }
+  .comentar {
+    margin-left: 530px;
+  }
 }
-
 /* ------------------------------------------------------------------------------------------ */
-
 @media screen and (min-width: 1100px) and (max-width: 1400px) {
-    .user-coment1{
-        width: 900px;
-        height: 1000px;
-        margin-left: 200px;
-    }
-    .list-foro{
-        margin-top: 50px;
+  .user-coment1 {
+    width: 900px;
+    height: 1000px;
+    margin-left: 200px;
+  }
+  .list-foro {
+    margin-top: 50px;
+  }
 }
-}
-
 /* ------------------------------------------------------------------------------------------ */
+@media screen and (min-width: 1400px) and (max-width: 1885px) {
+  .user-coment1 {
+    width: 900px;
+    height: 1000px;
+  }
+  .list-foro {
+    margin-top: 50px;
+  }
+}
 
-    @media screen and (min-width: 1400px) and (max-width: 1885px) {
-        .user-coment1{
-            width: 900px;
-            height: 1000px;
-
-        }
-        .list-foro{
-            margin-top: 50px;
-
-        }
-    }
+/*# sourceMappingURL=style.css.map */
