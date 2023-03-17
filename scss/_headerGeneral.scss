@@ -1,0 +1,118 @@
+$color_1: black;
+$font-family_1: 'Roboto', sans-serif;
+$background-color_1: beige;
+
+.headerI {
+	grid-area: header;
+	.navbar {
+		font-family: $font-family_1;
+		font-size: 20px;
+		padding: 20;
+		background-color: $background-color_1;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		color: $color_1;
+		>.container-fluid {
+			display: flex;
+			flex-wrap: inherit;
+			align-items: center;
+			justify-content: space-around;
+			.form-control {
+				height: 50px;
+			}
+		}
+		
+	}
+}
+
+.headerForum{
+	grid-area: headFo;
+	.navbar {
+		font-family: $font-family_1;
+		font-size: 20px;
+		padding: 20;
+		background-color: $background-color_1;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		color: $color_1;
+		>.container-fluid {
+			display: flex;
+			flex-wrap: inherit;
+			align-items: center;
+			justify-content: space-around;
+			.form-control {
+				height: 50px;
+			}
+		}
+		
+	}
+	}
+
+	.headerMerch{
+		grid-area: headMe;
+		.navbar {
+			font-family: $font-family_1;
+			font-size: 20px;
+			padding: 20;
+			background-color: $background-color_1;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			color: $color_1;
+			>.container-fluid {
+				display: flex;
+				flex-wrap: inherit;
+				align-items: center;
+				justify-content: space-around;
+				.form-control {
+					height: 50px;
+				}
+			}
+			
+		}
+	}
+
+	.headerMo{
+		grid-area: headM;
+		.navbar {
+			font-family: $font-family_1;
+			font-size: 20px;
+			padding: 20;
+			background-color: $background-color_1;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			color: $color_1;
+			>.container-fluid {
+				display: flex;
+				flex-wrap: inherit;
+				align-items: center;
+				justify-content: space-around;
+				.form-control {
+					height: 50px;
+				}
+			}
+			
+		}
+	}
+	
+	.headerSe{
+		grid-area: headS;
+		.navbar {
+			font-family: $font-family_1;
+			font-size: 20px;
+			padding: 20;
+			background-color: $background-color_1;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			color: $color_1;
+			>.container-fluid {
+				display: flex;
+				flex-wrap: inherit;
+				align-items: center;
+				justify-content: space-around;
+				.form-control {
+					height: 50px;
+				}
+			}
+			
+		}
+	}
