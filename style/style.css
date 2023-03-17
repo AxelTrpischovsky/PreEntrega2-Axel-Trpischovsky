@@ -27,6 +27,12 @@
     border: var(--bs-border-width) var(--bs-border-style) rgb(255 255 255 / 0%)!important;
 }
 
+.imgRedes:hover{
+    transform: scale(0.7);
+    transition-duration: 0.5s;
+
+}
+
 
 .parrafo{
     grid-area: imagenes;
