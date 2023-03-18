@@ -1,0 +1,44 @@
+
+$color_1: aqua;
+$color_2: yellow;
+$font-family_1: 'Roboto', sans-serif;
+$font-family_2: 'Roboto:', sans-serif;
+
+
+
+.content{
+    background-image: url(https://images4.alphacoders.com/814/81446.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 300px 1fr 100px;
+    grid-template-areas:    "header header header"
+                            "main main main"
+                            "imagenes imagenes imagenes"
+                            "pie pie pie";
+                            main {
+                                grid-area: main;
+                                .tituloPagina {
+                                    text-align: center;
+                                    font-family: $font-family_1;
+                                    font-size: 50px;
+                                    margin-top: 100px;
+                                    margin-bottom: 100px;
+                                    color: $color_1;
+                                }
+                                .subtitulo {
+                                    text-align: justify;
+                                    font-size: 30px;
+                                    margin: 100px 250px 100px 250px;
+                                    font-family: $font-family_2;
+                                    color: $color_2;
+                                }
+                                
+                            }
+}

@@ -4,10 +4,24 @@
   font-family: "Star Jedi";
   src: url(../fonts/StarJediHollow.woff);
 }
-.headerI {
+.content {
+  background-image: url(https://images4.alphacoders.com/814/81446.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position-y: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 100px 300px 1fr 100px;
+  grid-template-areas: "header header header" "main main main" "imagenes imagenes imagenes" "pie pie pie";
+}
+.content .headerI {
   grid-area: header;
 }
-.headerI .navbar {
+.content .headerI .navbar {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   padding: 20;
@@ -16,13 +30,13 @@
   border-bottom-right-radius: 30px;
   color: black;
 }
-.headerI .navbar > .container-fluid {
+.content .headerI .navbar > .container-fluid {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-around;
 }
-.headerI .navbar > .container-fluid .form-control {
+.content .headerI .navbar > .container-fluid .form-control {
   height: 50px;
 }
 
@@ -48,37 +62,8 @@
   height: 50px;
 }
 
-
-nav{
-background-color: beige;
-}
-
-.img-icon-star-nav{
-    width: 40px; 
-    height: 34px;
-}
-
-.content{
-    background-image: url(https://images4.alphacoders.com/814/81446.jpg);
-    background-position: center;
-    background-size: cover;
-    background-position-y: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: 33% 33% 34%;
-    grid-template-rows: 100px 300px 1fr 100px;
-    grid-template-areas:    "header header header"
-                            "main main main"
-                            "imagenes imagenes imagenes"
-                            "pie pie pie";
-
-                          }
 .headerMerch {
   grid-area: headMe;
-
 }
 .headerMerch .navbar {
   font-family: "Roboto", sans-serif;
@@ -143,6 +128,39 @@ background-color: beige;
   height: 50px;
 }
 
+.content {
+  background-image: url(https://images4.alphacoders.com/814/81446.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position-y: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 100px 300px 1fr 100px;
+  grid-template-areas: "header header header" "main main main" "imagenes imagenes imagenes" "pie pie pie";
+}
+.content main {
+  grid-area: main;
+}
+.content main .tituloPagina {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: aqua;
+}
+.content main .subtitulo {
+  text-align: justify;
+  font-size: 30px;
+  margin: 100px 250px 100px 250px;
+  font-family: "Roboto:", sans-serif;
+  color: yellow;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -189,27 +207,6 @@ background-color: beige;
 
 .hijo3 {
   grid-area: foro;
-}
-
-main {
-  grid-area: main;
-}
-
-.tituloPagina {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 50px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  color: aqua;
-}
-
-.subtitulo {
-  text-align: justify;
-  font-size: 30px;
-  margin: 100px 250px 100px 250px;
-  font-family: "Roboto:", sans-serif;
-  color: yellow;
 }
 
 .imgIndex {

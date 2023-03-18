@@ -2,28 +2,47 @@ $color_1: black;
 $font-family_1: 'Roboto', sans-serif;
 $background-color_1: beige;
 
-.headerI {
-	grid-area: header;
-	.navbar {
-		font-family: $font-family_1;
-		font-size: 20px;
-		padding: 20;
-		background-color: $background-color_1;
-		border-bottom-left-radius: 30px;
-		border-bottom-right-radius: 30px;
-		color: $color_1;
-		>.container-fluid {
-			display: flex;
-			flex-wrap: inherit;
-			align-items: center;
-			justify-content: space-around;
-			.form-control {
-				height: 50px;
-			}
-		}
-		
-	}
+.content{
+    background-image: url(https://images4.alphacoders.com/814/81446.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 300px 1fr 100px;
+    grid-template-areas:    "header header header"
+                            "main main main"
+                            "imagenes imagenes imagenes"
+                            "pie pie pie";
+							.headerI {
+								grid-area: header;
+								.navbar {
+									font-family: $font-family_1;
+									font-size: 20px;
+									padding: 20;
+									background-color: $background-color_1;
+									border-bottom-left-radius: 30px;
+									border-bottom-right-radius: 30px;
+									color: $color_1;
+									>.container-fluid {
+										display: flex;
+										flex-wrap: inherit;
+										align-items: center;
+										justify-content: space-around;
+										.form-control {
+											height: 50px;
+										}
+									}
+									
+								}
+							}
+							
 }
+
 
 .headerForum{
 	grid-area: headFo;
