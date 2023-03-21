@@ -146,11 +146,6 @@
   border: var(--bs-border-width) var(--bs-border-style) rgba(255, 255, 255, 0) !important;
 }
 
-.imgRedes:hover {
-  transform: scale(0.7);
-  transition-duration: 0.5s;
-}
-
 .parrafo {
   grid-area: imagenes;
   display: flex;
@@ -242,30 +237,6 @@ main {
   color: yellow;
   text-shadow: white;
   background-color: rgba(0, 0, 0, 0.7);
-}
-
-footer {
-  font-family: "Roboto", sans-serif;
-  text-align: justify;
-  padding: 15px;
-  background-color: beige;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  grid-area: pie;
-}
-
-.redes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.redesList {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1400px) {
@@ -533,6 +504,32 @@ footer {
     margin: 25px;
   }
 }
+footer {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  padding: 15px;
+  background-color: beige;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  grid-area: pie;
+}
+footer .redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer .redes .redesList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer .redes .redesList .imgRedes:hover {
+  transform: scale(0.7);
+  transition-duration: 0.5s;
+}
+
 * {
   margin: 0;
   padding: 0;

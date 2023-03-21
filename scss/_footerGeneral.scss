@@ -1,0 +1,31 @@
+$font-family-titulo: 'Roboto', sans-serif;
+$background-color_2: beige;
+
+
+footer {
+        font-family: $font-family-titulo;
+        text-align: justify;
+        padding: 15px;
+        background-color: $background-color_2;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        grid-area: pie;
+        .redes {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .redesList {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .imgRedes {
+                    &:hover {
+                        transform: scale(0.7);
+                        transition-duration: 0.5s;
+                    }
+                }
+            }
+        }
+    }

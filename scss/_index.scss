@@ -23,12 +23,7 @@ $background-color_2: beige;
     }
 }
 
-.imgRedes {
-	&:hover {
-		transform: scale(0.7);
-		transition-duration: 0.5s;
-	}
-}
+
 .parrafo {
 	grid-area: imagenes;
 	display: flex;
@@ -110,27 +105,7 @@ main {
 	text-shadow: white;
 	background-color: $background-color_1;
 }
-footer {
-	font-family: $font-family-titulo;
-	text-align: justify;
-	padding: 15px;
-	background-color: $background-color_2;
-	border-top-left-radius: 30px;
-	border-top-right-radius: 30px;
-	grid-area: pie;
-}
-.redes {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-.redesList {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
+
 
 @media screen and (min-width: 769px) and (max-width: 1400px) {
     .content {
