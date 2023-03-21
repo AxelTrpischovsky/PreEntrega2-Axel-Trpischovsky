@@ -21,90 +21,105 @@ $background-color_2: beige;
     .border {
         border: var(--bs-border-width) var(--bs-border-style) rgb(255 255 255 / 0%) !important;
     }
+    .tInd {
+        grid-area: main;
+        .tituloPagina {
+            text-align: center;
+            font-family: $font-family-titulo;
+            font-size: 50px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            color: $color_1;
+        }
+        .subtitulo {
+            text-align: justify;
+            font-size: 30px;
+            margin: 100px 250px 100px 250px;
+            font-family: $font-family-subtitulo;
+            color: $color_2;
+        }
+    }
+    .parrafo {
+        grid-area: imagenes;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .boxParrafos {
+            padding: 50px;
+            margin: 40px;
+            display: flex;
+            font-family: $font-family-titulo;
+            text-align: justify;
+            font-size: 30px;
+            padding: 50px;
+            margin: 50px 300px 50px 50px;
+            color: $color_2;
+        }
+        .hijo1 {
+            grid-area: filmo;
+            .imgIndex {
+                width: 400px;
+                height: 350px;
+                border-radius: 20px;
+                margin-left: 300px;
+                object-fit: cover;
+            }
+            .primerParrafo {
+                font-family: $font-family-titulo;
+                text-align: justify;
+                font-size: 30px;
+                padding: 90px 30px 30px 20px;
+                margin: 0px 200px 0px 50px;
+                color: $color_2;
+                text-shadow: white;
+                background-color: $background-color_1;
+            }
+        }
+        .hijo2 {
+            grid-area: merch;
+            .imgIndex {
+                width: 400px;
+                height: 350px;
+                border-radius: 20px;
+                margin-left: 300px;
+                object-fit: cover;
+            }
+            .segundoParrafo {
+                font-family: $font-family-titulo;
+                text-align: justify;
+                font-size: 30px;
+                padding: 70px 30px 30px 20px;
+                margin: 0px 200px 0px 50px;
+                color: $color_2;
+                text-shadow: white;
+                background-color: $background-color_1;
+            }
+        }
+        .hijo3 {
+            grid-area: foro;
+            .imgIndex {
+                width: 400px;
+                height: 350px;
+                border-radius: 20px;
+                margin-left: 300px;
+                object-fit: cover;
+            }
+            .tercerParrafo {
+                font-family: $font-family-titulo;
+                text-align: justify;
+                font-size: 30px;
+                padding: 60px 30px 30px 20px;
+                margin: 0px 200px 0px 50px;
+                color: $color_2;
+                text-shadow: white;
+                background-color: $background-color_1;
+            }
+        }
+    }
 }
 
 
-.parrafo {
-	grid-area: imagenes;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.hijo1 {
-	grid-area: filmo;
-}
-.hijo2 {
-	grid-area: merch;
-}
-.hijo3 {
-	grid-area: foro;
-}
-main {
-	grid-area: main;
-}
-.tituloPagina {
-	text-align: center;
-	font-family: $font-family-titulo;
-	font-size: 50px;
-	margin-top: 100px;
-	margin-bottom: 100px;
-	color: $color_1;
-}
-.subtitulo {
-	text-align: justify;
-	font-size: 30px;
-	margin: 100px 250px 100px 250px;
-	font-family: $font-family-subtitulo;
-	color: $color_2;
-}
-.imgIndex {
-	width: 400px;
-	height: 350px;
-	border-radius: 20px;
-	margin-left: 300px;
-	object-fit: cover;
-}
-.boxParrafos {
-	padding: 50px;
-	margin: 40px;
-	display: flex;
-	font-family: $font-family-titulo;
-	text-align: justify;
-	font-size: 30px;
-	padding: 50px;
-	margin: 50px 300px 50px 50px;
-	color: $color_2;
-}
-.primerParrafo {
-	font-family: $font-family-titulo;
-	text-align: justify;
-	font-size: 30px;
-	padding: 90px 30px 30px 20px;
-	margin: 0px 200px 0px 50px;
-	color: $color_2;
-	text-shadow: white;
-	background-color: $background-color_1;
-}
-.segundoParrafo {
-	font-family: $font-family-titulo;
-	text-align: justify;
-	font-size: 30px;
-	padding: 70px 30px 30px 20px;
-	margin: 0px 200px 0px 50px;
-	color: $color_2;
-	text-shadow: white;
-	background-color: $background-color_1;
-}
-.tercerParrafo {
-	font-family: $font-family-titulo;
-	text-align: justify;
-	font-size: 30px;
-	padding: 60px 30px 30px 20px;
-	margin: 0px 200px 0px 50px;
-	color: $color_2;
-	text-shadow: white;
-	background-color: $background-color_1;
-}
+
 
 
 @media screen and (min-width: 769px) and (max-width: 1400px) {
@@ -115,70 +130,97 @@ main {
         "header header header"
         "main imagenes imagenes"
         "pie pie pie";
+        .border {
+            border: var(--bs-border-width) var(--bs-border-style) rgb(255 255 255 / 0%) !important;
+        }
+        .tInd {
+            grid-area: main;
+            .tituloPagina{
+                font-size: 25px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-left: 100px;
+            }
+            .subtitulo{
+                text-align:justify;
+                font-size: 17px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-left: 100px;
+                margin-right: 0px;
+                font-family: 'Roboto:', sans-serif;
+                color: yellow;
+            }
+        }
+        .parrafo {
+            grid-area: imagenes;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .boxParrafos{
+                width: 700px;
+                padding: 0px;
+                margin-left: 25px;
+                margin-right: 5px;
+            }
+            .hijo1 {
+                grid-area: filmo;
+                .imgIndex{
+                    width: 190px;
+                    height: 140px;
+                    border-radius: 20px;
+                    margin-left: 10px;
+                    object-fit: cover;
+                }
+                .primerParrafo{
+                    font-family: 'Roboto', sans-serif;    
+                    text-align: justify;
+                    font-size: 17px;
+                    padding: 0px 30px 30px 20px;
+                    margin: 0px 0px 0px 10px;
+                    width: 250px;
+                }
+            }
+            .hijo2 {
+                grid-area: merch;
+                .imgIndex{
+                    width: 190px;
+                    height: 140px;
+                    border-radius: 20px;
+                    margin-left: 10px;
+                    object-fit: cover;
+                }
+                .segundoParrafo{
+                    font-family: 'Roboto', sans-serif;    
+                    text-align: justify;
+                    font-size: 17px;
+                    padding: 0px 30px 30px 20px;
+                    margin: 0px 0px 0px 10px;
+                    width: 250px;
+                }
+            }
+            .hijo3 {
+                grid-area: foro;
+                .imgIndex{
+                    width: 190px;
+                    height: 140px;
+                    border-radius: 20px;
+                    margin-left: 10px;
+                    object-fit: cover;
+                }
+                .tercerParrafo{
+                    font-family: 'Roboto', sans-serif;    
+                    text-align: justify;
+                    font-size: 17px;
+                    padding: 0px 30px 30px 20px;
+                    margin: 0px 0px 0px 10px;
+                    width: 250px;
+                }
+            }
+        }
     }
     
-    .tituloPagina{
-        font-size: 25px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 100px;
-    }
-    .subtitulo{
-        text-align:justify;
-        font-size: 17px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 100px;
-        margin-right: 0px;
-        font-family: 'Roboto:', sans-serif;
-        color: yellow;
-    }
-    
-    .boxParrafos{
-        width: 700px;
-        padding: 0px;
-        margin-left: 25px;
-        margin-right: 5px;
-    }
 
-    .imgIndex{
-        width: 190px;
-        height: 140px;
-        border-radius: 20px;
-        margin-left: 10px;
-        object-fit: cover;
-    }
-    
-    .primerParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 10px;
-        width: 250px;
-    }
-    
-    .segundoParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 10px;
-        width: 250px;
-    }
-    
-    .tercerParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 10px;
-        width: 250px;
-    }
-    
-    .subtitulo{
-        margin: 100px 100px 100px 100px;
-    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -191,71 +233,97 @@ main {
         "pie pie pie";
         height: 100%;
         width: 100%;
+        .border {
+            border: var(--bs-border-width) var(--bs-border-style) rgb(255 255 255 / 0%) !important;
+        }
+        .tInd {
+            grid-area: main;
+            .tituloPagina{
+                font-size: 20px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-left: 20px;
+            }
+            .subtitulo{
+                text-align:justify;
+                font-size: 17px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-left: 20px;
+                margin-right: 0px;
+                font-family: 'Roboto:', sans-serif;
+                color: yellow;
+            }
+        }
+        .parrafo {
+            grid-area: imagenes;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .boxParrafos{
+                width: 700px;
+                padding: 0px;
+                margin-left: 25px;
+                margin-right: 5px;
+            }
+            .hijo1 {
+                grid-area: filmo;
+                .imgIndex{
+                    width: 150px;
+                    height: 100px;
+                    border-radius: 20px;
+                    margin-left: 10px;
+                    object-fit: cover;
+                }
+                .primerParrafo{
+                    font-family: 'Roboto', sans-serif;    
+                    text-align: justify;
+                    font-size: 15px;
+                    padding: 10px;
+                    margin: 0px 0px 0px 10px;
+                    width: 190px;
+                }
+            }
+            .hijo2 {
+                grid-area: merch;
+                .imgIndex{
+                    width: 150px;
+                    height: 100px;
+                    border-radius: 20px;
+                    margin-left: 10px;
+                    object-fit: cover;
+                }
+                .segundoParrafo{
+                    font-family: 'Roboto', sans-serif;    
+                    text-align: justify;
+                    font-size: 15px;
+                    padding: 10px;
+                    margin: 0px 0px 0px 10px;
+                    width: 190px;
+                }
+            }
+            .hijo3 {
+                grid-area: foro;
+                .imgIndex{
+                    width: 150px;
+                    height: 100px;
+                    border-radius: 20px;
+                    margin-left: 10px;
+                    object-fit: cover;
+                }
+                .tercerParrafo{
+                    font-family: 'Roboto', sans-serif;    
+                    text-align: justify;
+                    font-size: 15px;
+                    padding: 10px;
+                    margin: 0px 0px 0px 10px;
+                    width: 190px;
+                }
+            }
+        }
     }
     
-    .tituloPagina{
-        font-size: 25px;
-        margin-top: 100px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-    }
-    .subtitulo{
-        text-align:justify;
-        font-size: 17px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 100px;
-        margin-right: 0px;
-        font-family: 'Roboto:', sans-serif;
-        color: yellow;
-    }
     
-    .boxParrafos{
-        width: 700px;
-        padding: 0px;
-        margin-left: 25px;
-        margin-right: 5px;
-    }
-
-    .imgIndex{
-        width: 150px;
-        height: 100px;
-        border-radius: 20px;
-        margin-left: 300px;
-        margin-left: 10px;
-        object-fit: cover;
-    }
-    
-    .primerParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 13px;
-        padding: 0px;
-        margin: 0px 0px 0px 50px;
-        width: 150px;
-    }
-    
-    .segundoParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 13px;
-        padding: 0px;
-        margin: 0px 0px 0px 50px;
-        width: 150px;
-    }
-    
-    .tercerParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 13px;
-        padding: 0px;
-        margin: 0px 0px 0px 50px;
-        width: 150px;
-    }
-
-    .subtitulo{
-        margin: 20px 20px 100px 20px;
-    }
 }
 
 @media screen and (min-width: 500px) and (max-width: 576px) {
@@ -269,74 +337,100 @@ main {
             "pie pie pie";
             height: 100%;
             width: 100%;
+            .border {
+                border: var(--bs-border-width) var(--bs-border-style) rgb(255 255 255 / 0%) !important;
+            }
+            .tInd {
+                grid-area: main;
+                .tituloPagina{
+                    font-size: 20px;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    margin-left: 20px;
+                }
+                .subtitulo{
+                    text-align:justify;
+                    font-size: 17px;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    font-family: 'Roboto:', sans-serif;
+                    color: yellow;
+                }
+            }
+            .parrafo {
+                grid-area: imagenes;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .boxParrafos{
+                    width: 700px;
+                    padding: 0px;
+                    margin-left: 25px;
+                    margin-right: 5px;
+                }
+                .hijo1 {
+                    grid-area: filmo;
+                    .imgIndex{
+                        width: 150px;
+                        height: 100px;
+                        border-radius: 20px;
+                        margin-left: 10px;
+                        object-fit: cover;
+                    }
+                    .primerParrafo{
+                        font-family: 'Roboto', sans-serif;    
+                        text-align: justify;
+                        font-size: 15px;
+                        padding: 10px;
+                        margin: 0px 0px 0px 10px;
+                        width: 250px;
+                    }
+                }
+                .hijo2 {
+                    grid-area: merch;
+                    .imgIndex{
+                        width: 150px;
+                        height: 100px;
+                        border-radius: 20px;
+                        margin-left: 10px;
+                        object-fit: cover;
+                    }
+                    .segundoParrafo{
+                        font-family: 'Roboto', sans-serif;    
+                        text-align: justify;
+                        font-size: 15px;
+                        padding: 10px;
+                        margin: 0px 0px 0px 10px;
+                        width: 250px;
+                    }
+                }
+                .hijo3 {
+                    grid-area: foro;
+                    .imgIndex{
+                        width: 150px;
+                        height: 100px;
+                        border-radius: 20px;
+                        margin-left: 10px;
+                        object-fit: cover;
+                    }
+                    .tercerParrafo{
+                        font-family: 'Roboto', sans-serif;    
+                        text-align: justify;
+                        font-size: 15px;
+                        padding: 10px;
+                        margin: 0px 0px 0px 10px;
+                        width: 250px;
+                    }
+                }
+            }
         }
-    
-    .tituloPagina{
-        font-size: 25px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 20px;
-    }
-    .subtitulo{
-        text-align:justify;
-        font-size: 17px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 100px;
-        margin-right: 0px;
-        font-family: 'Roboto:', sans-serif;
-        color: yellow;
-    }
-    
-    .boxParrafos{
-        width: 700px;
-        padding: 0px;
-        margin-left: 25px;
-        margin-right: 5px;
-    }
-
-    .imgIndex{
-        width: 150px;
-        height: 100px;
-        border-radius: 20px;
-        margin-left: 300px;
-        margin-left: 10px;
-        object-fit: cover;
-    }
-    
-    .primerParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 50px;
-        width: 250px;
-    }
-    
-    .segundoParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 50px;
-        width: 250px;
-    }
-    
-    .tercerParrafo{
-        font-family: 'Roboto', sans-serif;    
-        text-align: justify;
-        font-size: 17px;
-        padding: 0px 30px 30px 20px;
-        margin: 0px 0px 0px 50px;
-        width: 250px;
-    }
-    
-    .subtitulo{
-        margin: 100px 100px 100px 100px;
-    }
+        
+        
 }
 
-@media screen and (min-width: 1px) and (max-width: 499px) {
+@media screen and (min-width: 440px) and (max-width: 499px) {
     .content {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -347,76 +441,196 @@ main {
             "pie pie pie";
             height: 100%;
             width: 100%;
+            .border {
+                border: var(--bs-border-width) var(--bs-border-style) rgb(255 255 255 / 0%) !important;
+            }
+            .tInd {
+                grid-area: main;
+                .tituloPagina{
+                    font-size: 20px;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    margin-left: 20px;
+                }
+                .subtitulo{
+                    text-align:justify;
+                    font-size: 17px;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    font-family: 'Roboto:', sans-serif;
+                    color: yellow;
+                }
+            }
+            .parrafo {
+                grid-area: imagenes;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .boxParrafos{
+                    width: 700px;
+                    padding: 0px;
+                    margin-left: 25px;
+                    margin-right: 5px;
+                }
+                .hijo1 {
+                    grid-area: filmo;
+                    .imgIndex{
+                        width: 150px;
+                        height: 100px;
+                        border-radius: 20px;
+                        margin-left: 10px;
+                        object-fit: cover;
+                    }
+                    .primerParrafo{
+                        font-family: 'Roboto', sans-serif;    
+                        text-align: justify;
+                        font-size: 15px;
+                        padding: 10px;
+                        margin: 0px 0px 0px 10px;
+                        width: 250px;
+                    }
+                }
+                .hijo2 {
+                    grid-area: merch;
+                    .imgIndex{
+                        width: 150px;
+                        height: 100px;
+                        border-radius: 20px;
+                        margin-left: 10px;
+                        object-fit: cover;
+                    }
+                    .segundoParrafo{
+                        font-family: 'Roboto', sans-serif;    
+                        text-align: justify;
+                        font-size: 15px;
+                        padding: 10px;
+                        margin: 0px 0px 0px 10px;
+                        width: 250px;
+                    }
+                }
+                .hijo3 {
+                    grid-area: foro;
+                    .imgIndex{
+                        width: 150px;
+                        height: 100px;
+                        border-radius: 20px;
+                        margin-left: 10px;
+                        object-fit: cover;
+                    }
+                    .tercerParrafo{
+                        font-family: 'Roboto', sans-serif;    
+                        text-align: justify;
+                        font-size: 15px;
+                        padding: 10px;
+                        margin: 0px 0px 0px 10px;
+                        width: 250px;
+                    }
+                }
+            }
         }
-        
-        .tituloPagina{
-            font-size: 25px;
-            margin-top: 100px;
-            margin-bottom: 100px;
-            margin-left: 100px;
+    }
+
+@media screen and (min-width: 1px) and (max-width: 440px) {
+    .content {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header header header"
+            "main main main"
+            "imagenes imagenes imagenes"
+            "pie pie pie";
+            height: 100%;
+            width: 100%;
+            .border {
+                border: var(--bs-border-width) var(--bs-border-style) rgb(255 255 255 / 0%) !important;
+            }
+            .tInd {
+                grid-area: main;
+                .tituloPagina{
+                    font-size: 20px;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    margin-left: 20px;
+                }
+                .subtitulo{
+                    text-align:justify;
+                    font-size: 17px;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    font-family: 'Roboto:', sans-serif;
+                    color: yellow;
+                }
+            }
+            .parrafo {
+                grid-area: imagenes;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .boxParrafos{
+                    width: 700px;
+                    padding: 0px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+                .hijo1 {
+                    grid-area: filmo;
+                    .imgIndex{
+                        width: 150px;
+                        height: 100px;
+                        border-radius: 20px;
+                        margin-left: 10px;
+                        object-fit: cover;
+                    }
+                    .primerParrafo{
+                        font-family: 'Roboto', sans-serif;    
+                        text-align: justify;
+                        font-size: 15px;
+                        padding: 10px;
+                        margin: 0px 0px 0px 10px;
+                        width: 200px;
+                    }
+                }
+                .hijo2 {
+                    grid-area: merch;
+                    .imgIndex{
+                        width: 150px;
+                        height: 100px;
+                        border-radius: 20px;
+                        margin-left: 10px;
+                        object-fit: cover;
+                    }
+                    .segundoParrafo{
+                        font-family: 'Roboto', sans-serif;    
+                        text-align: justify;
+                        font-size: 15px;
+                        padding: 10px;
+                        margin: 0px 0px 0px 10px;
+                        width: 200px;
+                    }
+                }
+                .hijo3 {
+                    grid-area: foro;
+                    .imgIndex{
+                        width: 150px;
+                        height: 100px;
+                        border-radius: 20px;
+                        margin-left: 10px;
+                        object-fit: cover;
+                    }
+                    .tercerParrafo{
+                        font-family: 'Roboto', sans-serif;    
+                        text-align: justify;
+                        font-size: 15px;
+                        padding: 10px;
+                        margin: 0px 0px 0px 10px;
+                        width: 200px;
+                    }
+                }
+            }
         }
-        .subtitulo{
-            text-align:justify;
-            font-size: 17px;
-            margin-top: 100px;
-            margin-bottom: 100px;
-            margin-left: 100px;
-            margin-right: 0px;
-            font-family: 'Roboto:', sans-serif;
-            color: yellow;
-        }
-        
-        .boxParrafos{
-            width: 700px;
-            padding: 0px;
-            margin-left: 2.5px;
-            margin-right: 5px;
-        }
-    
-        .imgIndex{
-            width: 150px;
-            height: 100px;
-            border-radius: 20px;
-            margin-left: 300px;
-            margin-left: 10px;
-            object-fit: cover;
-        }
-        
-        .primerParrafo{
-            font-family: 'Roboto', sans-serif;    
-            text-align: justify;
-            font-size: 13px;
-            padding: 5px;
-            margin: 0px 0px 0px 5px;
-            width: 200px;
-        }
-        
-        .segundoParrafo{
-            font-family: 'Roboto', sans-serif;    
-            text-align: justify;
-            font-size: 13px;
-            padding: 5px;
-            margin: 0px 0px 0px 5px;
-            width: 200px;
-        }
-        
-        .tercerParrafo{
-            font-family: 'Roboto', sans-serif;    
-            text-align: justify;
-            font-size: 13px;
-            padding: 5px;
-            margin: 0px 0px 0px 5px;
-            width: 200px;
-        }
-        
-h1.tituloPagina{
-    margin-bottom: 25px;
-    margin-left: 20px;
 }
-
-
-
-        h2.subtitulo{
-            margin: 25px;
-        }
-}
+        
