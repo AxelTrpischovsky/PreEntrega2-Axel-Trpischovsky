@@ -7,13 +7,14 @@
 @import "index";
 @import "footerGeneral";
 @import "forum";
+@import "series";
 
 *{ 
     margin: 0;
     padding: 0;
 }
 
-/* --------------------------------------------------------------------------------------------- */
+
 
 .contentMerch{
     color: white;
@@ -166,78 +167,10 @@
 
 /* ------------------------------------------------------------------------------------------------ */
 
-.contentSeries{
-    color: white;
-    background-color: black;
-    background-image: url(https://andro4all.com/hero/2021/06/La-Remesa-Mala-es-una-de-las-ultimas-series-en-incorporarse-a-Disney.jpeg?width=1200);
-    background-position: center;
-    background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 33% 33% 34%;
-    grid-template-rows: 100px 1fr 1fr 100px;
-    grid-template-areas: 
-    "headS headS headS"
-    "mainS mainS mainS"
-    "capS capS capS"
-    "pieS pieS pieS";
-}
-
-.titSerie{
-    grid-area: mainS;
-}
-
-.capitulos{grid-area: capS;}
-
-.footerS{grid-area: pieS;}
-
-
-
-.sw-series{
-    width: 300px;
-    height: 168px;
-    padding: 10px;
-    border-radius: 35px;
-}
-
-.content-series{
-    margin-left: 30px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.sw-series:hover{
-    transform: scale(1.3);
-    transition-duration: 1s;
-}
 
 /* --------------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 1px) and (max-width: 499px) {
-
-
-        .sw-series{
-            width: 260px;
-            height: 128px;
-        }
-    
-        .titSerie{
-            height: 500px;
-            margin-top: 50px;
-        }
-    
-        .capitulos{
-            margin-bottom: 200px;
-        }
-    
-        .contentSeries{
-            height: 2000px;
-        }
-    
         .tMo{
             height: 500px;
         }
@@ -314,20 +247,6 @@ h2.subtitulo.mSt{
 }
 /* ------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 500px) and (max-width: 576px) {
-
-
-    .titSerie{
-        height: 500px;
-    }
-
-    .capitulos{
-        margin-bottom: 200px;
-    }
-
-    .contentSeries{
-        height: 2000px;
-    }
-
     .tMo{
         height: 500px;
     }
@@ -390,19 +309,6 @@ h2.subtitulo.mSt{
 
     /* Reglas de estilo para pantallas con un ancho máximo de 768px */
     @media screen and (min-width: 577px) and (max-width: 768px) {
-    .sw-series{
-        width: 200px;
-        height: 168px;
-    }
-    
-    .capitulos{
-        margin-bottom: 200px;
-    }
-
-    .contentSeries{
-        height: 1000px;
-    }
-
     .pelis{
         width: 200px;
         height: 168px;
@@ -465,8 +371,6 @@ h2.subtitulo.mSt{
 
     /* Reglas de estilo para pantallas con un ancho máximo de 1400px */
     @media screen and (min-width: 769px) and (max-width: 1400px) {
-    
-
     .card1{
         height: 250px;
         width: 600px;
@@ -483,7 +387,6 @@ h2.subtitulo.mSt{
     height: 250px;
     width: 600px;
 }
-
     .img-merch{
     
         width: 150px;
@@ -505,8 +408,7 @@ h2.subtitulo.mSt{
     width: 45px;
     height: 45px;
 }
+} 
 }
-}
-
 
 

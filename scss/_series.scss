@@ -1,0 +1,321 @@
+.contentSeries{
+    color: white;
+    background-color: black;
+    background-image: url(https://andro4all.com/hero/2021/06/La-Remesa-Mala-es-una-de-las-ultimas-series-en-incorporarse-a-Disney.jpeg?width=1200);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 1fr 1fr 100px;
+    grid-template-areas: 
+    "headS headS headS"
+    "mainS mainS mainS"
+    "capS capS capS"
+    "pieS pieS pieS";
+    .titSerie{
+        grid-area: mainS;
+        .tituloPagina {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            color: aqua;
+        }
+        .subtitulo {
+            text-align: justify;
+            font-size: 30px;
+            margin: 100px 250px 100px 250px;
+            font-family:'Roboto:', sans-serif;
+            color: yellow;
+        }
+    }
+    .capitulos{grid-area: capS;
+        .content-series{
+            margin-left: 30px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .sw-series{
+                width: 300px;
+                height: 168px;
+                padding: 10px;
+                border-radius: 35px;
+            }
+        }
+    }
+    .footerS{grid-area: pieS;}
+}
+.sw-series:hover{
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+
+
+
+@media screen and (min-width: 1px) and (max-width: 499px) {
+    .contentSeries{
+        color: white;
+        background-color: black;
+        background-image: url(https://andro4all.com/hero/2021/06/La-Remesa-Mala-es-una-de-las-ultimas-series-en-incorporarse-a-Disney.jpeg?width=1200);
+        background-position: center;
+        background-size: cover;
+        background-position-y: center;
+        background-attachment: fixed;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+        grid-template-rows: 100px 0.6fr 1fr 100px;
+        grid-template-areas: 
+        "headS headS headS"
+        "mainS mainS mainS"
+        "capS capS capS"
+        "pieS pieS pieS";
+        .titSerie{
+            grid-area: mainS;
+            height: 200px;
+            margin-top: 50px;
+            .tituloPagina {
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-size: 30px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                color: aqua;
+            }
+            .subtitulo {
+                text-align: justify;
+                font-size: 20px;
+                margin: 100px 20px 100px 20px;
+                font-family:'Roboto:', sans-serif;
+                color: yellow;
+            }
+        }
+        .capitulos{grid-area: capS;
+            margin-bottom: 50px;
+            .content-series{
+                margin-left: 30px;
+                margin-bottom: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                justify-content: center;
+                height: 1000px;
+                .sw-series{
+                    width: 260px;
+                    height: 128px;
+                    padding: 10px;
+                    border-radius: 35px;
+                }
+            }
+        }
+        .footerS{grid-area: pieS;}
+    }
+}
+.sw-series:hover{
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+@media screen and (min-width: 500px) and (max-width: 576px) {
+    .contentSeries{
+        color: white;
+        background-color: black;
+        background-image: url(https://andro4all.com/hero/2021/06/La-Remesa-Mala-es-una-de-las-ultimas-series-en-incorporarse-a-Disney.jpeg?width=1200);
+        background-position: center;
+        background-size: cover;
+        background-position-y: center;
+        background-attachment: fixed;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+        grid-template-rows: 100px 0.5fr 1fr 100px;
+        grid-template-areas: 
+        "headS headS headS"
+        "mainS mainS mainS"
+        "capS capS capS"
+        "pieS pieS pieS";
+        .titSerie{
+            grid-area: mainS;
+            height: 200px;
+            margin-top: 50px;
+            .tituloPagina {
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-size: 30px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                color: aqua;
+            }
+            .subtitulo {
+                text-align: justify;
+                font-size: 20px;
+                margin: 100px 20px 100px 20px;
+                font-family:'Roboto:', sans-serif;
+                color: yellow;
+            }
+        }
+        .capitulos{grid-area: capS;
+            margin-bottom: 50px;
+            .content-series{
+                margin-left: 30px;
+                margin-bottom: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                justify-content: center;
+                height: 1000px;
+                .sw-series{
+                    width: 260px;
+                    height: 128px;
+                    padding: 10px;
+                    border-radius: 35px;
+                }
+            }
+        }
+        .footerS{grid-area: pieS;}
+    }
+}
+.sw-series:hover{
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* Reglas de estilo para pantallas con un ancho máximo de 768px */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .contentSeries{
+        color: white;
+        background-color: black;
+        background-image: url(https://andro4all.com/hero/2021/06/La-Remesa-Mala-es-una-de-las-ultimas-series-en-incorporarse-a-Disney.jpeg?width=1200);
+        background-position: center;
+        background-size: cover;
+        background-position-y: center;
+        background-attachment: fixed;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+        grid-template-rows: 100px 1fr 1fr 100px;
+        grid-template-areas: 
+        "headS headS headS"
+        "mainS mainS mainS"
+        "capS capS capS"
+        "pieS pieS pieS";
+        .titSerie{
+            grid-area: mainS;
+            height: 500px;
+            margin-top: 50px;
+            .tituloPagina {
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-size: 30px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                color: aqua;
+            }
+            .subtitulo {
+                text-align: justify;
+                font-size: 20px;
+                margin: 100px 20px 100px 20px;
+                font-family:'Roboto:', sans-serif;
+                color: yellow;
+            }
+        }
+        .capitulos{grid-area: capS;
+            margin-bottom: 50px;
+            .content-series{
+                margin-left: 30px;
+                margin-bottom: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                justify-content: center;
+                height: 500px;
+                .sw-series{
+                    width: 260px;
+                    height: 128px;
+                    padding: 10px;
+                    border-radius: 35px;
+                }
+            }
+        }
+        .footerS{grid-area: pieS;}
+    }
+}
+.sw-series:hover{
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* Reglas de estilo para pantallas con un ancho máximo de 1400px */
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+    .contentSeries{
+        color: white;
+        background-color: black;
+        background-image: url(https://andro4all.com/hero/2021/06/La-Remesa-Mala-es-una-de-las-ultimas-series-en-incorporarse-a-Disney.jpeg?width=1200);
+        background-position: center;
+        background-size: cover;
+        background-position-y: center;
+        background-attachment: fixed;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+        grid-template-rows: 100px 1fr 1fr 100px;
+        grid-template-areas: 
+        "headS headS headS"
+        "mainS mainS mainS"
+        "capS capS capS"
+        "pieS pieS pieS";
+        .titSerie{
+            grid-area: mainS;
+            height: 500px;
+            margin-top: 50px;
+            .tituloPagina {
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-size: 30px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                color: aqua;
+            }
+            .subtitulo {
+                text-align: justify;
+                font-size: 20px;
+                margin: 100px 80px 100px 80px;
+                font-family:'Roboto:', sans-serif;
+                color: yellow;
+            }
+        }
+        .capitulos{grid-area: capS;
+            margin-bottom: 50px;
+            .content-series{
+                margin-left: 30px;
+                margin-bottom: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                justify-content: center;
+                height: 350px;
+                .sw-series{
+                    width: 260px;
+                    height: 128px;
+                    padding: 10px;
+                    border-radius: 35px;
+                }
+            }
+        }
+        .footerS{grid-area: pieS;}
+    }
+}
+.sw-series:hover{
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
