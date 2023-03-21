@@ -277,6 +277,8 @@ li.list-foro2{
     width: 70px;
     height: 30px;
     margin-left: 735px;
+    font-size: 0.3cm;
+    
 }
 
 /* --------------------------------------------------------------------------------------------- */
@@ -698,6 +700,8 @@ div.cajas-foro.cajFo2{
 input.comentar{
     margin-left: 230px;
     height: 30px;
+    font-size: 0.3cm;
+
 }
 
 }
@@ -848,35 +852,42 @@ input.comentar{
         height: 20px;
     }
 
+ol.list-foro{
+    padding: 0px;
+    margin: 0px;
+}
+
     .user-coment1{
-        width: 300px;
-        height: 500px;
-        margin-left: 200px;
-        margin-right: 100px;
+        width: 430px;
+        height: 600px;
+        margin-left: 50px;
+        align-content: flex-start;
     }
 
-.list-foro{
-    font-size: 0.5cm;
-    padding-left: 0px;
-    margin-left: 0px;}
-    
     .titulos-comentarios{
         font-family:'Roboto', sans-serif; 
         font-size: 0.5cm;
     }
 
     textarea{
-        width: 500px;
+        width: 370px;
         height: 100px;
     }
     .cajas-foro{
-        margin-top: 30px;
-        width: 600px;
-        height: 150px;
+        margin-top: 50px;
+        width: 350px;
+        height: 100px;
     }
 
     .comentar{
-        margin-left: 530px;
+        margin-left: 300px;
+        font-size: 0.3cm;
+    }
+
+    .sTf{
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 0px;
     }
 
     }
@@ -1030,6 +1041,44 @@ input.comentar{
         height: 30px;
     }
 
+    ol.list-foro{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+        .user-coment1{
+            width: 500px;
+            height: 600px;
+            margin-left: 50px;
+            align-content: flex-start;
+        }
+    
+        .titulos-comentarios{
+            font-family:'Roboto', sans-serif; 
+            font-size: 0.5cm;
+        }
+    
+        textarea{
+            width: 370px;
+            height: 100px;
+        }
+        .cajas-foro{
+            margin-top: 50px;
+            width: 350px;
+            height: 100px;
+        }
+    
+        .comentar{
+            margin-left: 300px;
+            font-size: 0.3cm;
+        }
+    
+        .sTf{
+            margin-left: 25px;
+            margin-right: 25px;
+            padding: 0px;
+        }
+
     }
 
     /* ------------------------------------------------------------------------------------------ */
@@ -1148,35 +1197,8 @@ input.comentar{
 }
 }
 
-/* ------------------------------------------------------------------------------------------ */
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
-    .user-coment1{
-        width: 500px;
-        height: 600px;
-        margin-left: 200px;
-        margin-right: 100px;
-    }
 
-    .titulos-comentarios{
-        font-family:'Roboto', sans-serif; 
-        font-size: 0.5cm;
-    }
-
-    textarea{
-        width: 400px;
-        height: 100px;
-    }
-    .cajas-foro{
-        margin-top: 30px;
-        width: 400px;
-        height: 100px;
-    }
-
-    .comentar{
-        margin-left: 330px;
-    }
-}
 
 /* ------------------------------------------------------------------------------------------ */
     
@@ -1184,8 +1206,8 @@ input.comentar{
     .user-coment1{
         width: 600px;
         height: 700px;
-        margin-left: 200px;
-        margin-right: 100px;
+        margin-left: 100px;
+        margin-right: 50px;
     }
 
     .titulos-comentarios{
@@ -1199,12 +1221,13 @@ input.comentar{
     }
     .cajas-foro{
         margin-top: 30px;
-        width: 600px;
+        width: 500px;
         height: 150px;
     }
 
     .comentar{
-        margin-left: 530px;
+        margin-left: 430px;
+        font-size: 0.3cm;
     }
 
 }
@@ -1214,10 +1237,10 @@ input.comentar{
 @media screen and (min-width: 915px) and (max-width: 1100px) {
 
     .user-coment1{
-        width: 700px;
-        height: 800px;
-        margin-left: 200px;
-        margin-right: 100px;
+        width: 600px;
+        height: 700px;
+        margin-left: 100px;
+        margin-right: 50px;
     }
 
     .titulos-comentarios{
@@ -1226,17 +1249,18 @@ input.comentar{
     }
 
     textarea{
-        width: 600px;
-        height: 150px;
+        width: 500px;
+        height: 100px;
     }
     .cajas-foro{
         margin-top: 30px;
-        width: 600px;
+        width: 500px;
         height: 150px;
     }
 
     .comentar{
-        margin-left: 530px;
+        margin-left: 430px;
+        font-size: 0.3cm;
     }
 
 
@@ -1254,6 +1278,9 @@ input.comentar{
     .list-foro{
         margin-top: 50px;
 }
+.comentar{
+    font-size: 0.3cm;
+}
 }
 
 /* ------------------------------------------------------------------------------------------ */
@@ -1267,5 +1294,8 @@ input.comentar{
         .list-foro{
             margin-top: 50px;
 
+        }
+        .comentar{
+            font-size: 0.3cm;
         }
     }

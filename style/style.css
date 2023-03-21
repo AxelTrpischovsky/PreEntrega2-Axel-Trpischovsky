@@ -366,6 +366,7 @@ li.list-foro2 {
   width: 70px;
   height: 30px;
   margin-left: 735px;
+  font-size: 0.3cm;
 }
 
 /* --------------------------------------------------------------------------------------------- */
@@ -742,6 +743,7 @@ li.list-foro2 {
   input.comentar {
     margin-left: 230px;
     height: 30px;
+    font-size: 0.3cm;
   }
 }
 /* ------------------------------------------------------------------------------------------ */
@@ -866,32 +868,37 @@ li.list-foro2 {
     width: 20px;
     height: 20px;
   }
-  .user-coment1 {
-    width: 300px;
-    height: 500px;
-    margin-left: 200px;
-    margin-right: 100px;
+  ol.list-foro {
+    padding: 0px;
+    margin: 0px;
   }
-  .list-foro {
-    font-size: 0.5cm;
-    padding-left: 0px;
-    margin-left: 0px;
+  .user-coment1 {
+    width: 430px;
+    height: 600px;
+    margin-left: 50px;
+    align-content: flex-start;
   }
   .titulos-comentarios {
     font-family: "Roboto", sans-serif;
     font-size: 0.5cm;
   }
   textarea {
-    width: 500px;
+    width: 370px;
     height: 100px;
   }
   .cajas-foro {
-    margin-top: 30px;
-    width: 600px;
-    height: 150px;
+    margin-top: 50px;
+    width: 350px;
+    height: 100px;
   }
   .comentar {
-    margin-left: 530px;
+    margin-left: 300px;
+    font-size: 0.3cm;
+  }
+  .sTf {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0px;
   }
 }
 /* ------------------------------------------------------------------------------------------ */
@@ -1018,6 +1025,38 @@ li.list-foro2 {
     width: 30px;
     height: 30px;
   }
+  ol.list-foro {
+    padding: 0px;
+    margin: 0px;
+  }
+  .user-coment1 {
+    width: 500px;
+    height: 600px;
+    margin-left: 50px;
+    align-content: flex-start;
+  }
+  .titulos-comentarios {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5cm;
+  }
+  textarea {
+    width: 370px;
+    height: 100px;
+  }
+  .cajas-foro {
+    margin-top: 50px;
+    width: 350px;
+    height: 100px;
+  }
+  .comentar {
+    margin-left: 300px;
+    font-size: 0.3cm;
+  }
+  .sTf {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0px;
+  }
 }
 /* ------------------------------------------------------------------------------------------ */
 /* Reglas de estilo para pantallas con un ancho máximo de 1400px */
@@ -1118,37 +1157,12 @@ li.list-foro2 {
   }
 }
 /* ------------------------------------------------------------------------------------------ */
-@media screen and (min-width: 0px) and (max-width: 768px) {
-  .user-coment1 {
-    width: 500px;
-    height: 600px;
-    margin-left: 200px;
-    margin-right: 100px;
-  }
-  .titulos-comentarios {
-    font-family: "Roboto", sans-serif;
-    font-size: 0.5cm;
-  }
-  textarea {
-    width: 400px;
-    height: 100px;
-  }
-  .cajas-foro {
-    margin-top: 30px;
-    width: 400px;
-    height: 100px;
-  }
-  .comentar {
-    margin-left: 330px;
-  }
-}
-/* ------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 768px) and (max-width: 915px) {
   .user-coment1 {
     width: 600px;
     height: 700px;
-    margin-left: 200px;
-    margin-right: 100px;
+    margin-left: 100px;
+    margin-right: 50px;
   }
   .titulos-comentarios {
     font-family: "Roboto", sans-serif;
@@ -1160,36 +1174,38 @@ li.list-foro2 {
   }
   .cajas-foro {
     margin-top: 30px;
-    width: 600px;
+    width: 500px;
     height: 150px;
   }
   .comentar {
-    margin-left: 530px;
+    margin-left: 430px;
+    font-size: 0.3cm;
   }
 }
 /* ------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 915px) and (max-width: 1100px) {
   .user-coment1 {
-    width: 700px;
-    height: 800px;
-    margin-left: 200px;
-    margin-right: 100px;
+    width: 600px;
+    height: 700px;
+    margin-left: 100px;
+    margin-right: 50px;
   }
   .titulos-comentarios {
     font-family: "Roboto", sans-serif;
     font-size: 0.5cm;
   }
   textarea {
-    width: 600px;
-    height: 150px;
+    width: 500px;
+    height: 100px;
   }
   .cajas-foro {
     margin-top: 30px;
-    width: 600px;
+    width: 500px;
     height: 150px;
   }
   .comentar {
-    margin-left: 530px;
+    margin-left: 430px;
+    font-size: 0.3cm;
   }
 }
 /* ------------------------------------------------------------------------------------------ */
@@ -1202,6 +1218,9 @@ li.list-foro2 {
   .list-foro {
     margin-top: 50px;
   }
+  .comentar {
+    font-size: 0.3cm;
+  }
 }
 /* ------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 1400px) and (max-width: 1885px) {
@@ -1211,6 +1230,9 @@ li.list-foro2 {
   }
   .list-foro {
     margin-top: 50px;
+  }
+  .comentar {
+    font-size: 0.3cm;
   }
 }
 
