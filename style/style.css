@@ -764,8 +764,10 @@ footer .redes .redesList .imgRedes:hover {
   grid-template-rows: 100px 500px 1fr 100px;
   grid-template-areas: "headFo headFo headFo" "mainFo mainFo mainFo" "secFo secFo secFo" "pieFo pieFo pieFo";
 }
-
-.tituloPagina {
+.contentForum .tFo {
+  grid-area: mainFo;
+}
+.contentForum .tFo .tituloPagina {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 50px;
@@ -773,33 +775,39 @@ footer .redes .redesList .imgRedes:hover {
   margin-bottom: 100px;
   color: aqua;
 }
-
-.subtitulo {
+.contentForum .tFo .subtitulo {
   text-align: justify;
   font-size: 30px;
   margin: 100px 250px 100px 250px;
   font-family: "Roboto:", sans-serif;
   color: yellow;
 }
-
-.tFo {
-  grid-area: mainFo;
-}
-
-.secForo {
+.contentForum .secForo {
   grid-area: secFo;
 }
-
-.footerForo {
-  grid-area: pieFo;
-}
-
-.list-foro {
+.contentForum .secForo .list-foro {
   margin-left: 150px;
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 0.7cm;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-left: 50px;
 }
-
-.user-coment1 {
+.contentForum .secForo .list-foro li.list-foro2 {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.836);
+  border-radius: 5px;
+}
+.contentForum .secForo .list-foro li.list-foro2 .menu-foro {
+  text-decoration: none;
+  font-family: "Star Jedi";
+  color: white;
+}
+.contentForum .secForo .user-coment1 {
   padding: 20px 20px 20px 20px;
   margin: 55px 550px 50px 500px;
   background-color: darkgrey;
@@ -810,334 +818,719 @@ footer .redes .redesList .imgRedes:hover {
   justify-content: center;
   align-content: center;
 }
-
-legend {
-  font-size: 0.7cm;
-  font-family: "Roboto", sans-serif;
-  text-align: justify;
+.contentForum .secForo .user-coment1 .cajas-foro {
+  margin-top: 30px;
 }
-
-textarea {
+.contentForum .secForo .user-coment1 .cajas-foro textarea {
   width: 800px;
   height: 200px;
 }
-
-.list-foro {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  font-size: 0.7cm;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  margin-left: 50px;
-}
-
-.menu-foro {
-  text-decoration: none;
-  font-family: "Star Jedi";
-  color: white;
-}
-
-li.list-foro2 {
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.836);
-  border-radius: 5px;
-}
-
-.titulo-foro {
-  text-align: center;
-}
-
-.cajas-foro {
-  margin-top: 30px;
-}
-
-.titulos-comentarios {
+.contentForum .secForo .user-coment1 .cajas-foro .titulos-comentarios {
   font-family: "Roboto", sans-serif;
   font-size: 0.7cm;
 }
-
-.comentar {
+.contentForum .secForo .user-coment1 .cajas-foro .comentar {
   width: 70px;
   height: 30px;
   margin-left: 735px;
   font-size: 0.3cm;
 }
+.contentForum .secForo .user-coment1 .titulo-foro {
+  text-align: center;
+  font-size: 0.7cm;
+  font-family: "Roboto", sans-serif;
+}
+.contentForum .footerForo {
+  grid-area: pieFo;
+}
 
 @media screen and (min-width: 1px) and (max-width: 499px) {
-  .subtitulo {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 16px;
+  .contentForum {
+    color: white;
+    background-color: black;
+    background-image: url(http://www.solofondos.com/wp-content/uploads/2016/02/12486d9d5ec2f4d62c52669d6b30546d_w324_h576_sc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 500px 1fr 100px;
+    grid-template-areas: "headFo headFo headFo" "mainFo mainFo mainFo" "secFo secFo secFo" "pieFo pieFo pieFo";
   }
-  .tituloPagina {
+  .contentForum .tFo {
+    grid-area: mainFo;
+  }
+  .contentForum .tFo .tituloPagina {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
     font-size: 35px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: aqua;
   }
-  ol.list-foro {
+  .contentForum .tFo .subtitulo {
+    text-align: justify;
+    font-size: 16px;
+    margin: 100px 20px 100px 20px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
+  }
+  .contentForum .secForo {
+    grid-area: secFo;
+  }
+  .contentForum .secForo .list-foro {
     padding: 0px;
     margin: 0px;
     font-size: 18px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: "Roboto", sans-serif;
+    color: white;
   }
-  .user-coment1 {
+  .contentForum .secForo .list-foro li.list-foro2 {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 5px;
+  }
+  .contentForum .secForo .list-foro li.list-foro2 .menu-foro {
+    text-decoration: none;
+    font-family: "Star Jedi";
+    color: white;
+  }
+  .contentForum .secForo .user-coment1 {
     width: 300px;
     height: 600px;
-    margin-left: 20px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 55px 0px 50px 20px;
+    background-color: darkgrey;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-content: flex-start;
   }
-  .titulos-comentarios {
-    font-family: "Roboto", sans-serif;
-    font-size: 0.5cm;
-  }
-  textarea {
-    width: 250px;
-    height: 100px;
-  }
-  .cajas-foro {
+  .contentForum .secForo .user-coment1 .cajas-foro {
     margin-top: 50px;
     width: 250px;
     height: 100px;
   }
-  .comentar {
+  .contentForum .secForo .user-coment1 .cajas-foro textarea {
+    width: 250px;
+    height: 100px;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .titulos-comentarios {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5cm;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .comentar {
+    width: 70px;
+    height: 30px;
     margin-left: 180px;
     font-size: 0.3cm;
   }
-  .sTf {
-    margin-left: 25px;
-    margin-right: 25px;
-    padding: 0px;
+  .contentForum .secForo .user-coment1 .titulo-foro {
+    text-align: center;
+    font-size: 0.7cm;
+    font-family: "Roboto", sans-serif;
+  }
+  .contentForum .footerForo {
+    grid-area: pieFo;
   }
 }
-/* ------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 500px) and (max-width: 576px) {
-  .subtitulo {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 18px;
+  .contentForum {
+    color: white;
+    background-color: black;
+    background-image: url(http://www.solofondos.com/wp-content/uploads/2016/02/12486d9d5ec2f4d62c52669d6b30546d_w324_h576_sc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 500px 1fr 100px;
+    grid-template-areas: "headFo headFo headFo" "mainFo mainFo mainFo" "secFo secFo secFo" "pieFo pieFo pieFo";
   }
-  .tituloPagina {
+  .contentForum .tFo {
+    grid-area: mainFo;
+  }
+  .contentForum .tFo .tituloPagina {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
     font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: aqua;
   }
-  ol.list-foro {
+  .contentForum .tFo .subtitulo {
+    text-align: justify;
+    font-size: 18px;
+    margin: 100px 20px 100px 20px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
+  }
+  .contentForum .secForo {
+    grid-area: secFo;
+  }
+  .contentForum .secForo .list-foro {
     padding: 0px;
     margin: 0px;
+    font-size: 18px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: "Roboto", sans-serif;
+    color: white;
   }
-  .user-coment1 {
+  .contentForum .secForo .list-foro li.list-foro2 {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 5px;
+  }
+  .contentForum .secForo .list-foro li.list-foro2 .menu-foro {
+    text-decoration: none;
+    font-family: "Star Jedi";
+    color: white;
+  }
+  .contentForum .secForo .user-coment1 {
     width: 430px;
     height: 600px;
-    margin-left: 50px;
+    padding: 0px 0px 0px 0px;
+    margin: 55px 0px 50px 50px;
+    background-color: darkgrey;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-content: flex-start;
   }
-  .titulos-comentarios {
-    font-family: "Roboto", sans-serif;
-    font-size: 0.5cm;
-  }
-  textarea {
-    width: 370px;
-    height: 100px;
-  }
-  .cajas-foro {
+  .contentForum .secForo .user-coment1 .cajas-foro {
     margin-top: 50px;
     width: 350px;
     height: 100px;
   }
-  .comentar {
+  .contentForum .secForo .user-coment1 .cajas-foro textarea {
+    width: 370px;
+    height: 100px;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .titulos-comentarios {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5cm;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .comentar {
+    width: 70px;
+    height: 30px;
     margin-left: 300px;
     font-size: 0.3cm;
   }
-  .sTf {
-    margin-left: 25px;
-    margin-right: 25px;
-    padding: 0px;
+  .contentForum .secForo .user-coment1 .titulo-foro {
+    text-align: center;
+    font-size: 0.7cm;
+    font-family: "Roboto", sans-serif;
+  }
+  .contentForum .footerForo {
+    grid-area: pieFo;
   }
 }
-/* ------------------------------------------------------------------------------------------ */
-/* Reglas de estilo para pantallas con un ancho máximo de 768px */
 @media screen and (min-width: 577px) and (max-width: 768px) {
-  ol.list-foro {
+  .contentForum {
+    color: white;
+    background-color: black;
+    background-image: url(http://www.solofondos.com/wp-content/uploads/2016/02/12486d9d5ec2f4d62c52669d6b30546d_w324_h576_sc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 500px 1fr 100px;
+    grid-template-areas: "headFo headFo headFo" "mainFo mainFo mainFo" "secFo secFo secFo" "pieFo pieFo pieFo";
+  }
+  .contentForum .tFo {
+    grid-area: mainFo;
+  }
+  .contentForum .tFo .tituloPagina {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: aqua;
+  }
+  .contentForum .tFo .subtitulo {
+    text-align: justify;
+    font-size: 20px;
+    margin: 100px 20px 100px 20px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
+  }
+  .contentForum .secForo {
+    grid-area: secFo;
+  }
+  .contentForum .secForo .list-foro {
     padding: 0px;
     margin: 0px;
+    font-size: 18px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: "Roboto", sans-serif;
+    color: white;
   }
-  .user-coment1 {
-    width: 500px;
+  .contentForum .secForo .list-foro li.list-foro2 {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 5px;
+  }
+  .contentForum .secForo .list-foro li.list-foro2 .menu-foro {
+    text-decoration: none;
+    font-family: "Star Jedi";
+    color: white;
+  }
+  .contentForum .secForo .user-coment1 {
+    width: 430px;
     height: 600px;
-    margin-left: 50px;
+    padding: 0px 0px 0px 0px;
+    margin: 55px 0px 50px 50px;
+    background-color: darkgrey;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-content: flex-start;
   }
-  .titulos-comentarios {
-    font-family: "Roboto", sans-serif;
-    font-size: 0.5cm;
-  }
-  textarea {
-    width: 370px;
-    height: 100px;
-  }
-  .cajas-foro {
+  .contentForum .secForo .user-coment1 .cajas-foro {
     margin-top: 50px;
     width: 350px;
     height: 100px;
   }
-  .comentar {
+  .contentForum .secForo .user-coment1 .cajas-foro textarea {
+    width: 370px;
+    height: 100px;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .titulos-comentarios {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5cm;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .comentar {
+    width: 70px;
+    height: 30px;
     margin-left: 300px;
     font-size: 0.3cm;
   }
-  .sTf {
-    margin-left: 25px;
-    margin-right: 25px;
-    padding: 0px;
+  .contentForum .secForo .user-coment1 .titulo-foro {
+    text-align: center;
+    font-size: 0.7cm;
+    font-family: "Roboto", sans-serif;
   }
-  .subtitulo {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 20px;
-  }
-  .tituloPagina {
-    font-size: 40px;
+  .contentForum .footerForo {
+    grid-area: pieFo;
   }
 }
-/* ------------------------------------------------------------------------------------------ */
-/* Reglas de estilo para pantallas con un ancho máximo de 1400px */
-@media screen and (min-width: 769px) and (max-width: 1400px) {
-  .card1 {
-    height: 250px;
-    width: 600px;
-  }
-  .card2 {
-    height: 250px;
-    width: 600px;
-  }
-  .card3 {
-    height: 250px;
-    width: 600px;
-  }
-  .card4 {
-    height: 250px;
-    width: 600px;
-  }
-  .img-merch {
-    width: 150px;
-    height: 150px;
-  }
-  .text-merch {
-    font-size: 0.3cm;
-  }
-  .carrito {
-    margin-top: 200px;
-    margin-right: 15px;
-    width: 30px;
-    height: 30px;
-  }
-  .imgCa {
-    width: 45px;
-    height: 45px;
-  }
-  .subtitulo {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-/* ------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 768px) and (max-width: 915px) {
-  .user-coment1 {
-    width: 600px;
-    height: 700px;
-    margin-left: 100px;
-    margin-right: 50px;
+  .contentForum {
+    color: white;
+    background-color: black;
+    background-image: url(http://www.solofondos.com/wp-content/uploads/2016/02/12486d9d5ec2f4d62c52669d6b30546d_w324_h576_sc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 500px 1fr 100px;
+    grid-template-areas: "headFo headFo headFo" "mainFo mainFo mainFo" "secFo secFo secFo" "pieFo pieFo pieFo";
   }
-  .titulos-comentarios {
+  .contentForum .tFo {
+    grid-area: mainFo;
+  }
+  .contentForum .tFo .tituloPagina {
+    text-align: center;
     font-family: "Roboto", sans-serif;
-    font-size: 0.5cm;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: aqua;
   }
-  textarea {
-    width: 500px;
-    height: 100px;
-  }
-  .cajas-foro {
-    margin-top: 30px;
-    width: 500px;
-    height: 150px;
-  }
-  .comentar {
-    margin-left: 430px;
-    font-size: 0.3cm;
-  }
-  .subtitulo {
-    margin-left: 20px;
-    margin-right: 20px;
+  .contentForum .tFo .subtitulo {
+    text-align: justify;
     font-size: 23px;
+    margin: 100px 20px 100px 20px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
   }
-  .tituloPagina {
-    font-size: 40px;
+  .contentForum .secForo {
+    grid-area: secFo;
   }
-}
-/* ------------------------------------------------------------------------------------------ */
-@media screen and (min-width: 915px) and (max-width: 1100px) {
-  .user-coment1 {
-    width: 600px;
-    height: 700px;
-    margin-left: 100px;
-    margin-right: 50px;
-  }
-  .titulos-comentarios {
+  .contentForum .secForo .list-foro {
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     font-family: "Roboto", sans-serif;
-    font-size: 0.5cm;
+    color: white;
   }
-  textarea {
-    width: 500px;
-    height: 100px;
+  .contentForum .secForo .list-foro li.list-foro2 {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 5px;
   }
-  .cajas-foro {
+  .contentForum .secForo .list-foro li.list-foro2 .menu-foro {
+    text-decoration: none;
+    font-family: "Star Jedi";
+    color: white;
+  }
+  .contentForum .secForo .user-coment1 {
+    width: 600px;
+    height: 650px;
+    padding: 0px 0px 0px 0px;
+    margin: 55px 0px 50px 50px;
+    background-color: darkgrey;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro {
     margin-top: 30px;
     width: 500px;
     height: 150px;
   }
-  .comentar {
+  .contentForum .secForo .user-coment1 .cajas-foro textarea {
+    width: 500px;
+    height: 100px;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .titulos-comentarios {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5cm;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .comentar {
+    width: 70px;
+    height: 30px;
     margin-left: 430px;
     font-size: 0.3cm;
   }
-  .subtitulo {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 25px;
+  .contentForum .secForo .user-coment1 .titulo-foro {
+    text-align: center;
+    font-size: 0.7cm;
+    font-family: "Roboto", sans-serif;
   }
-  .tituloPagina {
+  .contentForum .footerForo {
+    grid-area: pieFo;
+  }
+}
+@media screen and (min-width: 915px) and (max-width: 1100px) {
+  .contentForum {
+    color: white;
+    background-color: black;
+    background-image: url(http://www.solofondos.com/wp-content/uploads/2016/02/12486d9d5ec2f4d62c52669d6b30546d_w324_h576_sc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 500px 1fr 100px;
+    grid-template-areas: "headFo headFo headFo" "mainFo mainFo mainFo" "secFo secFo secFo" "pieFo pieFo pieFo";
+  }
+  .contentForum .tFo {
+    grid-area: mainFo;
+  }
+  .contentForum .tFo .tituloPagina {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
     font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: aqua;
+  }
+  .contentForum .tFo .subtitulo {
+    text-align: justify;
+    font-size: 25px;
+    margin: 100px 20px 100px 20px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
+  }
+  .contentForum .secForo {
+    grid-area: secFo;
+  }
+  .contentForum .secForo .list-foro {
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: "Roboto", sans-serif;
+    color: white;
+  }
+  .contentForum .secForo .list-foro li.list-foro2 {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 5px;
+  }
+  .contentForum .secForo .list-foro li.list-foro2 .menu-foro {
+    text-decoration: none;
+    font-family: "Star Jedi";
+    color: white;
+  }
+  .contentForum .secForo .user-coment1 {
+    width: 600px;
+    height: 700px;
+    padding: 0px 0px 0px 0px;
+    margin: 55px 50px 50px 100px;
+    background-color: darkgrey;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro {
+    margin-top: 30px;
+    width: 500px;
+    height: 150px;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro textarea {
+    width: 500px;
+    height: 100px;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .titulos-comentarios {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5cm;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .comentar {
+    width: 70px;
+    height: 30px;
+    margin-left: 430px;
+    font-size: 0.3cm;
+  }
+  .contentForum .secForo .user-coment1 .titulo-foro {
+    text-align: center;
+    font-size: 0.7cm;
+    font-family: "Roboto", sans-serif;
+  }
+  .contentForum .footerForo {
+    grid-area: pieFo;
   }
 }
-/* ------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 1100px) and (max-width: 1400px) {
-  .user-coment1 {
+  .contentForum {
+    color: white;
+    background-color: black;
+    background-image: url(http://www.solofondos.com/wp-content/uploads/2016/02/12486d9d5ec2f4d62c52669d6b30546d_w324_h576_sc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 500px 1fr 100px;
+    grid-template-areas: "headFo headFo headFo" "mainFo mainFo mainFo" "secFo secFo secFo" "pieFo pieFo pieFo";
+  }
+  .contentForum .tFo {
+    grid-area: mainFo;
+  }
+  .contentForum .tFo .tituloPagina {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: aqua;
+  }
+  .contentForum .tFo .subtitulo {
+    text-align: justify;
+    font-size: 30px;
+    margin: 100px 20px 100px 20px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
+  }
+  .contentForum .secForo {
+    grid-area: secFo;
+  }
+  .contentForum .secForo .list-foro {
+    margin-top: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 0.7cm;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin-left: 50px;
+  }
+  .contentForum .secForo .list-foro li.list-foro2 {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 5px;
+  }
+  .contentForum .secForo .list-foro li.list-foro2 .menu-foro {
+    text-decoration: none;
+    font-family: "Star Jedi";
+    color: white;
+  }
+  .contentForum .secForo .user-coment1 {
     width: 900px;
     height: 1000px;
-    margin-left: 200px;
+    padding: 20px 20px 20px 20px;
+    margin: 55px 550px 50px 200px;
+    background-color: darkgrey;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
   }
-  .list-foro {
-    margin-top: 50px;
+  .contentForum .secForo .user-coment1 .cajas-foro {
+    margin-top: 30px;
   }
-  .comentar {
+  .contentForum .secForo .user-coment1 .cajas-foro textarea {
+    width: 800px;
+    height: 200px;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .titulos-comentarios {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.7cm;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .comentar {
+    width: 70px;
+    height: 30px;
+    margin-left: 735px;
     font-size: 0.3cm;
   }
-  .subtitulo {
-    margin-left: 20px;
-    margin-right: 20px;
+  .contentForum .secForo .user-coment1 .titulo-foro {
+    text-align: center;
+    font-size: 0.7cm;
+    font-family: "Roboto", sans-serif;
+  }
+  .contentForum .footerForo {
+    grid-area: pieFo;
   }
 }
-/* ------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 1400px) and (max-width: 1885px) {
-  .user-coment1 {
+  .contentForum {
+    color: white;
+    background-color: black;
+    background-image: url(http://www.solofondos.com/wp-content/uploads/2016/02/12486d9d5ec2f4d62c52669d6b30546d_w324_h576_sc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 500px 1fr 100px;
+    grid-template-areas: "headFo headFo headFo" "mainFo mainFo mainFo" "secFo secFo secFo" "pieFo pieFo pieFo";
+  }
+  .contentForum .tFo {
+    grid-area: mainFo;
+  }
+  .contentForum .tFo .tituloPagina {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: aqua;
+  }
+  .contentForum .tFo .subtitulo {
+    text-align: justify;
+    font-size: 30px;
+    margin: 100px 20px 100px 20px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
+  }
+  .contentForum .secForo {
+    grid-area: secFo;
+  }
+  .contentForum .secForo .list-foro {
+    margin-top: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 0.7cm;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin-left: 50px;
+  }
+  .contentForum .secForo .list-foro li.list-foro2 {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 5px;
+  }
+  .contentForum .secForo .list-foro li.list-foro2 .menu-foro {
+    text-decoration: none;
+    font-family: "Star Jedi";
+    color: white;
+  }
+  .contentForum .secForo .user-coment1 {
     width: 900px;
     height: 1000px;
+    padding: 20px 20px 20px 20px;
+    margin: 55px 550px 50px 200px;
+    background-color: darkgrey;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
   }
-  .list-foro {
-    margin-top: 50px;
+  .contentForum .secForo .user-coment1 .cajas-foro {
+    margin-top: 30px;
   }
-  .comentar {
+  .contentForum .secForo .user-coment1 .cajas-foro textarea {
+    width: 800px;
+    height: 200px;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .titulos-comentarios {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.7cm;
+  }
+  .contentForum .secForo .user-coment1 .cajas-foro .comentar {
+    width: 70px;
+    height: 30px;
+    margin-left: 735px;
     font-size: 0.3cm;
+  }
+  .contentForum .secForo .user-coment1 .titulo-foro {
+    text-align: center;
+    font-size: 0.7cm;
+    font-family: "Roboto", sans-serif;
+  }
+  .contentForum .footerForo {
+    grid-area: pieFo;
   }
 }
 * {
