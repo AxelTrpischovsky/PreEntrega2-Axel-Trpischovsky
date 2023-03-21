@@ -1,6 +1,13 @@
+$color_1: white;
+$color_2: aqua;
+$color_3: yellow;
+$font-family_1: 'Roboto', sans-serif;
+$font-family_2: 'Roboto:', sans-serif;
+$background-color_1: black;
+
 .contentSeries{
-    color: white;
-    background-color: black;
+    color: $color_1;
+    background-color: $background-color_1;
     background-image: url(https://andro4all.com/hero/2021/06/La-Remesa-Mala-es-una-de-las-ultimas-series-en-incorporarse-a-Disney.jpeg?width=1200);
     background-position: center;
     background-size: cover;
@@ -19,18 +26,18 @@
         grid-area: mainS;
         .tituloPagina {
             text-align: center;
-            font-family: 'Roboto', sans-serif;
+            font-family: $font-family_1;
             font-size: 50px;
             margin-top: 100px;
             margin-bottom: 100px;
-            color: aqua;
+            color: $color_2;
         }
         .subtitulo {
             text-align: justify;
             font-size: 30px;
             margin: 100px 250px 100px 250px;
-            font-family:'Roboto:', sans-serif;
-            color: yellow;
+            font-family: $font-family_2;
+            color: $color_3;
         }
     }
     .capitulos{grid-area: capS;
@@ -59,8 +66,8 @@
 
 @media screen and (min-width: 1px) and (max-width: 499px) {
     .contentSeries{
-        color: white;
-        background-color: black;
+        color: $color_1;
+        background-color: $background-color_1;
         background-image: url(https://andro4all.com/hero/2021/06/La-Remesa-Mala-es-una-de-las-ultimas-series-en-incorporarse-a-Disney.jpeg?width=1200);
         background-position: center;
         background-size: cover;
@@ -81,18 +88,18 @@
             margin-top: 50px;
             .tituloPagina {
                 text-align: center;
-                font-family: 'Roboto', sans-serif;
+                font-family: $font-family_1;
                 font-size: 30px;
                 margin-top: 100px;
                 margin-bottom: 100px;
-                color: aqua;
+                color: $color_2;
             }
             .subtitulo {
                 text-align: justify;
                 font-size: 20px;
                 margin: 100px 20px 100px 20px;
-                font-family:'Roboto:', sans-serif;
-                color: yellow;
+                font-family: $font-family_2;
+                color: $color_3;
             }
         }
         .capitulos{grid-area: capS;
@@ -125,8 +132,8 @@
 /* ------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 500px) and (max-width: 576px) {
     .contentSeries{
-        color: white;
-        background-color: black;
+        color: $color_1;
+        background-color: $background-color_1;
         background-image: url(https://andro4all.com/hero/2021/06/La-Remesa-Mala-es-una-de-las-ultimas-series-en-incorporarse-a-Disney.jpeg?width=1200);
         background-position: center;
         background-size: cover;
@@ -147,18 +154,18 @@
             margin-top: 50px;
             .tituloPagina {
                 text-align: center;
-                font-family: 'Roboto', sans-serif;
+                font-family: $font-family_1;
                 font-size: 30px;
                 margin-top: 100px;
                 margin-bottom: 100px;
-                color: aqua;
+                color: $color_2;
             }
             .subtitulo {
                 text-align: justify;
                 font-size: 20px;
                 margin: 100px 20px 100px 20px;
-                font-family:'Roboto:', sans-serif;
-                color: yellow;
+                font-family: $font-family_2;
+                color: $color_3;
             }
         }
         .capitulos{grid-area: capS;
@@ -192,8 +199,8 @@
 /* Reglas de estilo para pantallas con un ancho máximo de 768px */
 @media screen and (min-width: 577px) and (max-width: 768px) {
     .contentSeries{
-        color: white;
-        background-color: black;
+        color: $color_1;
+        background-color: $background-color_1;
         background-image: url(https://andro4all.com/hero/2021/06/La-Remesa-Mala-es-una-de-las-ultimas-series-en-incorporarse-a-Disney.jpeg?width=1200);
         background-position: center;
         background-size: cover;
@@ -214,18 +221,18 @@
             margin-top: 50px;
             .tituloPagina {
                 text-align: center;
-                font-family: 'Roboto', sans-serif;
+                font-family: $font-family_1;
                 font-size: 30px;
                 margin-top: 100px;
                 margin-bottom: 100px;
-                color: aqua;
+                color: $color_2;
             }
             .subtitulo {
                 text-align: justify;
                 font-size: 20px;
                 margin: 100px 20px 100px 20px;
-                font-family:'Roboto:', sans-serif;
-                color: yellow;
+                font-family: $font-family_2;
+                color: $color_3;
             }
         }
         .capitulos{grid-area: capS;
@@ -259,8 +266,8 @@
 /* Reglas de estilo para pantallas con un ancho máximo de 1400px */
 @media screen and (min-width: 769px) and (max-width: 1400px) {
     .contentSeries{
-        color: white;
-        background-color: black;
+        color: $color_1;
+        background-color: $background-color_1;
         background-image: url(https://andro4all.com/hero/2021/06/La-Remesa-Mala-es-una-de-las-ultimas-series-en-incorporarse-a-Disney.jpeg?width=1200);
         background-position: center;
         background-size: cover;
@@ -281,18 +288,18 @@
             margin-top: 50px;
             .tituloPagina {
                 text-align: center;
-                font-family: 'Roboto', sans-serif;
+                font-family: $font-family_1;
                 font-size: 30px;
                 margin-top: 100px;
                 margin-bottom: 100px;
-                color: aqua;
+                color: $color_2;
             }
             .subtitulo {
                 text-align: justify;
                 font-size: 20px;
                 margin: 100px 80px 100px 80px;
-                font-family:'Roboto:', sans-serif;
-                color: yellow;
+                font-family: $font-family_2;
+                color: $color_3;
             }
         }
         .capitulos{grid-area: capS;
