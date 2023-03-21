@@ -808,6 +808,7 @@ footer .redes .redesList .imgRedes:hover {
   color: white;
 }
 .contentForum .secForo .user-coment1 {
+  border: 2px solid black;
   padding: 20px 20px 20px 20px;
   margin: 55px 550px 50px 500px;
   background-color: darkgrey;
@@ -906,7 +907,7 @@ footer .redes .redesList .imgRedes:hover {
     width: 300px;
     height: 600px;
     padding: 0px 0px 0px 0px;
-    margin: 55px 0px 50px 20px;
+    margin: 55px 0px 50px 50px;
     background-color: darkgrey;
     border-bottom-right-radius: 35px;
     border-top-left-radius: 35px;
