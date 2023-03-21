@@ -6,142 +6,11 @@
 @import "headerGeneral";
 @import "index";
 @import "footerGeneral";
+@import "forum";
 
 *{ 
     margin: 0;
     padding: 0;
-}
-
-
-
-
-
-/* --------------------------------------------------------------------------------------------- */
-.tituloPagina {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    color: aqua;
-}
-
-.subtitulo {
-    text-align: justify;
-    font-size: 30px;
-    margin: 100px 250px 100px 250px;
-    font-family: "Roboto:", sans-serif;
-    color: yellow;
-}
-
-.contentForum{
-    color: white;
-    background-color: black;
-    background-image: url(http://www.solofondos.com/wp-content/uploads/2016/02/12486d9d5ec2f4d62c52669d6b30546d_w324_h576_sc.jpg);
-    background-position: center;
-    background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 33% 33% 34%;
-    grid-template-rows: 100px 500px 1fr 100px;
-    grid-template-areas: 
-    "headFo headFo headFo"
-    "mainFo mainFo mainFo"
-    "secFo secFo secFo"
-    "pieFo pieFo pieFo";
-}
-
-.tFo{
-    grid-area: mainFo;
-}
-
-.secForo{
-    grid-area: secFo ;
-}
-
-.footerForo{
-    grid-area: pieFo ;
-}
-
-.list-foro{
-    margin-left: 150px;
-    list-style-type: none;
-}
-
-
-
-.user-coment1{
-    padding: 20px 20px 20px 20px;
-    margin: 55px 550px 50px 500px;
-    background-color:darkgrey;
-    border-bottom-right-radius:  35px;
-    border-top-left-radius: 35px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-
-legend{
-    font-size: 0.7cm;
-    font-family: 'Roboto', sans-serif;    
-    text-align: justify;
-}
-
-
-textarea{
-    width: 800px;
-    height: 200px;
-}
-
-
-
-.list-foro{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    font-size: 0.7cm;
-    font-family: 'Roboto', sans-serif;    
-    color: white;
-    margin-left: 50px;
-}
-
-.menu-foro{
-    text-decoration: none;
-    font-family: "Star Jedi";
-    color: white;
-}
-
-li.list-foro2{
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.836);
-    border-radius: 5px;
-
-}
-
-.titulo-foro{
-    text-align: center;
-}
-
-.cajas-foro{
-    margin-top: 30px;
-}
-
-.titulos-comentarios{
-    font-family:'Roboto', sans-serif; 
-    font-size: 0.7cm;
-}
-
-.comentar{
-    width: 70px;
-    height: 30px;
-    margin-left: 735px;
-    font-size: 0.3cm;
-    
 }
 
 /* --------------------------------------------------------------------------------------------- */
@@ -440,51 +309,7 @@ h2.subtitulo.mSt{
     margin-bottom: 0px;
 }
 
-form.user-coment1{
-    width: 350px;
-    height: 500px;
-margin-top: 0px;
-margin-left: 15px;
-margin-right: 0px;
-margin-bottom: 20px;
-}
 
-legend.titulo-foro{
-    font-size: 0.4cm;
-    margin-bottom: 0px;
-    margin-top: 10px;
-}
-
-.list-foro{
-font-size: 0.5cm;
-padding-left: 0px;
-margin-left: 0px;}
-
-.titulos-comentarios{
-    font-family:'Roboto', sans-serif; 
-    font-size: 0.4cm;
-}
-
-textarea.inFo{
-    width: 300px;
-    height: 50px;
-}
-div.cajas-foro{
-    margin-top: 30px;
-    width: 300px;
-    height: 150px;
-}
-
-div.cajas-foro.cajFo2{
-    margin-top: 0px;
-}
-
-input.comentar{
-    margin-left: 230px;
-    height: 30px;
-    font-size: 0.3cm;
-
-}
 
 }
 /* ------------------------------------------------------------------------------------------ */
@@ -558,44 +383,6 @@ input.comentar{
     .imgCa{
         width: 20px;
         height: 20px;
-    }
-
-ol.list-foro{
-    padding: 0px;
-    margin: 0px;
-}
-
-    .user-coment1{
-        width: 430px;
-        height: 600px;
-        margin-left: 50px;
-        align-content: flex-start;
-    }
-
-    .titulos-comentarios{
-        font-family:'Roboto', sans-serif; 
-        font-size: 0.5cm;
-    }
-
-    textarea{
-        width: 370px;
-        height: 100px;
-    }
-    .cajas-foro{
-        margin-top: 50px;
-        width: 350px;
-        height: 100px;
-    }
-
-    .comentar{
-        margin-left: 300px;
-        font-size: 0.3cm;
-    }
-
-    .sTf{
-        margin-left: 25px;
-        margin-right: 25px;
-        padding: 0px;
     }
 
     }
@@ -676,46 +463,6 @@ ol.list-foro{
         height: 30px;
     }
 
-    ol.list-foro{
-        padding: 0px;
-        margin: 0px;
-    }
-    
-        .user-coment1{
-            width: 500px;
-            height: 600px;
-            margin-left: 50px;
-            align-content: flex-start;
-        }
-    
-        .titulos-comentarios{
-            font-family:'Roboto', sans-serif; 
-            font-size: 0.5cm;
-        }
-    
-        textarea{
-            width: 370px;
-            height: 100px;
-        }
-        .cajas-foro{
-            margin-top: 50px;
-            width: 350px;
-            height: 100px;
-        }
-    
-        .comentar{
-            margin-left: 300px;
-            font-size: 0.3cm;
-        }
-    
-        .sTf{
-            margin-left: 25px;
-            margin-right: 25px;
-            padding: 0px;
-        }
-
-    }
-
     /* ------------------------------------------------------------------------------------------ */
 
     /* Reglas de estilo para pantallas con un ancho máximo de 1400px */
@@ -761,106 +508,7 @@ ol.list-foro{
     height: 45px;
 }
 }
-
-
-
-
-/* ------------------------------------------------------------------------------------------ */
-    
-@media screen and (min-width: 768px) and (max-width: 915px) {
-    .user-coment1{
-        width: 600px;
-        height: 700px;
-        margin-left: 100px;
-        margin-right: 50px;
-    }
-
-    .titulos-comentarios{
-        font-family:'Roboto', sans-serif; 
-        font-size: 0.5cm;
-    }
-
-    textarea{
-        width: 500px;
-        height: 100px;
-    }
-    .cajas-foro{
-        margin-top: 30px;
-        width: 500px;
-        height: 150px;
-    }
-
-    .comentar{
-        margin-left: 430px;
-        font-size: 0.3cm;
-    }
-
 }
 
-/* ------------------------------------------------------------------------------------------ */
-    
-@media screen and (min-width: 915px) and (max-width: 1100px) {
-
-    .user-coment1{
-        width: 600px;
-        height: 700px;
-        margin-left: 100px;
-        margin-right: 50px;
-    }
-
-    .titulos-comentarios{
-        font-family:'Roboto', sans-serif; 
-        font-size: 0.5cm;
-    }
-
-    textarea{
-        width: 500px;
-        height: 100px;
-    }
-    .cajas-foro{
-        margin-top: 30px;
-        width: 500px;
-        height: 150px;
-    }
-
-    .comentar{
-        margin-left: 430px;
-        font-size: 0.3cm;
-    }
 
 
-
-}
-
-/* ------------------------------------------------------------------------------------------ */
-
-@media screen and (min-width: 1100px) and (max-width: 1400px) {
-    .user-coment1{
-        width: 900px;
-        height: 1000px;
-        margin-left: 200px;
-    }
-    .list-foro{
-        margin-top: 50px;
-}
-.comentar{
-    font-size: 0.3cm;
-}
-}
-
-/* ------------------------------------------------------------------------------------------ */
-
-    @media screen and (min-width: 1400px) and (max-width: 1885px) {
-        .user-coment1{
-            width: 900px;
-            height: 1000px;
-
-        }
-        .list-foro{
-            margin-top: 50px;
-
-        }
-        .comentar{
-            font-size: 0.3cm;
-        }
-    }
