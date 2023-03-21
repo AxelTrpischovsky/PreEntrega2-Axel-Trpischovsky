@@ -115,79 +115,9 @@
     flex-direction: column;
 }
 
-/* --------------------------------------------------------------------------------------------- */
-
-.contentMovies{
-    color: white;
-    background-color: black;
-    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/df4td7f-518bd788-ce19-4efc-9f39-6cafbc0f4074.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyOThiYWMwLWI4YmYtNGM4MC1hZjY3LTcyNWMxMjcyZGJiMFwvZGY0dGQ3Zi01MThiZDc4OC1jZTE5LTRlZmMtOWYzOS02Y2FmYmMwZjQwNzQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.j3-1AZN3ObJPAdisjOrDTEPF4vt210lwa-cwcXhIlWI);
-    background-position: center;
-    background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 33% 33% 34%;
-    grid-template-rows: 100px 1fr 1fr 100px;
-    grid-template-areas: 
-    "headM headM headM"
-    "mainM mainM mainM"
-    "capM capM capM"
-    "pieM pieM pieM";
-}
-
-.tMo{
-    grid-area: mainM;
-}
-
-.secPelis{grid-area: capM;}
-
-.footerM{grid-area: pieM;}
-
-
-.pelis{
-    width: 300px;
-    height: 168px;
-    padding: 10px;
-    border-radius: 35px;
-}
-
-.content-pelis{
-    margin-left: 30px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.pelis:hover{
-    transform: scale(1.3);
-    transition-duration: 1s;
-}
-
-
-/* ------------------------------------------------------------------------------------------------ */
-
-
-/* --------------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 1px) and (max-width: 499px) {
-        .tMo{
-            height: 500px;
-        }
-    
-        .secPelis{
-            margin-bottom: 200px;
-
-        }
-    section.secPelis{
-        margin-left: 5px;
-    }
-        .contentMovies{
-            height: 2000px;
-        }
-    
-        .card1{
+    .card1{
             height: 100px;
             width: 300px;
         }
@@ -248,19 +178,6 @@ h2.subtitulo.mSt{
 }
 /* ------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 500px) and (max-width: 576px) {
-    .tMo{
-        height: 500px;
-    }
-
-    .secPelis{
-        margin-bottom: 200px;
-        margin-left: 100px;
-    }
-
-    .contentMovies{
-        height: 2000px;
-    }
-
     .card1{
         height: 100px;
         width: 300px;
@@ -310,19 +227,6 @@ h2.subtitulo.mSt{
 
     /* Reglas de estilo para pantallas con un ancho máximo de 768px */
     @media screen and (min-width: 577px) and (max-width: 768px) {
-    .pelis{
-        width: 200px;
-        height: 168px;
-    }
-    
-    .secPelis{
-        margin-bottom: 200px;
-    }
-
-    .contentMovies{
-        height: 1000px;
-    }
-
     .card1{
         height: 150px;
         width: 400px;
