@@ -1,0 +1,1016 @@
+$color_1: white;
+$color_2: aqua;
+$color_3: yellow;
+$font-family_1: 'Roboto', sans-serif;
+$font-family_2: 'Roboto:', sans-serif;
+$background-color_1: black;
+$background-color_2: rgba(0, 0, 0, 0.952);
+$background-color_3: cadetblue;
+.contentMerch{
+    color: $color_1;
+    background-color: $background-color_1;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1041px-Star_Wars_Logo.svg.png);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 500px 1fr 100px;
+    grid-template-areas: 
+    "headMe headMe headMe"
+    "mainMe mainMe mainMe"
+    "secM secM secM"
+    "pieMer pieMer pieMer";
+    .tMe{
+        grid-area: mainMe;
+        height: 500px;
+        .tituloPagina {
+            text-align: center;
+            font-family: $font-family_1;
+            font-size: 50px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            color: $color_2;
+        }
+        .subtitulo {
+            text-align: justify;
+            font-size: 30px;
+            margin: 100px 250px 100px 250px;
+            font-family:$font-family_2;
+            color: $color_3;
+        }
+        .mSt{
+            text-shadow:$color_1;
+            background-color:$background-color_2;
+            border-radius: 5px;
+        }
+    }
+    .padre-merch{
+        grid-area: secM;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: 0px;
+        .card1{
+            display: flex;
+            margin-bottom: 20px;
+            background-color: $background-color_3;
+        
+            height: 350px;
+            width: 800px;
+            .img-merch{
+                width: 300px;
+                height: 300px;
+                border-radius: 6px;
+                margin: 20px 20px 20px 20px;
+            }
+            .img-merch, .text-merch{
+                display: inline-block;
+            }
+            
+            .text-merch{
+                margin-top: 20px;
+                text-align:justify;
+                color: $color_1;
+                font-size: 0.4cm;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+            .carrito{
+                margin-top: 300px;
+                flex-direction: column;
+            }
+            
+            .text-merch, .carrito{
+                flex-direction: column;
+            }
+        }
+        .card2{
+            display: flex;
+            margin-bottom: 20px;
+            background-color: $background-color_3;
+            height: 350px;
+            width: 800px;
+            .img-merch{
+                width: 300px;
+                height: 300px;
+                border-radius: 6px;
+                margin: 20px 20px 20px 20px;
+            }
+            .img-merch, .text-merch{
+                display: inline-block;
+            }
+            
+            .text-merch{
+                margin-top: 20px;
+                text-align:justify;
+                color: $color_1;
+                font-size: 0.4cm;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+            .carrito{
+                margin-top: 300px;
+                flex-direction: column;
+            }
+            
+            .text-merch, .carrito{
+                flex-direction: column;
+            }
+        }
+        .card3{
+            display: flex;
+            margin-bottom: 20px;
+            background-color: $background-color_3;
+            height: 350px;
+            width: 800px;
+            .img-merch{
+                width: 300px;
+                height: 300px;
+                border-radius: 6px;
+                margin: 20px 20px 20px 20px;
+            }
+            .img-merch, .text-merch{
+                display: inline-block;
+            }
+            
+            .text-merch{
+                margin-top: 20px;
+                text-align:justify;
+                color: $color_1;
+                font-size: 0.4cm;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+            .carrito{
+                margin-top: 300px;
+                flex-direction: column;
+            }
+            
+            .text-merch, .carrito{
+                flex-direction: column;
+            }
+        }
+        .card4{
+            display: flex;
+            margin-bottom: 20px;
+            background-color: $background-color_3;
+            height: 350px;
+            width: 800px;
+            .img-merch{
+                width: 300px;
+                height: 300px;
+                border-radius: 6px;
+                margin: 20px 20px 20px 20px;
+            }
+            .img-merch, .text-merch{
+                display: inline-block;
+            }
+            
+            .text-merch{
+                margin-top: 20px;
+                text-align:justify;
+                color: $color_1;
+                font-size: 0.4cm;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+            .carrito{
+                margin-top: 300px;
+                flex-direction: column;
+            }
+            
+            .text-merch, .carrito{
+                flex-direction: column;
+            }
+        }
+    }
+    .pieMe{
+        grid-area: pieMer;
+    }
+}
+@media screen and (min-width: 1px) and (max-width: 499px) {
+    .contentMerch{
+        color: $color_1;
+        background-color: $background-color_1;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1041px-Star_Wars_Logo.svg.png);
+        background-position: center;
+        background-size: cover;
+        background-position-y: center;
+        background-attachment: fixed;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+        grid-template-rows: 100px 500px 1fr 100px;
+        grid-template-areas: 
+        "headMe headMe headMe"
+        "mainMe mainMe mainMe"
+        "secM secM secM"
+        "pieMer pieMer pieMer";
+        .tMe{
+            grid-area: mainMe;
+            height: 500px;
+            .tituloPagina {
+                text-align: center;
+                font-family: $font-family_1;
+                font-size: 30px;
+                margin-top: 150px;
+                margin-bottom: 50px;
+                color: $color_2;
+            }
+            .subtitulo {
+                text-align: justify;
+                font-size: 18px;
+                margin: 50px 20px 100px 20px;
+                font-family:$font-family_2;
+                color: $color_3;
+            }
+            .mSt{
+                text-shadow:$color_1;
+                background-color: $background-color_2;
+                border-radius: 5px;
+            }
+        }
+        .padre-merch{
+            grid-area: secM;
+            margin-left: 30%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-left: 0px;
+            .card1{
+                display: flex;
+                margin-bottom: 20px;
+                background-color: $background-color_3;
+                height: 100px;
+                width: 300px;
+                .img-merch{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 6px;
+                    margin: 20px 20px 20px 20px;
+                }
+                .img-merch, .text-merch{
+                    display: inline-block;
+                }
+                
+                .text-merch{
+                    color: $color_1;
+                    margin-top: 20px;
+                    font-size: 0.13cm;
+                    width: 300px;
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    text-align: justify;
+                }
+                .carrito{
+                    margin-top: 75px;
+                    margin-right: 15px;
+                    width: 15px;
+                    height: 15px;
+                    flex-direction: column;
+                }
+                
+                .text-merch, .carrito{
+                    flex-direction: column;
+                }
+            }
+            .card2{
+                display: flex;
+                margin-bottom: 20px;
+                background-color: $background-color_3;
+                height: 100px;
+                width: 300px;
+                .img-merch{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 6px;
+                    margin: 20px 20px 20px 20px;
+                }
+                .img-merch, .text-merch{
+                    display: inline-block;
+                }
+                
+                .text-merch{
+                    margin-top: 20px;
+                    color: $color_1;
+                    font-size: 0.13cm;
+                    width: 300px;
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    text-align: justify;
+                }
+                .carrito{
+                    margin-top: 75px;
+                    margin-right: 15px;
+                    width: 15px;
+                    height: 15px;
+                    flex-direction: column;
+                }
+                
+                .text-merch, .carrito{
+                    flex-direction: column;
+                }
+            }
+            .card3{
+                display: flex;
+                margin-bottom: 20px;
+                background-color: $background-color_3;
+                height: 100px;
+                width: 300px;
+                .img-merch{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 6px;
+                    margin: 20px 20px 20px 20px;
+                }
+                .img-merch, .text-merch{
+                    display: inline-block;
+                }
+                
+                .text-merch{
+                    margin-top: 20px;
+                    color: $color_1;
+                    font-size: 0.13cm;
+                    width: 300px;
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    text-align: justify;
+                }
+                .carrito{
+                    margin-top: 75px;
+                    margin-right: 15px;
+                    width: 15px;
+                    height: 15px;
+                    flex-direction: column;
+                }
+                
+                .text-merch, .carrito{
+                    flex-direction: column;
+                }
+            }
+            .card4{
+                display: flex;
+                margin-bottom: 20px;
+                background-color: $background-color_3;
+                height: 100px;
+                width: 300px;
+                .img-merch{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 6px;
+                    margin: 20px 20px 20px 20px;
+                }
+                .img-merch, .text-merch{
+                    display: inline-block;
+                }
+                
+                .text-merch{
+                    margin-top: 20px;
+                    color: $color_1;
+                    font-size: 0.13cm;
+                    width: 300px;
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    text-align: justify;
+                }
+                .carrito{
+                    margin-top: 75px;
+                    margin-right: 15px;
+                    width: 15px;
+                    height: 15px;
+                    flex-direction: column;
+                }
+                
+                .text-merch, .carrito{
+                    flex-direction: column;
+                }
+            }
+        }
+        .pieMe{
+            grid-area: pieMer;
+        }
+    }
+    .imgCa{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 576px) {
+    .contentMerch{
+        color: $color_1;
+        background-color: $background-color_1;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1041px-Star_Wars_Logo.svg.png);
+        background-position: center;
+        background-size: cover;
+        background-position-y: center;
+        background-attachment: fixed;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+        grid-template-rows: 100px 500px 1fr 100px;
+        grid-template-areas: 
+        "headMe headMe headMe"
+        "mainMe mainMe mainMe"
+        "secM secM secM"
+        "pieMer pieMer pieMer";
+        .tMe{
+            grid-area: mainMe;
+            height: 500px;
+            .tituloPagina {
+                text-align: center;
+                font-family: $font-family_1;
+                font-size: 35px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                color: $color_2;
+            }
+            .subtitulo {
+                text-align: justify;
+                font-size: 20px;
+                margin: 100px 40px 100px 40px;
+                font-family:$font-family_2;
+                color: $color_3;
+            }
+            .mSt{
+                text-shadow:$color_1;
+                background-color:$background-color_2;
+                border-radius: 5px;
+            }
+        }
+        .padre-merch{
+            grid-area: secM;
+            margin-left: 30%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-left: 0px;
+            .card1{
+                display: flex;
+                margin-bottom: 20px;
+                background-color: $background-color_3;
+                height: 100px;
+                width: 300px;
+                .img-merch{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 6px;
+                    margin: 20px 20px 20px 20px;
+                }
+                .img-merch, .text-merch{
+                    display: inline-block;
+                }
+                
+                .text-merch{
+                    color: $color_1;
+                    margin-top: 20px;
+                    font-size: 0.13cm;
+                    width: 300px;
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    text-align: justify;
+                }
+                .carrito{
+                    margin-top: 75px;
+                    margin-right: 15px;
+                    width: 15px;
+                    height: 15px;
+                    flex-direction: column;
+                }
+                
+                .text-merch, .carrito{
+                    flex-direction: column;
+                }
+            }
+            .card2{
+                display: flex;
+                margin-bottom: 20px;
+                background-color: $background-color_3;
+                height: 100px;
+                width: 300px;
+                .img-merch{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 6px;
+                    margin: 20px 20px 20px 20px;
+                }
+                .img-merch, .text-merch{
+                    display: inline-block;
+                }
+                
+                .text-merch{
+                    margin-top: 20px;
+                    color: $color_1;
+                    font-size: 0.13cm;
+                    width: 300px;
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    text-align: justify;
+                }
+                .carrito{
+                    margin-top: 75px;
+                    margin-right: 15px;
+                    width: 15px;
+                    height: 15px;
+                    flex-direction: column;
+                }
+                
+                .text-merch, .carrito{
+                    flex-direction: column;
+                }
+            }
+            .card3{
+                display: flex;
+                margin-bottom: 20px;
+                background-color: $background-color_3;
+                height: 100px;
+                width: 300px;
+                .img-merch{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 6px;
+                    margin: 20px 20px 20px 20px;
+                }
+                .img-merch, .text-merch{
+                    display: inline-block;
+                }
+                
+                .text-merch{
+                    margin-top: 20px;
+                    color: $color_1;
+                    font-size: 0.13cm;
+                    width: 300px;
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    text-align: justify;
+                }
+                .carrito{
+                    margin-top: 75px;
+                    margin-right: 15px;
+                    width: 15px;
+                    height: 15px;
+                    flex-direction: column;
+                }
+                
+                .text-merch, .carrito{
+                    flex-direction: column;
+                }
+            }
+            .card4{
+                display: flex;
+                margin-bottom: 20px;
+                background-color: $background-color_3;
+                height: 100px;
+                width: 300px;
+                .img-merch{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 6px;
+                    margin: 20px 20px 20px 20px;
+                }
+                .img-merch, .text-merch{
+                    display: inline-block;
+                }
+                
+                .text-merch{
+                    margin-top: 20px;
+                    color: $color_1;
+                    font-size: 0.13cm;
+                    width: 300px;
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    text-align: justify;
+                }
+                .carrito{
+                    margin-top: 75px;
+                    margin-right: 15px;
+                    width: 15px;
+                    height: 15px;
+                    flex-direction: column;
+                }
+                
+                .text-merch, .carrito{
+                    flex-direction: column;
+                }
+            }
+        }
+        .pieMe{
+            grid-area: pieMer;
+        }
+    }
+    .imgCa{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .contentMerch{
+            color: $color_1;
+            background-color: $background-color_1;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1041px-Star_Wars_Logo.svg.png);
+            background-position: center;
+            background-size: cover;
+            background-position-y: center;
+            background-attachment: fixed;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 33% 33% 34%;
+            grid-template-rows: 100px 500px 1fr 100px;
+            grid-template-areas: 
+            "headMe headMe headMe"
+            "mainMe mainMe mainMe"
+            "secM secM secM"
+            "pieMer pieMer pieMer";
+            .tMe{
+                grid-area: mainMe;
+                height: 500px;
+                .tituloPagina {
+                    text-align: center;
+                    font-family: $font-family_1;
+                    font-size: 40px;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    color: $color_2;
+                }
+                .subtitulo {
+                    text-align: justify;
+                    font-size: 25px;
+                    margin: 100px 40px 100px 40px;
+                    font-family:$font-family_2;
+                    color: $color_3;
+                }
+                .mSt{
+                    text-shadow:$color_1;
+                    background-color:$background-color_2;
+                    border-radius: 5px;
+                }
+            }
+            .padre-merch{
+                grid-area: secM;
+                margin-left: 30%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-left: 0px;
+                .card1{
+                    display: flex;
+                    margin-bottom: 20px;
+                    background-color: $background-color_3;
+                    height: 150px;
+                    width: 400px;
+                    .img-merch{
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 6px;
+                        margin: 20px 20px 20px 20px;
+                    }
+                    .img-merch, .text-merch{
+                        display: inline-block;
+                    }
+                    
+                    .text-merch{
+                        margin-top: 20px;
+                        font-size: 0.20cm;
+                        width: 300px;
+                        margin-right: 0px;
+                        margin-bottom: 0px;
+                        text-align: justify;
+                    }
+                    .carrito{
+                        margin-top: 120px;
+                        margin-right: 15px;
+                        width: 15px;
+                        height: 15px;
+                        flex-direction: column;
+                    }
+                    
+                    .text-merch, .carrito{
+                        flex-direction: column;
+                    }
+                }
+                .card2{
+                    display: flex;
+                    margin-bottom: 20px;
+                    background-color: $background-color_3;
+                    height: 150px;
+                    width: 400px;
+                    .img-merch{
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 6px;
+                        margin: 20px 20px 20px 20px;
+                    }
+                    .img-merch, .text-merch{
+                        display: inline-block;
+                    }
+                    
+                    .text-merch{
+                        margin-top: 20px;
+                        color: $color_1;
+                        font-size: 0.20cm;
+                        width: 300px;
+                        margin-right: 0px;
+                        margin-bottom: 0px;
+                        text-align: justify;
+                    }
+                    .carrito{
+                        margin-top: 120px;
+                        margin-right: 15px;
+                        width: 15px;
+                        height: 15px;
+                        flex-direction: column;
+                    }
+                    
+                    .text-merch, .carrito{
+                        flex-direction: column;
+                    }
+                }
+                .card3{
+                    display: flex;
+                    margin-bottom: 20px;
+                    background-color: $background-color_3;
+                    height: 150px;
+                    width: 400px;
+                    .img-merch{
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 6px;
+                        margin: 20px 20px 20px 20px;
+                    }
+                    .img-merch, .text-merch{
+                        display: inline-block;
+                    }
+                    
+                    .text-merch{
+                        margin-top: 20px;
+                        color: $color_1;
+                        font-size: 0.20cm;
+                        width: 300px;
+                        margin-right: 0px;
+                        margin-bottom: 0px;
+                        text-align: justify;
+                    }
+                    .carrito{
+                        margin-top: 120px;
+                        margin-right: 15px;
+                        width: 15px;
+                        height: 15px;
+                        flex-direction: column;
+                    }
+                    
+                    .text-merch, .carrito{
+                        flex-direction: column;
+                    }
+                }
+                .card4{
+                    display: flex;
+                    margin-bottom: 20px;
+                    background-color: $background-color_3;
+                    height: 150px;
+                    width: 400px;
+                    .img-merch{
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 6px;
+                        margin: 20px 20px 20px 20px;
+                    }
+                    .img-merch, .text-merch{
+                        display: inline-block;
+                    }
+                    
+                    .text-merch{
+                        margin-top: 20px;
+                        color: $color_1;
+                        font-size: 0.20cm;
+                        width: 300px;
+                        margin-right: 0px;
+                        margin-bottom: 0px;
+                        text-align: justify;
+                    }
+                    .carrito{
+                        margin-top: 120px;
+                        margin-right: 15px;
+                        width: 15px;
+                        height: 15px;
+                        flex-direction: column;
+                    }
+                    
+                    .text-merch, .carrito{
+                        flex-direction: column;
+                    }
+                }
+            }
+            .pieMe{
+                grid-area: pieMer;
+            }
+    }
+    .imgCa{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+    .contentMerch{
+            color: $color_1;
+            background-color: $background-color_1;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1041px-Star_Wars_Logo.svg.png);
+            background-position: center;
+            background-size: cover;
+            background-position-y: center;
+            background-attachment: fixed;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 33% 33% 34%;
+            grid-template-rows: 100px 500px 1fr 100px;
+            grid-template-areas: 
+            "headMe headMe headMe"
+            "mainMe mainMe mainMe"
+            "secM secM secM"
+            "pieMer pieMer pieMer";
+            .tMe{
+                grid-area: mainMe;
+                height: 500px;
+                .tituloPagina {
+                    text-align: center;
+                    font-family: $font-family_1;
+                    font-size: 50px;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    color: $color_2;
+                }
+                .subtitulo {
+                    text-align: justify;
+                    font-size: 25px;
+                    margin: 100px 80px 100px 80px;
+                    font-family:$font-family_2;
+                    color: $color_3;
+                }
+                .mSt{
+                    text-shadow:$color_1;
+                    background-color:$background-color_2;
+                    border-radius: 5px;
+                }
+            }
+            .padre-merch{
+                grid-area: secM;
+                margin-left: 30%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-left: 0px;
+                .card1{
+                    display: flex;
+                    margin-bottom: 20px;
+                    background-color: $background-color_3;
+                    height: 250px;
+                    width: 600px;
+                    .img-merch{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 6px;
+                        margin: 20px 20px 20px 20px;
+                    }
+                    .img-merch, .text-merch{
+                        display: inline-block;
+                    }
+                    
+                    .text-merch{
+                        margin-top: 20px;
+                        text-align:justify;
+                        color: $color_1;
+                        font-size: 0.3cm;
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .carrito{
+                        margin-top: 200px;
+                        margin-right: 15px;
+                        width: 30px;
+                        height: 30px;
+                        flex-direction: column;
+                    }
+                    
+                    .text-merch, .carrito{
+                        flex-direction: column;
+                    }
+                }
+                .card2{
+                    display: flex;
+                    margin-bottom: 20px;
+                    background-color: $background-color_3;
+                    height: 250px;
+                    width: 600px;
+                    .img-merch{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 6px;
+                        margin: 20px 20px 20px 20px;
+                    }
+                    .img-merch, .text-merch{
+                        display: inline-block;
+                    }
+                    
+                    .text-merch{
+                        margin-top: 20px;
+                        text-align:justify;
+                        color: $color_1;
+                        font-size: 0.3cm;
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .carrito{
+                        margin-top: 200px;
+                        margin-right: 15px;
+                        width: 30px;
+                        height: 30px;
+                        flex-direction: column;
+                    }
+                    
+                    .text-merch, .carrito{
+                        flex-direction: column;
+                    }
+                }
+                .card3{
+                    display: flex;
+                    margin-bottom: 20px;
+                    background-color: $background-color_3;
+                    height: 250px;
+                    width: 600px;
+                    .img-merch{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 6px;
+                        margin: 20px 20px 20px 20px;
+                    }
+                    .img-merch, .text-merch{
+                        display: inline-block;
+                    }
+                    
+                    .text-merch{
+                        margin-top: 20px;
+                        text-align:justify;
+                        color: $color_1;
+                        font-size: 0.3cm;
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .carrito{
+                        margin-top: 200px;
+                        margin-right: 15px;
+                        width: 30px;
+                        height: 30px;
+                        flex-direction: column;
+                    }
+                    
+                    .text-merch, .carrito{
+                        flex-direction: column;
+                    }
+                }
+                .card4{
+                    display: flex;
+                    margin-bottom: 20px;
+                    background-color: $background-color_3;
+                    height: 250px;
+                    width: 600px;
+                    .img-merch{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 6px;
+                        margin: 20px 20px 20px 20px;
+                    }
+                    .img-merch, .text-merch{
+                        display: inline-block;
+                    }
+                    
+                    .text-merch{
+                        margin-top: 20px;
+                        text-align:justify;
+                        color: $color_1;
+                        font-size: 0.3cm;
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .carrito{
+                        margin-top: 200px;
+                        margin-right: 15px;
+                        width: 30px;
+                        height: 30px;
+                        flex-direction: column;
+                    }
+                    
+                    .text-merch, .carrito{
+                        flex-direction: column;
+                    }
+                }
+            }
+            .pieMe{
+                grid-area: pieMer;
+            }
+    }
+    .imgCa{
+                width: 45px;
+                height: 45px;
+    }
+}

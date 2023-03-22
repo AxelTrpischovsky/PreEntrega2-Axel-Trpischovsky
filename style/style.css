@@ -2151,11 +2151,6 @@ footer .redes .redesList .imgRedes:hover {
     transition-duration: 1s;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .contentMerch {
   color: white;
   background-color: black;
@@ -2170,39 +2165,54 @@ footer .redes .redesList .imgRedes:hover {
   grid-template-rows: 100px 500px 1fr 100px;
   grid-template-areas: "headMe headMe headMe" "mainMe mainMe mainMe" "secM secM secM" "pieMer pieMer pieMer";
 }
-
-.pieMe {
-  grid-area: pieMer;
-}
-
-.padre-merch {
-  grid-area: secM;
-  margin-left: 30%;
-}
-
-.tMe {
+.contentMerch .tMe {
   grid-area: mainMe;
   height: 500px;
 }
-
-.mSt {
+.contentMerch .tMe .tituloPagina {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: aqua;
+}
+.contentMerch .tMe .subtitulo {
+  text-align: justify;
+  font-size: 30px;
+  margin: 100px 250px 100px 250px;
+  font-family: "Roboto:", sans-serif;
+  color: yellow;
+}
+.contentMerch .tMe .mSt {
   text-shadow: white;
   background-color: rgba(0, 0, 0, 0.952);
   border-radius: 5px;
 }
-
-.img-merch {
+.contentMerch .padre-merch {
+  grid-area: secM;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 0px;
+}
+.contentMerch .padre-merch .card1 {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: cadetblue;
+  height: 350px;
+  width: 800px;
+}
+.contentMerch .padre-merch .card1 .img-merch {
   width: 300px;
   height: 300px;
   border-radius: 6px;
   margin: 20px 20px 20px 20px;
 }
-
-.img-merch, .text-merch {
+.contentMerch .padre-merch .card1 .img-merch, .contentMerch .padre-merch .card1 .text-merch {
   display: inline-block;
 }
-
-.text-merch {
+.contentMerch .padre-merch .card1 .text-merch {
   margin-top: 20px;
   text-align: justify;
   color: white;
@@ -2210,215 +2220,888 @@ footer .redes .redesList .imgRedes:hover {
   margin-right: 20px;
   margin-bottom: 20px;
 }
-
-.card1 {
-  display: flex;
-  margin-bottom: 20px;
-  background-color: cadetblue;
-  height: 350px;
-  width: 800px;
-}
-
-.card2 {
-  display: flex;
-  margin-bottom: 20px;
-  background-color: cadetblue;
-  height: 350px;
-  width: 800px;
-}
-
-.card3 {
-  display: flex;
-  margin-bottom: 20px;
-  background-color: cadetblue;
-  height: 350px;
-  width: 800px;
-}
-
-.card4 {
-  display: flex;
-  margin-bottom: 20px;
-  background-color: cadetblue;
-  height: 350px;
-  width: 800px;
-}
-
-.carrito {
+.contentMerch .padre-merch .card1 .carrito {
   margin-top: 300px;
   flex-direction: column;
 }
-
-.text-merch, .carrito {
+.contentMerch .padre-merch .card1 .text-merch, .contentMerch .padre-merch .card1 .carrito {
   flex-direction: column;
+}
+.contentMerch .padre-merch .card2 {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: cadetblue;
+  height: 350px;
+  width: 800px;
+}
+.contentMerch .padre-merch .card2 .img-merch {
+  width: 300px;
+  height: 300px;
+  border-radius: 6px;
+  margin: 20px 20px 20px 20px;
+}
+.contentMerch .padre-merch .card2 .img-merch, .contentMerch .padre-merch .card2 .text-merch {
+  display: inline-block;
+}
+.contentMerch .padre-merch .card2 .text-merch {
+  margin-top: 20px;
+  text-align: justify;
+  color: white;
+  font-size: 0.4cm;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.contentMerch .padre-merch .card2 .carrito {
+  margin-top: 300px;
+  flex-direction: column;
+}
+.contentMerch .padre-merch .card2 .text-merch, .contentMerch .padre-merch .card2 .carrito {
+  flex-direction: column;
+}
+.contentMerch .padre-merch .card3 {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: cadetblue;
+  height: 350px;
+  width: 800px;
+}
+.contentMerch .padre-merch .card3 .img-merch {
+  width: 300px;
+  height: 300px;
+  border-radius: 6px;
+  margin: 20px 20px 20px 20px;
+}
+.contentMerch .padre-merch .card3 .img-merch, .contentMerch .padre-merch .card3 .text-merch {
+  display: inline-block;
+}
+.contentMerch .padre-merch .card3 .text-merch {
+  margin-top: 20px;
+  text-align: justify;
+  color: white;
+  font-size: 0.4cm;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.contentMerch .padre-merch .card3 .carrito {
+  margin-top: 300px;
+  flex-direction: column;
+}
+.contentMerch .padre-merch .card3 .text-merch, .contentMerch .padre-merch .card3 .carrito {
+  flex-direction: column;
+}
+.contentMerch .padre-merch .card4 {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: cadetblue;
+  height: 350px;
+  width: 800px;
+}
+.contentMerch .padre-merch .card4 .img-merch {
+  width: 300px;
+  height: 300px;
+  border-radius: 6px;
+  margin: 20px 20px 20px 20px;
+}
+.contentMerch .padre-merch .card4 .img-merch, .contentMerch .padre-merch .card4 .text-merch {
+  display: inline-block;
+}
+.contentMerch .padre-merch .card4 .text-merch {
+  margin-top: 20px;
+  text-align: justify;
+  color: white;
+  font-size: 0.4cm;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.contentMerch .padre-merch .card4 .carrito {
+  margin-top: 300px;
+  flex-direction: column;
+}
+.contentMerch .padre-merch .card4 .text-merch, .contentMerch .padre-merch .card4 .carrito {
+  flex-direction: column;
+}
+.contentMerch .pieMe {
+  grid-area: pieMer;
 }
 
 @media screen and (min-width: 1px) and (max-width: 499px) {
-  .card1 {
-    height: 100px;
-    width: 300px;
+  .contentMerch {
+    color: white;
+    background-color: black;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1041px-Star_Wars_Logo.svg.png);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 500px 1fr 100px;
+    grid-template-areas: "headMe headMe headMe" "mainMe mainMe mainMe" "secM secM secM" "pieMer pieMer pieMer";
   }
-  .card2 {
-    height: 100px;
-    width: 300px;
+  .contentMerch .tMe {
+    grid-area: mainMe;
+    height: 500px;
   }
-  .card3 {
-    height: 100px;
-    width: 300px;
-  }
-  .card4 {
-    height: 100px;
-    width: 300px;
-  }
-  .img-merch {
-    width: 50px;
-    height: 50px;
-  }
-  .text-merch {
-    font-size: 0.13cm;
-    width: 300px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    text-align: justify;
-  }
-  .carrito {
-    margin-top: 75px;
-    margin-right: 15px;
-    width: 15px;
-    height: 15px;
-  }
-  .imgCa {
-    width: 20px;
-    height: 20px;
-  }
-  section.padre-merch {
-    margin-left: 40px;
+  .contentMerch .tMe .tituloPagina {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    margin-top: 150px;
     margin-bottom: 50px;
-    height: 600px;
+    color: aqua;
   }
-  main.tMe {
-    height: 250px;
+  .contentMerch .tMe .subtitulo {
+    text-align: justify;
+    font-size: 18px;
+    margin: 50px 20px 100px 20px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
   }
-  h2.subtitulo.mSt {
-    margin-bottom: 0px;
+  .contentMerch .tMe .mSt {
+    text-shadow: white;
+    background-color: rgba(0, 0, 0, 0.952);
+    border-radius: 5px;
   }
-}
-/* ------------------------------------------------------------------------------------------ */
-@media screen and (min-width: 500px) and (max-width: 576px) {
-  .card1 {
+  .contentMerch .padre-merch {
+    grid-area: secM;
+    margin-left: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 0px;
+  }
+  .contentMerch .padre-merch .card1 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
     height: 100px;
     width: 300px;
   }
-  .card2 {
-    height: 100px;
-    width: 300px;
-  }
-  .card3 {
-    height: 100px;
-    width: 300px;
-  }
-  .card4 {
-    height: 100px;
-    width: 300px;
-  }
-  .img-merch {
+  .contentMerch .padre-merch .card1 .img-merch {
     width: 50px;
     height: 50px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
   }
-  .text-merch {
+  .contentMerch .padre-merch .card1 .img-merch, .contentMerch .padre-merch .card1 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card1 .text-merch {
+    color: white;
+    margin-top: 20px;
     font-size: 0.13cm;
     width: 300px;
     margin-right: 0px;
     margin-bottom: 0px;
     text-align: justify;
   }
-  .carrito {
+  .contentMerch .padre-merch .card1 .carrito {
     margin-top: 75px;
     margin-right: 15px;
     width: 15px;
     height: 15px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card1 .text-merch, .contentMerch .padre-merch .card1 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card2 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    height: 100px;
+    width: 300px;
+  }
+  .contentMerch .padre-merch .card2 .img-merch {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contentMerch .padre-merch .card2 .img-merch, .contentMerch .padre-merch .card2 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card2 .text-merch {
+    margin-top: 20px;
+    color: white;
+    font-size: 0.13cm;
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .contentMerch .padre-merch .card2 .carrito {
+    margin-top: 75px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card2 .text-merch, .contentMerch .padre-merch .card2 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card3 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    height: 100px;
+    width: 300px;
+  }
+  .contentMerch .padre-merch .card3 .img-merch {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contentMerch .padre-merch .card3 .img-merch, .contentMerch .padre-merch .card3 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card3 .text-merch {
+    margin-top: 20px;
+    color: white;
+    font-size: 0.13cm;
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .contentMerch .padre-merch .card3 .carrito {
+    margin-top: 75px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card3 .text-merch, .contentMerch .padre-merch .card3 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card4 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    height: 100px;
+    width: 300px;
+  }
+  .contentMerch .padre-merch .card4 .img-merch {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contentMerch .padre-merch .card4 .img-merch, .contentMerch .padre-merch .card4 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card4 .text-merch {
+    margin-top: 20px;
+    color: white;
+    font-size: 0.13cm;
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .contentMerch .padre-merch .card4 .carrito {
+    margin-top: 75px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card4 .text-merch, .contentMerch .padre-merch .card4 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .pieMe {
+    grid-area: pieMer;
   }
   .imgCa {
     width: 20px;
     height: 20px;
   }
 }
-/* ------------------------------------------------------------------------------------------ */
-/* Reglas de estilo para pantallas con un ancho máximo de 768px */
+@media screen and (min-width: 500px) and (max-width: 576px) {
+  .contentMerch {
+    color: white;
+    background-color: black;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1041px-Star_Wars_Logo.svg.png);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 500px 1fr 100px;
+    grid-template-areas: "headMe headMe headMe" "mainMe mainMe mainMe" "secM secM secM" "pieMer pieMer pieMer";
+  }
+  .contentMerch .tMe {
+    grid-area: mainMe;
+    height: 500px;
+  }
+  .contentMerch .tMe .tituloPagina {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: aqua;
+  }
+  .contentMerch .tMe .subtitulo {
+    text-align: justify;
+    font-size: 20px;
+    margin: 100px 40px 100px 40px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
+  }
+  .contentMerch .tMe .mSt {
+    text-shadow: white;
+    background-color: rgba(0, 0, 0, 0.952);
+    border-radius: 5px;
+  }
+  .contentMerch .padre-merch {
+    grid-area: secM;
+    margin-left: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 0px;
+  }
+  .contentMerch .padre-merch .card1 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    height: 100px;
+    width: 300px;
+  }
+  .contentMerch .padre-merch .card1 .img-merch {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contentMerch .padre-merch .card1 .img-merch, .contentMerch .padre-merch .card1 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card1 .text-merch {
+    color: white;
+    margin-top: 20px;
+    font-size: 0.13cm;
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .contentMerch .padre-merch .card1 .carrito {
+    margin-top: 75px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card1 .text-merch, .contentMerch .padre-merch .card1 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card2 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    height: 100px;
+    width: 300px;
+  }
+  .contentMerch .padre-merch .card2 .img-merch {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contentMerch .padre-merch .card2 .img-merch, .contentMerch .padre-merch .card2 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card2 .text-merch {
+    margin-top: 20px;
+    color: white;
+    font-size: 0.13cm;
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .contentMerch .padre-merch .card2 .carrito {
+    margin-top: 75px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card2 .text-merch, .contentMerch .padre-merch .card2 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card3 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    height: 100px;
+    width: 300px;
+  }
+  .contentMerch .padre-merch .card3 .img-merch {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contentMerch .padre-merch .card3 .img-merch, .contentMerch .padre-merch .card3 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card3 .text-merch {
+    margin-top: 20px;
+    color: white;
+    font-size: 0.13cm;
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .contentMerch .padre-merch .card3 .carrito {
+    margin-top: 75px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card3 .text-merch, .contentMerch .padre-merch .card3 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card4 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    height: 100px;
+    width: 300px;
+  }
+  .contentMerch .padre-merch .card4 .img-merch {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contentMerch .padre-merch .card4 .img-merch, .contentMerch .padre-merch .card4 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card4 .text-merch {
+    margin-top: 20px;
+    color: white;
+    font-size: 0.13cm;
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .contentMerch .padre-merch .card4 .carrito {
+    margin-top: 75px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card4 .text-merch, .contentMerch .padre-merch .card4 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .pieMe {
+    grid-area: pieMer;
+  }
+  .imgCa {
+    width: 20px;
+    height: 20px;
+  }
+}
 @media screen and (min-width: 577px) and (max-width: 768px) {
-  .card1 {
+  .contentMerch {
+    color: white;
+    background-color: black;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1041px-Star_Wars_Logo.svg.png);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 500px 1fr 100px;
+    grid-template-areas: "headMe headMe headMe" "mainMe mainMe mainMe" "secM secM secM" "pieMer pieMer pieMer";
+  }
+  .contentMerch .tMe {
+    grid-area: mainMe;
+    height: 500px;
+  }
+  .contentMerch .tMe .tituloPagina {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: aqua;
+  }
+  .contentMerch .tMe .subtitulo {
+    text-align: justify;
+    font-size: 25px;
+    margin: 100px 40px 100px 40px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
+  }
+  .contentMerch .tMe .mSt {
+    text-shadow: white;
+    background-color: rgba(0, 0, 0, 0.952);
+    border-radius: 5px;
+  }
+  .contentMerch .padre-merch {
+    grid-area: secM;
+    margin-left: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 0px;
+  }
+  .contentMerch .padre-merch .card1 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
     height: 150px;
     width: 400px;
   }
-  .card2 {
-    height: 150px;
-    width: 400px;
-  }
-  .card3 {
-    height: 150px;
-    width: 400px;
-  }
-  .card4 {
-    height: 150px;
-    width: 400px;
-  }
-  .img-merch {
+  .contentMerch .padre-merch .card1 .img-merch {
     width: 80px;
     height: 80px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
   }
-  .text-merch {
+  .contentMerch .padre-merch .card1 .img-merch, .contentMerch .padre-merch .card1 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card1 .text-merch {
+    margin-top: 20px;
     font-size: 0.2cm;
     width: 300px;
     margin-right: 0px;
     margin-bottom: 0px;
     text-align: justify;
   }
-  .carrito {
+  .contentMerch .padre-merch .card1 .carrito {
     margin-top: 120px;
     margin-right: 15px;
     width: 15px;
     height: 15px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card1 .text-merch, .contentMerch .padre-merch .card1 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card2 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    height: 150px;
+    width: 400px;
+  }
+  .contentMerch .padre-merch .card2 .img-merch {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contentMerch .padre-merch .card2 .img-merch, .contentMerch .padre-merch .card2 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card2 .text-merch {
+    margin-top: 20px;
+    color: white;
+    font-size: 0.2cm;
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .contentMerch .padre-merch .card2 .carrito {
+    margin-top: 120px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card2 .text-merch, .contentMerch .padre-merch .card2 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card3 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    height: 150px;
+    width: 400px;
+  }
+  .contentMerch .padre-merch .card3 .img-merch {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contentMerch .padre-merch .card3 .img-merch, .contentMerch .padre-merch .card3 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card3 .text-merch {
+    margin-top: 20px;
+    color: white;
+    font-size: 0.2cm;
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .contentMerch .padre-merch .card3 .carrito {
+    margin-top: 120px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card3 .text-merch, .contentMerch .padre-merch .card3 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card4 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    height: 150px;
+    width: 400px;
+  }
+  .contentMerch .padre-merch .card4 .img-merch {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contentMerch .padre-merch .card4 .img-merch, .contentMerch .padre-merch .card4 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card4 .text-merch {
+    margin-top: 20px;
+    color: white;
+    font-size: 0.2cm;
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .contentMerch .padre-merch .card4 .carrito {
+    margin-top: 120px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card4 .text-merch, .contentMerch .padre-merch .card4 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .pieMe {
+    grid-area: pieMer;
   }
   .imgCa {
     width: 30px;
     height: 30px;
   }
-  /* ------------------------------------------------------------------------------------------ */
-  /* Reglas de estilo para pantallas con un ancho máximo de 1400px */
 }
-@media screen and (min-width: 577px) and (max-width: 768px) and (min-width: 769px) and (max-width: 1400px) {
-  .card1 {
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+  .contentMerch {
+    color: white;
+    background-color: black;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1041px-Star_Wars_Logo.svg.png);
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px 500px 1fr 100px;
+    grid-template-areas: "headMe headMe headMe" "mainMe mainMe mainMe" "secM secM secM" "pieMer pieMer pieMer";
+  }
+  .contentMerch .tMe {
+    grid-area: mainMe;
+    height: 500px;
+  }
+  .contentMerch .tMe .tituloPagina {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: aqua;
+  }
+  .contentMerch .tMe .subtitulo {
+    text-align: justify;
+    font-size: 25px;
+    margin: 100px 80px 100px 80px;
+    font-family: "Roboto:", sans-serif;
+    color: yellow;
+  }
+  .contentMerch .tMe .mSt {
+    text-shadow: white;
+    background-color: rgba(0, 0, 0, 0.952);
+    border-radius: 5px;
+  }
+  .contentMerch .padre-merch {
+    grid-area: secM;
+    margin-left: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 0px;
+  }
+  .contentMerch .padre-merch .card1 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
     height: 250px;
     width: 600px;
   }
-  .card2 {
-    height: 250px;
-    width: 600px;
-  }
-  .card3 {
-    height: 250px;
-    width: 600px;
-  }
-  .card4 {
-    height: 250px;
-    width: 600px;
-  }
-  .img-merch {
+  .contentMerch .padre-merch .card1 .img-merch {
     width: 150px;
     height: 150px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
   }
-  .text-merch {
+  .contentMerch .padre-merch .card1 .img-merch, .contentMerch .padre-merch .card1 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card1 .text-merch {
+    margin-top: 20px;
+    text-align: justify;
+    color: white;
     font-size: 0.3cm;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
-  .carrito {
+  .contentMerch .padre-merch .card1 .carrito {
     margin-top: 200px;
     margin-right: 15px;
     width: 30px;
     height: 30px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card1 .text-merch, .contentMerch .padre-merch .card1 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card2 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    height: 250px;
+    width: 600px;
+  }
+  .contentMerch .padre-merch .card2 .img-merch {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contentMerch .padre-merch .card2 .img-merch, .contentMerch .padre-merch .card2 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card2 .text-merch {
+    margin-top: 20px;
+    text-align: justify;
+    color: white;
+    font-size: 0.3cm;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .contentMerch .padre-merch .card2 .carrito {
+    margin-top: 200px;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card2 .text-merch, .contentMerch .padre-merch .card2 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card3 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    height: 250px;
+    width: 600px;
+  }
+  .contentMerch .padre-merch .card3 .img-merch {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contentMerch .padre-merch .card3 .img-merch, .contentMerch .padre-merch .card3 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card3 .text-merch {
+    margin-top: 20px;
+    text-align: justify;
+    color: white;
+    font-size: 0.3cm;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .contentMerch .padre-merch .card3 .carrito {
+    margin-top: 200px;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card3 .text-merch, .contentMerch .padre-merch .card3 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card4 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    height: 250px;
+    width: 600px;
+  }
+  .contentMerch .padre-merch .card4 .img-merch {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contentMerch .padre-merch .card4 .img-merch, .contentMerch .padre-merch .card4 .text-merch {
+    display: inline-block;
+  }
+  .contentMerch .padre-merch .card4 .text-merch {
+    margin-top: 20px;
+    text-align: justify;
+    color: white;
+    font-size: 0.3cm;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .contentMerch .padre-merch .card4 .carrito {
+    margin-top: 200px;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    flex-direction: column;
+  }
+  .contentMerch .padre-merch .card4 .text-merch, .contentMerch .padre-merch .card4 .carrito {
+    flex-direction: column;
+  }
+  .contentMerch .pieMe {
+    grid-area: pieMer;
   }
   .imgCa {
     width: 45px;
     height: 45px;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
